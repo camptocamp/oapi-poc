@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "ogcapi-poc",
+]
+
+default-members = ["ogcapi-poc"]

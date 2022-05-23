@@ -1,0 +1,67 @@
+services:
+  nginx-proxy:
+    image: nginxproxy/nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - certs:/etc/nginx/certs
+      - vhost:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
+  acme-companion:
+    image: nginxproxy/acme-companion
+    volumes_from:
+      - nginx-proxy
+    volumes:
+      - acme:/etc/acme.sh
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+
+  db:
+    image: postgis/postgis
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${DB_USER}" ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    # ports:
+    #   - ${DB_PORT}:5432
+
+  server:
+    # init: true
+    build:
+      context: .
+    environment:
+      - VIRTUAL_HOST=poc.meteoschweiz-poc.swisstopo.cloud
+      - VIRTUAL_PORT=8484
+      - LETSENCRYPT_HOST=poc.meteoschweiz-poc.swisstopo.cloud
+      - RUST_LOG=${RUST_LOG}
+      - APP_HOST=${APP_HOST}
+      - APP_PORT=${APP_PORT}
+      - APP_USER=${APP_USER}
+      - APP_PASSWORD=${APP_PASSWORD}
+      - DATABASE_URL=postgresql://${DB_USER}:${DB_PASSWORD}@db:5432/${DB_NAME}
+      # - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      # - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      # - AWS_REGION=${AWS_REGION}
+      # - AWS_CUSTOM_ENDPOINT=http://minio:9000
+      - SQLX_OFFLINE=true
+    # depends_on:
+    #   db:
+    #     condition: service_healthy
+    command: cargo run
+    # ports:
+    #   - ${APP_PORT}:${APP_PORT}
+    expose:
+      - ${APP_PORT}
+
+volumes:
+  certs:
+  vhost:
+  html:
+  acme:
