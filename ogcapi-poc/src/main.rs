@@ -6,6 +6,8 @@ use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 
 use crate::auth::Auth;
 
+pub static OPENAPI: &[u8; 99477] = include_bytes!("../../openapi.yaml");
+
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
     // setup env
@@ -26,7 +28,7 @@ async fn main() -> anyhow::Result<()> {
     let db = ogcapi_drivers::postgres::Db::setup(&config.database_url).await?;
 
     // build application
-    let router = ogcapi_services::app(db).await;
+    let router = ogcapi_services::app(db, OPENAPI).await;
 
     // add custom basic auth
     let router = router.route_layer(RequireAuthorizationLayer::custom(Auth));
