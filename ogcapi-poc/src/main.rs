@@ -1,6 +1,10 @@
+mod auth;
 mod loader;
 
+use tower_http::auth::RequireAuthorizationLayer;
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
+
+use crate::auth::Auth;
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
@@ -23,6 +27,9 @@ async fn main() -> anyhow::Result<()> {
 
     // build application
     let router = ogcapi_services::app(db).await;
+
+    // add custom basic auth
+    let router = router.route_layer(RequireAuthorizationLayer::custom(Auth));
 
     // run our app with hyper
     let address = &format!("{}:{}", config.host, config.port).parse()?;

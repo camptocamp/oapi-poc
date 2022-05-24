@@ -4,3 +4,4 @@ Proof of concept (POC) to ingest geospatial datasets from [MetoSuisse](https://w
 
 * [Landing Page (aka Root Catalog)](https://poc.meteoschweiz-poc.swisstopo.cloud/)
 * [STAC Browser](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/)
+* [S3](http://met-oapi-poc.s3.amazonaws.com/)
