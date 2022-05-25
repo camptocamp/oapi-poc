@@ -4,7 +4,7 @@ mod loader;
 use tower_http::auth::RequireAuthorizationLayer;
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 
-use crate::auth::Auth;
+use crate::{auth::Auth, loader::AssetLoader};
 
 pub static OPENAPI: &[u8; 99477] = include_bytes!("../../openapi.yaml");
 
@@ -27,8 +27,17 @@ async fn main() -> anyhow::Result<()> {
     // setup database connection pool & run any pending migrations
     let db = ogcapi_drivers::postgres::Db::setup(&config.database_url).await?;
 
+    // application state
+    let mut state = ogcapi_services::State::new(db, OPENAPI);
+
+    // register processors
+    state.register_processes(vec![
+        Box::new(ogcapi_services::Greeter),
+        Box::new(AssetLoader),
+    ]);
+
     // build application
-    let router = ogcapi_services::app(db, OPENAPI).await;
+    let router = ogcapi_services::app(state).await;
 
     // add custom basic auth
     let router = router.route_layer(RequireAuthorizationLayer::custom(Auth));

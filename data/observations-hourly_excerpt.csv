@@ -1,4 +1,4 @@
-datetimeäáš;value;station_name;nat_abbr;wigos_id;e_coord;n_coord;latitude;longitude;installation_height;param_short
+datetime;value;station_name;nat_abbr;wigos_id;e_coord;n_coord;latitude;longitude;installation_height;param_short
 2022-03-02T00:00:00Z;347;Arosa;ARO;0-20000-0-06785;2771036.8;1184825.9;46.79262222;9.679088889;1888;dkl010h0
 2022-03-02T00:00:00Z;4;Arosa;ARO;0-20000-0-06785;2771036.8;1184825.9;46.79262222;9.679088889;1888;fu3010h0
 2022-03-02T00:00:00Z;9.7;Arosa;ARO;0-20000-0-06785;2771036.8;1184825.9;46.79262222;9.679088889;1888;fu3010h1
