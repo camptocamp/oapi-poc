@@ -41,12 +41,15 @@ def collection_from_geocat(uuid):
 
 
 # Load collection
+root = 'https://poc.meteoschweiz-poc.swisstopo.cloud'
+root = 'http://0.0.0.0:8484'
+
 uuid = '1549b018-f8f0-4a56-bd17-c8a4377afe58'
 
 collection = collection_from_geocat(uuid)
 
-r = requests.delete(f"https://poc.meteoschweiz-poc.swisstopo.cloud/collections/{collection['id']}", auth=AUTH)
+r = requests.delete(f"{root}/collections/{collection['id']}", auth=AUTH)
 r.status_code
-r = requests.post("https://poc.meteoschweiz-poc.swisstopo.cloud/collections", auth=AUTH, json=collection)
+r = requests.post(f"{root}/collections", auth=AUTH, json=collection)
 r.status_code
 # r.text

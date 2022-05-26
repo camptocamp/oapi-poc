@@ -11,7 +11,7 @@ use serde_json::{Map, Value};
 use url::Url;
 use uuid::Uuid;
 
-use ogcapi_drivers::s3::{ByteStream, S3};
+use ogcapi_drivers::s3::ByteStream;
 use ogcapi_services::{Error, Processor, Result, State};
 use ogcapi_types::{
     common::Crs,
@@ -21,7 +21,8 @@ use ogcapi_types::{
 };
 
 static AWS_S3_BUCKET: &str = "met-oapi-poc";
-static AWS_S3_BUCKET_BASE: &str = "http://met-oapi-poc.s3.amazonaws.com";
+// static AWS_S3_BUCKET_BASE: &str = "http://met-oapi-poc.s3.amazonaws.com";
+static AWS_S3_BUCKET_BASE: &str = "https://poc.meteoschweiz-poc.swisstopo.cloud/minio";
 
 /// STAC Asset loader
 pub(crate) struct AssetLoader;
@@ -108,12 +109,11 @@ impl Processor for AssetLoader {
         let inputs: AssetLoaderInputs = serde_json::from_value(value)
             .map_err(|e| Error::Exception(StatusCode::BAD_REQUEST, e.to_string()))?;
 
-        // Setup S3 driver
-        let s3 = S3::setup().await;
-
         // Upload asset
         let bytes = base64::decode(inputs.file.value).context("Failed to decode base64 string")?;
-        s3.client
+        state
+            .s3
+            .client
             .put_object()
             .bucket(AWS_S3_BUCKET)
             .key(&inputs.key)
@@ -125,8 +125,9 @@ impl Processor for AssetLoader {
 
         let asset = Asset {
             href: format!(
-                "{}/{}",
+                "{}/{}/{}",
                 AWS_S3_BUCKET_BASE,
+                AWS_S3_BUCKET,
                 inputs.key.trim_start_matches('/')
             ),
             title: inputs.title,
@@ -156,6 +157,7 @@ impl Processor for AssetLoader {
                     .map_err(|e| Error::Exception(StatusCode::BAD_REQUEST, e.to_string()))?;
 
                 item.assets.insert(key, asset);
+                item.collection = Some(inputs.collection.to_owned());
 
                 state.drivers.features.create_feature(&item).await?
             }

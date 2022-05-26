@@ -1,6 +1,8 @@
 mod auth;
 mod loader;
 
+use anyhow::Ok;
+
 use tower_http::auth::RequireAuthorizationLayer;
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 
@@ -28,7 +30,7 @@ async fn main() -> anyhow::Result<()> {
     let db = ogcapi_drivers::postgres::Db::setup(&config.database_url).await?;
 
     // application state
-    let mut state = ogcapi_services::State::new(db, OPENAPI);
+    let mut state = ogcapi_services::State::new_with(db, OPENAPI).await;
 
     // register processors
     state.register_processes(vec![
