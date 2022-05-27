@@ -18,11 +18,11 @@ Example python scripts for loading an asset to an existing collection as well as
 
 ## Consumption
 
-The created resources can for example be consoumed with the [STAC Browser](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/). Currently the assets are loaded into a minion container, in the future they will reside on a [S3 bucket](http://met-oapi-poc.s3.amazonaws.com/).
+The created resources can for example be consoumed with the [STAC Browser](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/). The assets contents accessible through the `href` reside on a [S3 bucket](http://met-oapi-poc.s3.amazonaws.com/).
 
 ## Caveats
 
-* No data is persisted, it lives in the containers of the docker composition.
+* Only the data on S3 is persisted, the rest lives in the containers of the docker composition.
 * The asset content is not parsed, nor are any attributes derived.
 * Only `base64` encoded string are supported as file value for now.
 * An asset can be replaced by specifying the asset `id`, the S3 `key` and the `item id` as value in the inputs.

@@ -8,7 +8,7 @@ auth = ('user', 'password')
 
 # API endpoint
 url = 'https://poc.meteoschweiz-poc.swisstopo.cloud'
-url = 'http://0.0.0.0:8484'
+# url = 'http://0.0.0.0:8484'
 
 # Process description
 # r = requests.get(f'{url}/processes/load-asset')
@@ -25,7 +25,7 @@ with path.open('rb') as file:
                 'mediaType': 'text/csv',
             },
             'key': f"test/{path.name}",
-            'id': '4fb2c4cb-11c8-446f-af18-41222d16d410',
+            # 'id': '4fb2c4cb-11c8-446f-af18-41222d16d410',
             'collection': 'ch.meteoschweiz.klimanormwerte-temperatur_1961_1990',
             'item': {
                 'value': {

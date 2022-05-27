@@ -42,7 +42,7 @@ def collection_from_geocat(uuid):
 
 # Load collection
 root = 'https://poc.meteoschweiz-poc.swisstopo.cloud'
-root = 'http://0.0.0.0:8484'
+# root = 'http://0.0.0.0:8484'
 
 uuid = '1549b018-f8f0-4a56-bd17-c8a4377afe58'
 

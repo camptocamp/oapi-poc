@@ -1,4 +1,5 @@
 use anyhow::Context;
+use aws_sdk_s3::model::ObjectCannedAcl;
 use axum::{
     async_trait,
     http::StatusCode,
@@ -21,8 +22,7 @@ use ogcapi_types::{
 };
 
 static AWS_S3_BUCKET: &str = "met-oapi-poc";
-// static AWS_S3_BUCKET_BASE: &str = "http://met-oapi-poc.s3.amazonaws.com";
-static AWS_S3_BUCKET_BASE: &str = "https://poc.meteoschweiz-poc.swisstopo.cloud/minio";
+static AWS_S3_BUCKET_BASE: &str = "http://met-oapi-poc.s3.amazonaws.com";
 
 /// STAC Asset loader
 pub(crate) struct AssetLoader;
@@ -119,15 +119,15 @@ impl Processor for AssetLoader {
             .key(&inputs.key)
             .body(ByteStream::from(bytes))
             .content_type(&inputs.file.media_type)
+            .acl(ObjectCannedAcl::PublicRead)
             .send()
             .await
             .context("Failed to put object to S3")?;
 
         let asset = Asset {
             href: format!(
-                "{}/{}/{}",
+                "{}/{}",
                 AWS_S3_BUCKET_BASE,
-                AWS_S3_BUCKET,
                 inputs.key.trim_start_matches('/')
             ),
             title: inputs.title,

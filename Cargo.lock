@@ -1355,13 +1355,12 @@ dependencies = [
 [[package]]
 name = "ogcapi-drivers"
 version = "0.1.0"
-source = "git+https://github.com/camptocamp/ogcapi?branch=poc#5c7b56fc3c0be847c8285f4f01adfeabffeb4210"
+source = "git+https://github.com/camptocamp/ogcapi?branch=poc#00d701785e05e37c797fc7f34e57e2596b9e09be"
 dependencies = [
  "anyhow",
  "async-trait",
  "aws-config",
  "aws-sdk-s3",
- "aws-smithy-types",
  "http",
  "ogcapi-types",
  "rink-core",
@@ -1376,9 +1375,7 @@ name = "ogcapi-poc"
 version = "0.0.1"
 dependencies = [
  "anyhow",
- "aws-config",
  "aws-sdk-s3",
- "aws-smithy-types",
  "axum",
  "base64",
  "dotenv",
@@ -1402,7 +1399,7 @@ dependencies = [
 [[package]]
 name = "ogcapi-services"
 version = "0.1.0"
-source = "git+https://github.com/camptocamp/ogcapi?branch=poc#5c7b56fc3c0be847c8285f4f01adfeabffeb4210"
+source = "git+https://github.com/camptocamp/ogcapi?branch=poc#00d701785e05e37c797fc7f34e57e2596b9e09be"
 dependencies = [
  "anyhow",
  "axum",
@@ -1430,7 +1427,7 @@ dependencies = [
 [[package]]
 name = "ogcapi-types"
 version = "0.1.0"
-source = "git+https://github.com/camptocamp/ogcapi?branch=poc#5c7b56fc3c0be847c8285f4f01adfeabffeb4210"
+source = "git+https://github.com/camptocamp/ogcapi?branch=poc#00d701785e05e37c797fc7f34e57e2596b9e09be"
 dependencies = [
  "chrono",
  "geojson",
