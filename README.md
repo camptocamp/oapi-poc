@@ -29,6 +29,6 @@ The created resources can for example be consoumed with the [STAC Browser](https
 * It is currently not possible to updat the Feature/Item on upload.
 * Catalog trees can only be created from the collection downwards as the root catalog is immutable for now.
 
-## Catalgo Trees (advanced & untested)
+## Catalog Trees (advanced & untested)
 
 Potentially catalog trees can be setup by inserting collection resources with the property `type` set to `Catalog` that feature the proper link relations `parent` and `child` and/or `item`. Naturally this relation should be reflected on the linke ressources as well.
