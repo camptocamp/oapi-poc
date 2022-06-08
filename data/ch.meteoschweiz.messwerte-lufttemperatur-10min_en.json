@@ -1,0 +1,2295 @@
+{
+"crs": {
+"type":"name",
+"properties":{
+"name":"EPSG:2056"}
+},
+"license": "https://www.meteoswiss.admin.ch/content/dam/meteoswiss/en/service-und-publikationen/produkt/doc/standardservices.pdf",
+"mapname": "ch.meteoschweiz.messwerte-lufttemperatur-10min",
+"map_long_name": "Measurement values air temperature 2 m, 10 min mean",
+"map_short_name": "Temperature 2 m, 10 min",
+"map_abstract": "Current measurement values of Temperature 2 m, 10 min [°C]. Data is updated every 10 minutes. The data set contains all weather stations of the SwissMetNet, the automatic monitoring network of MeteoSwiss, which comprises 160 automatic monitoring stations. These stations deliver a multitude of current data on the weather and climate in Switzerland every ten minutes.",
+"creation_time": "08.06.2022 14:55",
+"type":"FeatureCollection",
+"features":[
+{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2771032.30,1184823.00]},
+"id":"ARO",
+"properties":{
+"station_name":"Arosa",
+"station_symbol":1,
+"value":14.1,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1880.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Arosa (ARO)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>14.1 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1880.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=ARO\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2756908.09,1209344.65]},
+"id":"RAG",
+"properties":{
+"station_name":"Bad Ragaz",
+"station_symbol":1,
+"value":22.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "498.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Bad Ragaz (RAG)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>22.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>498.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=RAG\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2719100.41,1279046.07]},
+"id":"HAI",
+"properties":{
+"station_name":"Salen-Reutenen",
+"station_symbol":1,
+"value":17.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "720.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Salen-Reutenen (HAI)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>17.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>720.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=HAI\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2677457.15,1283471.74]},
+"id":"HLL",
+"properties":{
+"station_name":"Hallau",
+"station_symbol":1,
+"value":19.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "421.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Hallau (HLL)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>19.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>421.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=HLL\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2593269.41,1244543.47]},
+"id":"DEM",
+"properties":{
+"station_name":"Delémont",
+"station_symbol":1,
+"value":16.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "441.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Delémont (DEM)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>16.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>441.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=DEM\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2726347.40,1237170.91]},
+"id":"EBK",
+"properties":{
+"station_name":"Ebnat-Kappel",
+"station_symbol":1,
+"value":20.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "625.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Ebnat-Kappel (EBK)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>20.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>625.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=EBK\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2732265.69,1198424.71]},
+"id":"ELM",
+"properties":{
+"station_name":"Elm",
+"station_symbol":1,
+"value":18.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "960.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Elm (ELM)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>18.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>960.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=ELM\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2699984.27,1221062.38]},
+"id":"EIN",
+"properties":{
+"station_name":"Einsiedeln",
+"station_symbol":1,
+"value":16.9,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "912.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Einsiedeln (EIN)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>16.9 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>912.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=EIN\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2687442.59,1165037.77]},
+"id":"ANT",
+"properties":{
+"station_name":"Andermatt",
+"station_symbol":1,
+"value":12.9,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1436.52",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Andermatt (ANT)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>12.9 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1436.52 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=ANT\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2655845.42,1175923.73]},
+"id":"MER",
+"properties":{
+"station_name":"Meiringen",
+"station_symbol":1,
+"value":18.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "590.60",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Meiringen (MER)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>18.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>590.60 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=MER\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2577039.56,1147648.83]},
+"id":"CHD",
+"properties":{
+"station_name":"Château-d'Oex",
+"station_symbol":1,
+"value":13.4,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1031.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Château-d'Oex (CHD)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>13.4 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1031.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=CHD\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2575181.80,1180076.10]},
+"id":"GRA",
+"properties":{
+"station_name":"Fribourg / Grangeneuve",
+"station_symbol":1,
+"value":15.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "652.60",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Fribourg / Grangeneuve (GRA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>15.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>652.60 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GRA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2565060.25,1211006.92]},
+"id":"CHM",
+"properties":{
+"station_name":"Chaumont",
+"station_symbol":1,
+"value":10.4,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1138.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Chaumont (CHM)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>10.4 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1138.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=CHM\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2628005.36,1198791.98]},
+"id":"LAG",
+"properties":{
+"station_name":"Langnau i.E.",
+"station_symbol":1,
+"value":16.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "747.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Langnau i.E. (LAG)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>16.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>747.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=LAG\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2612662.32,1218664.25]},
+"id":"KOP",
+"properties":{
+"station_name":"Koppigen",
+"station_symbol":1,
+"value":16.4,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "486.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Koppigen (KOP)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>16.4 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>486.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=KOP\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2630735.80,1116061.18]},
+"id":"GRC",
+"properties":{
+"station_name":"Grächen",
+"station_symbol":1,
+"value":14.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1607.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Grächen (GRC)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>14.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1607.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GRC\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2629565.85,1141074.96]},
+"id":"BLA",
+"properties":{
+"station_name":"Blatten, Lötschental",
+"station_symbol":1,
+"value":14.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1540.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Blatten, Lötschental (BLA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>14.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1540.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BLA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2733015.56,1124079.40]},
+"id":"GRO",
+"properties":{
+"station_name":"Grono",
+"station_symbol":1,
+"value":24.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "325.52",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Grono (GRO)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>24.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>325.52 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GRO\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2798423.28,1143019.76]},
+"id":"BEH",
+"properties":{
+"station_name":"Passo del Bernina",
+"station_symbol":1,
+"value":11.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "2267.00",
+"measurement_height": "7.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Passo del Bernina (BEH)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>11.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>2267.00 m (Height a. ground: 7.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BEH\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2778576.02,1144976.10]},
+"id":"SIA",
+"properties":{
+"station_name":"Segl-Maria",
+"station_symbol":1,
+"value":13.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1806.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Segl-Maria (SIA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>13.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1806.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=SIA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2828861.77,1165573.69]},
+"id":"SMM",
+"properties":{
+"station_name":"Sta. Maria, Val Müstair",
+"station_symbol":1,
+"value":18.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1388.20",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Sta. Maria, Val Müstair (SMM)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>18.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1388.20 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=SMM\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2783514.12,1187456.89]},
+"id":"DAV",
+"properties":{
+"station_name":"Davos",
+"station_symbol":1,
+"value":16.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1595.93",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Davos (DAV)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>16.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1595.93 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=DAV\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2759472.02,1193156.19]},
+"id":"CHU",
+"properties":{
+"station_name":"Chur",
+"station_symbol":1,
+"value":22.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "558.37",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Chur (CHU)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>22.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>558.37 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=CHU\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2801988.99,1136245.88]},
+"id":"ROB",
+"properties":{
+"station_name":"Poschiavo / Robbia",
+"station_symbol":1,
+"value":20.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1079.92",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Poschiavo / Robbia (ROB)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>20.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1079.92 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=ROB\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2787246.01,1155684.47]},
+"id":"SAM",
+"properties":{
+"station_name":"Samedan",
+"station_symbol":1,
+"value":15.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1710.62",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Samedan (SAM)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>15.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1710.62 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=SAM\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2817134.17,1186393.00]},
+"id":"SCU",
+"properties":{
+"station_name":"Scuol",
+"station_symbol":1,
+"value":20.4,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1306.41",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Scuol (SCU)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>20.4 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1306.41 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=SCU\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2497062.68,1142370.09]},
+"id":"DOL",
+"properties":{
+"station_name":"La Dôle",
+"station_symbol":1,
+"value":6.1,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1671.26",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>La Dôle (DOL)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>6.1 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1671.26 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=DOL\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2562126.03,1184611.18]},
+"id":"PAY",
+"properties":{
+"station_name":"Payerne",
+"station_symbol":1,
+"value":15.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "491.04",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Payerne (PAY)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>15.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>491.04 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=PAY\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2641912.11,1155283.76]},
+"id":"JUN",
+"properties":{
+"station_name":"Jungfraujoch",
+"station_symbol":1,
+"value":-1.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "3581.63",
+"measurement_height": "10.30 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Jungfraujoch (JUN)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>-1.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>3581.63 m (Height a. ground: 10.30 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=JUN\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2626400.66,1233848.70]},
+"id":"WYN",
+"properties":{
+"station_name":"Wynau",
+"station_symbol":1,
+"value":18.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "423.99",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Wynau (WYN)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>18.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>423.99 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=WYN\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2744179.55,1234919.19]},
+"id":"SAE",
+"properties":{
+"station_name":"Säntis",
+"station_symbol":1,
+"value":7.3,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "2504.18",
+"measurement_height": "2.52 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Säntis (SAE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>7.3 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>2504.18 m (Height a. ground: 2.52 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=SAE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2757718.70,1221696.10]},
+"id":"VAD",
+"properties":{
+"station_name":"Vaduz",
+"station_symbol":1,
+"value":22.4,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "459.18",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Vaduz (VAD)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>22.4 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>459.18 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=VAD\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2560399.50,1130712.96]},
+"id":"AIG",
+"properties":{
+"station_name":"Aigle",
+"station_symbol":1,
+"value":17.7,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "382.94",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Aigle (AIG)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>17.7 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>382.94 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=AIG\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2567719.70,1155074.00]},
+"id":"MLS",
+"properties":{
+"station_name":"Le Moléson",
+"station_symbol":1,
+"value":4.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1976.11",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Le Moléson (MLS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>4.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1976.11 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=MLS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2562459.89,1252675.63]},
+"id":"FAH",
+"properties":{
+"station_name":"Fahy",
+"station_symbol":1,
+"value":13.9,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "598.39",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Fahy (FAH)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>13.9 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>598.39 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=FAH\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2601704.57,1127485.22]},
+"id":"MVE",
+"properties":{
+"station_name":"Montana",
+"station_symbol":1,
+"value":12.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1424.45",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Montana (MVE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>12.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1424.45 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=MVE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2624294.94,1097572.97]},
+"id":"ZER",
+"properties":{
+"station_name":"Zermatt",
+"station_symbol":1,
+"value":14.9,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1640.66",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Zermatt (ZER)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>14.9 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1640.66 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=ZER\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2570842.53,1220155.09]},
+"id":"CHA",
+"properties":{
+"station_name":"Chasseral",
+"station_symbol":1,
+"value":6.9,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1595.75",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Chasseral (CHA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>6.9 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1595.75 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=CHA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2661909.62,1203410.48]},
+"id":"PIL",
+"properties":{
+"station_name":"Pilatus",
+"station_symbol":1,
+"value":5.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "2107.40",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Pilatus (PIL)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>5.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>2107.40 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=PIL\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2690174.01,1193560.58]},
+"id":"ALT",
+"properties":{
+"station_name":"Altdorf",
+"station_symbol":1,
+"value":20.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "439.86",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Altdorf (ALT)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>20.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>439.86 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=ALT\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2666740.81,1150763.88]},
+"id":"ULR",
+"properties":{
+"station_name":"Ulrichen",
+"station_symbol":1,
+"value":18.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1347.81",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Ulrichen (ULR)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>18.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1347.81 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=ULR\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2695885.99,1152260.22]},
+"id":"PIO",
+"properties":{
+"station_name":"Piotta",
+"station_symbol":1,
+"value":19.7,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "991.38",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Piotta (PIO)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>19.7 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>991.38 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Characteristics</strong></td><td>A construction site close to the station can have an influence on temperature measurements.</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=PIO\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2717859.07,1095840.02]},
+"id":"LUG",
+"properties":{
+"station_name":"Lugano",
+"station_symbol":1,
+"value":23.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "274.56",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Lugano (LUG)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>23.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>274.56 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Characteristics</strong></td><td>Temperature measurement near a lake.</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=LUG\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2638132.57,1206076.11]},
+"id":"NAP",
+"properties":{
+"station_name":"Napf",
+"station_symbol":1,
+"value":10.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1406.21",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Napf (NAP)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>10.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1406.21 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=NAP\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2590481.43,1118457.05]},
+"id":"SIO",
+"properties":{
+"station_name":"Sion",
+"station_symbol":1,
+"value":19.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "481.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Sion (SIO)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>19.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>481.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=SIO\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2715475.14,1113160.38]},
+"id":"MAG",
+"properties":{
+"station_name":"Magadino / Cadenazzo",
+"station_symbol":1,
+"value":23.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "205.20",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Magadino / Cadenazzo (MAG)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>23.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>205.20 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=MAG\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2563072.20,1205551.87]},
+"id":"NEU",
+"properties":{
+"station_name":"Neuchâtel",
+"station_symbol":1,
+"value":17.1,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "486.10",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Neuchâtel (NEU)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>17.1 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>486.10 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=NEU\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2716052.35,1077967.37]},
+"id":"SBO",
+"properties":{
+"station_name":"Stabio",
+"station_symbol":1,
+"value":23.7,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "353.32",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Stabio (SBO)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>23.7 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>353.32 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=SBO\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2633018.81,1169091.44]},
+"id":"INT",
+"properties":{
+"station_name":"Interlaken",
+"station_symbol":1,
+"value":18.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "579.29",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Interlaken (INT)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>18.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>579.29 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=INT\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2708189.95,1173788.37]},
+"id":"DIS",
+"properties":{
+"station_name":"Disentis",
+"station_symbol":1,
+"value":19.9,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1198.71",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Disentis (DIS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>19.9 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1198.71 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=DIS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2747860.93,1254585.34]},
+"id":"STG",
+"properties":{
+"station_name":"St. Gallen",
+"station_symbol":1,
+"value":18.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "777.60",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>St. Gallen (STG)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>18.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>777.60 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=STG\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2723751.80,1210566.94]},
+"id":"GLA",
+"properties":{
+"station_name":"Glarus",
+"station_symbol":1,
+"value":21.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "519.39",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Glarus (GLA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>21.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>519.39 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GLA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2498483.43,1122750.94]},
+"id":"GVE",
+"properties":{
+"station_name":"Genève / Cointrin",
+"station_symbol":1,
+"value":16.7,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "417.53",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Genève / Cointrin (GVE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>16.7 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>417.53 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GVE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2682706.56,1259335.60]},
+"id":"KLO",
+"properties":{
+"station_name":"Zürich / Kloten",
+"station_symbol":1,
+"value":20.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "428.23",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Zürich / Kloten (KLO)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>20.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>428.23 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=KLO\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2690087.00,1167480.00]},
+"id":"GUE",
+"properties":{
+"station_name":"Gütsch, Andermatt",
+"station_symbol":1,
+"value":9.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "2288.30",
+"measurement_height": "2.30 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Gütsch, Andermatt (GUE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>9.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>2288.30 m (Height a. ground: 2.30 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GUE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2540814.74,1151510.19]},
+"id":"PUY",
+"properties":{
+"station_name":"Pully",
+"station_symbol":1,
+"value":16.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "457.37",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Pully (PUY)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>16.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>457.37 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=PUY\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2579193.41,1079731.92]},
+"id":"GSB",
+"properties":{
+"station_name":"Col du Grand St-Bernard",
+"station_symbol":1,
+"value":5.3,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "2479.24",
+"measurement_height": "8.60 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Col du Grand St-Bernard (GSB)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>5.3 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>2479.24 m (Height a. ground: 8.60 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GSB\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2609371.04,1148942.83]},
+"id":"ABO",
+"properties":{
+"station_name":"Adelboden",
+"station_symbol":1,
+"value":11.7,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1324.06",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Adelboden (ABO)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>11.7 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1324.06 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=ABO\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2631146.36,1128021.40]},
+"id":"VIS",
+"properties":{
+"station_name":"Visp",
+"station_symbol":1,
+"value":19.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "641.40",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Visp (VIS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>19.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>641.40 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=VIS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2550914.04,1214861.63]},
+"id":"CDF",
+"properties":{
+"station_name":"La Chaux-de-Fonds",
+"station_symbol":1,
+"value":11.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1019.31",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>La Chaux-de-Fonds (CDF)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>11.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1019.31 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=CDF\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2633248.82,1253844.31]},
+"id":"RUE",
+"properties":{
+"station_name":"Rünenberg",
+"station_symbol":1,
+"value":16.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "613.19",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Rünenberg (RUE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>16.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>613.19 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=RUE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2648389.88,1248365.12]},
+"id":"BUS",
+"properties":{
+"station_name":"Buchs / Aarau",
+"station_symbol":1,
+"value":19.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "388.87",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Buchs / Aarau (BUS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>19.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>388.87 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BUS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2665539.89,1209846.96]},
+"id":"LUZ",
+"properties":{
+"station_name":"Luzern",
+"station_symbol":1,
+"value":19.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "456.32",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Luzern (LUZ)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>19.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>456.32 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=LUZ\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2674156.73,1186066.47]},
+"id":"ENG",
+"properties":{
+"station_name":"Engelberg",
+"station_symbol":1,
+"value":15.9,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1036.65",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Engelberg (ENG)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>15.9 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1036.65 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=ENG\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2688698.03,1282799.12]},
+"id":"SHA",
+"properties":{
+"station_name":"Schaffhausen",
+"station_symbol":1,
+"value":21.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "440.88",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Schaffhausen (SHA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>21.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>440.88 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=SHA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2685117.31,1248061.23]},
+"id":"SMA",
+"properties":{
+"station_name":"Zürich / Fluntern",
+"station_symbol":1,
+"value":19.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "557.75",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Zürich / Fluntern (SMA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>19.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>557.75 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=SMA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2734112.06,1147293.30]},
+"id":"SBE",
+"properties":{
+"station_name":"S. Bernardino",
+"station_symbol":1,
+"value":13.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1640.75",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>S. Bernardino (SBE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>13.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1640.75 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=SBE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2780615.72,1189634.31]},
+"id":"WFJ",
+"properties":{
+"station_name":"Weissfluhjoch",
+"station_symbol":1,
+"value":10.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "2693.74",
+"measurement_height": "2.50 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Weissfluhjoch (WFJ)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>10.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>2693.74 m (Height a. ground: 2.50 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=WFJ\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2783161.28,1143525.29]},
+"id":"COV",
+"properties":{
+"station_name":"Piz Corvatsch",
+"station_symbol":1,
+"value":2.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "3297.12",
+"measurement_height": "2.81 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Piz Corvatsch (COV)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>2.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>3297.12 m (Height a. ground: 2.81 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=COV\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2610911.07,1265603.72]},
+"id":"BAS",
+"properties":{
+"station_name":"Basel / Binningen",
+"station_symbol":1,
+"value":18.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "318.17",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Basel / Binningen (BAS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>18.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>318.17 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BAS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2506872.67,1139573.27]},
+"id":"CGI",
+"properties":{
+"station_name":"Nyon / Changins",
+"station_symbol":1,
+"value":16.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "460.20",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Nyon / Changins (CGI)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>16.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>460.20 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=CGI\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2534220.26,1188081.32]},
+"id":"FRE",
+"properties":{
+"station_name":"Bullet / La Frétaz",
+"station_symbol":1,
+"value":9.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1207.38",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Bullet / La Frétaz (FRE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>9.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1207.38 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=FRE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2601929.13,1204409.39]},
+"id":"BER",
+"properties":{
+"station_name":"Bern / Zollikofen",
+"station_symbol":1,
+"value":15.9,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "554.93",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Bern / Zollikofen (BER)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>15.9 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>554.93 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BER\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2738421.27,1273959.22]},
+"id":"GUT",
+"properties":{
+"station_name":"Güttingen",
+"station_symbol":1,
+"value":19.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "442.09",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Güttingen (GUT)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>19.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>442.09 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GUT\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2640419.55,1245944.71]},
+"id":"GOE",
+"properties":{
+"station_name":"Gösgen",
+"station_symbol":1,
+"value":19.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "382.49",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Gösgen (GOE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>19.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>382.49 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GOE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2693842.90,1230741.24]},
+"id":"WAE",
+"properties":{
+"station_name":"Wädenswil",
+"station_symbol":1,
+"value":20.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "487.58",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Wädenswil (WAE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>20.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>487.58 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=WAE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2710514.59,1259819.72]},
+"id":"TAE",
+"properties":{
+"station_name":"Aadorf / Tänikon",
+"station_symbol":1,
+"value":20.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "539.93",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Aadorf / Tänikon (TAE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>20.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>539.93 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=TAE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2681428.20,1253545.09]},
+"id":"REH",
+"properties":{
+"station_name":"Zürich / Affoltern",
+"station_symbol":1,
+"value":20.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "445.39",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Zürich / Affoltern (REH)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>20.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>445.39 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=REH\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2704166.01,1114311.34]},
+"id":"OTL",
+"properties":{
+"station_name":"Locarno / Monti",
+"station_symbol":1,
+"value":22.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "368.95",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Locarno / Monti (OTL)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>22.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>368.95 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=OTL\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2659809.17,1267693.57]},
+"id":"BEZ",
+"properties":{
+"station_name":"Beznau",
+"station_symbol":1,
+"value":21.1,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "327.51",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Beznau (BEZ)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>21.1 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>327.51 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BEZ\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2587788.79,1202476.86]},
+"id":"MUB",
+"properties":{
+"station_name":"Mühleberg",
+"station_symbol":1,
+"value":17.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "481.79",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Mühleberg (MUB)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>17.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>481.79 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=MUB\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2704429.52,1117453.01]},
+"id":"CIM",
+"properties":{
+"station_name":"Cimetta",
+"station_symbol":1,
+"value":12.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1662.72",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Cimetta (CIM)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>12.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1662.72 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=CIM\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2605412.88,1106738.27]},
+"id":"EVO",
+"properties":{
+"station_name":"Evolène / Villa",
+"station_symbol":1,
+"value":10.1,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1828.00",
+"measurement_height": "2.50 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Evolène / Villa (EVO)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>10.1 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1828.00 m (Height a. ground: 2.50 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=EVO\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2656379.85,1272111.08]},
+"id":"LEI",
+"properties":{
+"station_name":"Leibstadt",
+"station_symbol":1,
+"value":20.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "343.01",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Leibstadt (LEI)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>20.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>343.01 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=LEI\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2668583.30,1158214.72]},
+"id":"GRH",
+"properties":{
+"station_name":"Grimsel Hospiz",
+"station_symbol":1,
+"value":8.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1987.50",
+"measurement_height": "7.50 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Grimsel Hospiz (GRH)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>8.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1987.50 m (Height a. ground: 7.50 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GRH\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2714986.99,1146445.89]},
+"id":"COM",
+"properties":{
+"station_name":"Acquarossa / Comprovasco",
+"station_symbol":1,
+"value":22.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "576.96",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Acquarossa / Comprovasco (COM)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>22.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>576.96 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=COM\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2672251.01,1259459.95]},
+"id":"LAE",
+"properties":{
+"station_name":"Lägern",
+"station_symbol":1,
+"value":15.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "872.56",
+"measurement_height": "28.01 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Lägern (LAE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>15.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>872.56 m (Height a. ground: 28.01 m)</td></tr><tr><td class='text-nowrap'><strong>Characteristics</strong></td><td>Temperature measurement on a tower 26 m above ground.</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=LAE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2713515.37,1247751.74]},
+"id":"HOE",
+"properties":{
+"station_name":"Hörnli",
+"station_symbol":1,
+"value":15.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1133.82",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Hörnli (HOE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>15.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1133.82 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=HOE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2586827.13,1177404.21]},
+"id":"PLF",
+"properties":{
+"station_name":"Plaffeien",
+"station_symbol":1,
+"value":11.4,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1044.49",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Plaffeien (PLF)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>11.4 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1044.49 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=PLF\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2682587.68,1144090.99]},
+"id":"ROE",
+"properties":{
+"station_name":"Robièi",
+"station_symbol":1,
+"value":9.7,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1904.00",
+"measurement_height": "6.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Robièi (ROE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>9.7 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1904.00 m (Height a. ground: 6.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=ROE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2659356.30,1265381.00]},
+"id":"PSI",
+"properties":{
+"station_name":"Würenlingen / PSI",
+"station_symbol":1,
+"value":21.1,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "336.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Würenlingen / PSI (PSI)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>21.1 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>336.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=PSI\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2657995.87,1135421.46]},
+"id":"BIN",
+"properties":{
+"station_name":"Binn",
+"station_symbol":1,
+"value":16.1,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1481.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Binn (BIN)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>16.1 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1481.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BIN\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2629148.17,1089519.60]},
+"id":"MRP",
+"properties":{
+"station_name":"Monte Rosa-Plattje",
+"station_symbol":1,
+"value":6.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "2890.50",
+"measurement_height": "5.50 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Monte Rosa-Plattje (MRP)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>6.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>2890.50 m (Height a. ground: 5.50 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=MRP\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2567374.27,1107577.30]},
+"id":"MAR",
+"properties":{
+"station_name":"Les Marécottes",
+"station_symbol":1,
+"value":15.1,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "992.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Les Marécottes (MAR)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>15.1 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>992.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=MAR\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2691000.04,1215145.22]},
+"id":"SAG",
+"properties":{
+"station_name":"Sattel, SZ",
+"station_symbol":1,
+"value":17.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "792.10",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Sattel, SZ (SAG)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>17.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>792.10 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=SAG\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2677758.87,1226878.00]},
+"id":"CHZ",
+"properties":{
+"station_name":"Cham",
+"station_symbol":1,
+"value":19.9,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "444.50",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Cham (CHZ)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>19.9 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>444.50 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=CHZ\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2618695.70,1269036.53]},
+"id":"STC",
+"properties":{
+"station_name":"St. Chrischona",
+"station_symbol":1,
+"value":15.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "725.00",
+"measurement_height": "232.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>St. Chrischona (STC)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>15.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>725.00 m (Height a. ground: 232.00 m)</td></tr><tr><td class='text-nowrap'><strong>Characteristics</strong></td><td>Temperature measurement on a tower 232 m above ground.</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=STC\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2573621.03,1225603.95]},
+"id":"COY",
+"properties":{
+"station_name":"Courtelary",
+"station_symbol":1,
+"value":14.3,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "697.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Courtelary (COY)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>14.3 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>697.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=COY\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2552108.67,1146853.39]},
+"id":"VEV",
+"properties":{
+"station_name":"Vevey / Corseaux",
+"station_symbol":1,
+"value":17.1,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "407.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Vevey / Corseaux (VEV)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>17.1 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>407.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=VEV\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2555263.50,1138175.39]},
+"id":"BOU",
+"properties":{
+"station_name":"Bouveret",
+"station_symbol":1,
+"value":17.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "377.00",
+"measurement_height": "3.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Bouveret (BOU)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>17.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>377.00 m (Height a. ground: 3.00 m)</td></tr><tr><td class='text-nowrap'><strong>Characteristics</strong></td><td>Temperature measurement at a lake shore.</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BOU\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2675400.57,1180399.77]},
+"id":"TIT",
+"properties":{
+"station_name":"Titlis",
+"station_symbol":1,
+"value":1.1,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "3096.00",
+"measurement_height": "56.00 m (on 50.00 m-roof)",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Titlis (TIT)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>1.1 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>3096.00 m (Height a. ground: 56.00 m (on 50.00 m-roof))</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=TIT\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2616773.49,1160883.78]},
+"id":"FRU",
+"properties":{
+"station_name":"Frutigen",
+"station_symbol":1,
+"value":15.4,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "758.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Frutigen (FRU)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>15.4 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>758.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=FRU\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2633053.72,1269147.42]},
+"id":"MOE",
+"properties":{
+"station_name":"Möhlin",
+"station_symbol":1,
+"value":19.4,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "346.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Möhlin (MOE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>19.4 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>346.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=MOE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2533457.71,1176567.60]},
+"id":"MAH",
+"properties":{
+"station_name":"Mathod",
+"station_symbol":1,
+"value":16.1,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "439.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Mathod (MAH)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>16.1 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>439.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=MAH\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2513820.67,1169387.71]},
+"id":"CHB",
+"properties":{
+"station_name":"Les Charbonnières",
+"station_symbol":1,
+"value":12.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1047.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Les Charbonnières (CHB)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>12.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1047.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=CHB\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2614323.35,1110735.93]},
+"id":"MTE",
+"properties":{
+"station_name":"Mottec",
+"station_symbol":1,
+"value":12.4,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1582.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Mottec (MTE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>12.4 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1582.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=MTE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2734017.13,1165551.23]},
+"id":"VLS",
+"properties":{
+"station_name":"Vals",
+"station_symbol":1,
+"value":17.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1244.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Vals (VLS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>17.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1244.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=VLS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2760382.96,1261386.41]},
+"id":"ARH",
+"properties":{
+"station_name":"Altenrhein",
+"station_symbol":1,
+"value":20.7,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "400.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Altenrhein (ARH)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>20.7 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>400.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=ARH\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2679454.88,1245033.85]},
+"id":"UEB",
+"properties":{
+"station_name":"Uetliberg",
+"station_symbol":1,
+"value":14.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1016.00",
+"measurement_height": "162.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Uetliberg (UEB)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>14.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1016.00 m (Height a. ground: 162.00 m)</td></tr><tr><td class='text-nowrap'><strong>Characteristics</strong></td><td>Temperature measurement on a tower 162 m above ground.</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=UEB\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2688477.46,1171925.64]},
+"id":"GOS",
+"properties":{
+"station_name":"Göschenen",
+"station_symbol":1,
+"value":16.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "952.30",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Göschenen (GOS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>16.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>952.30 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GOS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2752688.16,1164034.75]},
+"id":"AND",
+"properties":{
+"station_name":"Andeer",
+"station_symbol":1,
+"value":22.1,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "988.83",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Andeer (AND)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>22.1 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>988.83 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=AND\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2771280.40,1148114.45]},
+"id":"BIV",
+"properties":{
+"station_name":"Bivio",
+"station_symbol":1,
+"value":14.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1858.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Bivio (BIV)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>14.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1858.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BIV\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2714263.86,1140943.05]},
+"id":"MTR",
+"properties":{
+"station_name":"Matro",
+"station_symbol":1,
+"value":8.1,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "2193.10",
+"measurement_height": "22.10 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Matro (MTR)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>8.1 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>2193.10 m (Height a. ground: 22.10 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=MTR\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2718535.00,1132792.00]},
+"id":"BIA",
+"properties":{
+"station_name":"Biasca",
+"station_symbol":1,
+"value":25.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "280.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Biasca (BIA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>25.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>280.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BIA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2777274.07,1166618.33]},
+"id":"LAT",
+"properties":{
+"station_name":"Bergün / Latsch",
+"station_symbol":1,
+"value":19.7,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1409.85",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Bergün / Latsch (LAT)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>19.7 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1409.85 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=LAT\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2583491.37,1102189.07]},
+"id":"MOB",
+"properties":{
+"station_name":"Montagnier, Bagnes",
+"station_symbol":1,
+"value":16.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "841.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Montagnier, Bagnes (MOB)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>16.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>841.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=MOB\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2573821.12,1137856.58]},
+"id":"CDM",
+"properties":{
+"station_name":"Col des Mosses",
+"station_symbol":1,
+"value":10.3,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1414.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Col des Mosses (CDM)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>10.3 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1414.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=CDM\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2647682.58,1116339.61]},
+"id":"SIM",
+"properties":{
+"station_name":"Simplon-Dorf",
+"station_symbol":1,
+"value":14.4,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1467.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Simplon-Dorf (SIM)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>14.4 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1467.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=SIM\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2816494.06,1170254.99]},
+"id":"BUF",
+"properties":{
+"station_name":"Buffalora",
+"station_symbol":1,
+"value":15.1,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1973.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Buffalora (BUF)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>15.1 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1973.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BUF\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2735686.16,1181965.43]},
+"id":"ILZ",
+"properties":{
+"station_name":"Ilanz",
+"station_symbol":1,
+"value":23.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "700.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Ilanz (ILZ)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>23.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>700.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=ILZ\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2737720.71,1263609.58]},
+"id":"BIZ",
+"properties":{
+"station_name":"Bischofszell / Sitterdorf",
+"station_symbol":1,
+"value":20.3,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "509.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Bischofszell / Sitterdorf (BIZ)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>20.3 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>509.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BIZ\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2707638.08,1226334.18]},
+"id":"LAC",
+"properties":{
+"station_name":"Lachen / Galgenen",
+"station_symbol":1,
+"value":20.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "470.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Lachen / Galgenen (LAC)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>20.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>470.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=LAC\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2644328.85,1193314.83]},
+"id":"FLU",
+"properties":{
+"station_name":"Flühli, LU",
+"station_symbol":1,
+"value":15.4,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "941.75",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Flühli, LU (FLU)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>15.4 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>941.75 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=FLU\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2595831.05,1163587.26]},
+"id":"BOL",
+"properties":{
+"station_name":"Boltigen",
+"station_symbol":1,
+"value":14.3,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "822.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Boltigen (BOL)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>14.3 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>822.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BOL\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2611200.69,1177634.11]},
+"id":"THU",
+"properties":{
+"station_name":"Thun",
+"station_symbol":1,
+"value":17.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "572.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Thun (THU)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>17.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>572.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=THU\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2571761.65,1167321.01]},
+"id":"MAS",
+"properties":{
+"station_name":"Marsens",
+"station_symbol":1,
+"value":14.4,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "716.50",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Marsens (MAS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>14.4 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>716.50 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=MAS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2544197.78,1163651.11]},
+"id":"VIT",
+"properties":{
+"station_name":"Villars-Tiercelin",
+"station_symbol":1,
+"value":99999,
+"unit": "°C",
+"reference_ts": "-",
+"altitude": "861.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Villars-Tiercelin (VIT)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Air temperature</strong></td><td>-</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>861.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=VIT\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2598216.33,1225348.45]},
+"id":"GRE",
+"properties":{
+"station_name":"Grenchen",
+"station_symbol":1,
+"value":17.3,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "429.90",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Grenchen (GRE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>17.3 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>429.90 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GRE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2660127.80,1232850.40]},
+"id":"MOA",
+"properties":{
+"station_name":"Mosen",
+"station_symbol":1,
+"value":19.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "454.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Mosen (MOA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>19.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>454.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=MOA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2689688.01,1130564.30]},
+"id":"CEV",
+"properties":{
+"station_name":"Cevio",
+"station_symbol":1,
+"value":22.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "420.90",
+"measurement_height": "3.90 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Cevio (CEV)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>22.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>420.90 m (Height a. ground: 3.90 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=CEV\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2571160.03,1210800.51]},
+"id":"CRM",
+"properties":{
+"station_name":"Cressier",
+"station_symbol":1,
+"value":17.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "433.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Cressier (CRM)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>17.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>433.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=CRM\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2732846.60,1189402.25]},
+"id":"CMA",
+"properties":{
+"station_name":"Crap Masegn",
+"station_symbol":1,
+"value":8.4,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "2470.52",
+"measurement_height": "3.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Crap Masegn (CMA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>8.4 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>2470.52 m (Height a. ground: 3.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=CMA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2722503.24,1087454.53]},
+"id":"GEN",
+"properties":{
+"station_name":"Monte Generoso",
+"station_symbol":1,
+"value":16.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1602.40",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Monte Generoso (GEN)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>16.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1602.40 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GEN\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2515886.20,1153209.25]},
+"id":"BIE",
+"properties":{
+"station_name":"Bière",
+"station_symbol":1,
+"value":15.3,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "685.71",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Bière (BIE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>15.3 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>685.71 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BIE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2555505.34,1158052.38]},
+"id":"ORO",
+"properties":{
+"station_name":"Oron",
+"station_symbol":1,
+"value":13.4,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "829.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Oron (ORO)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>13.4 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>829.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=ORO\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2536758.70,1203564.29]},
+"id":"BRL",
+"properties":{
+"station_name":"La Brévine",
+"station_symbol":1,
+"value":11.3,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1042.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>La Brévine (BRL)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>11.3 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1042.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BRL\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2606850.14,1202975.05]},
+"id":"BAN",
+"properties":{
+"station_name":"Bantiger",
+"station_symbol":1,
+"value":11.5,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1096.50",
+"measurement_height": "155.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Bantiger (BAN)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>11.5 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1096.50 m (Height a. ground: 155.00 m)</td></tr><tr><td class='text-nowrap'><strong>Characteristics</strong></td><td>Temperature measurement on a tower 155 m above ground.</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=BAN\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2642913.60,1225540.12]},
+"id":"EGO",
+"properties":{
+"station_name":"Egolzwil",
+"station_symbol":1,
+"value":17.9,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "523.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Egolzwil (EGO)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>17.9 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>523.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=EGO\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2581913.49,1130622.31]},
+"id":"DIA",
+"properties":{
+"station_name":"Les Diablerets",
+"station_symbol":1,
+"value":-0.3,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "2966.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Les Diablerets (DIA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>-0.3 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>2966.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=DIA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2643684.53,1199709.96]},
+"id":"SPF",
+"properties":{
+"station_name":"Schüpfheim",
+"station_symbol":1,
+"value":17.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "746.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Schüpfheim (SPF)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>17.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>746.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=SPF\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2761635.61,1180384.72]},
+"id":"VAB",
+"properties":{
+"station_name":"Valbella",
+"station_symbol":1,
+"value":14.4,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1571.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Valbella (VAB)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>14.4 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1571.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=VAB\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2760261.80,1160569.58]},
+"id":"PMA",
+"properties":{
+"station_name":"Piz Martegnas",
+"station_symbol":1,
+"value":6.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "2670.34",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Piz Martegnas (PMA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>6.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>2670.34 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=PMA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2815374.99,1188987.02]},
+"id":"NAS",
+"properties":{
+"station_name":"Naluns / Schlivera",
+"station_symbol":1,
+"value":11.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "2382.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Naluns / Schlivera (NAS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>11.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>2382.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=NAS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2586854.67,1105303.74]},
+"id":"ATT",
+"properties":{
+"station_name":"Les Attelas",
+"station_symbol":1,
+"value":1.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "2744.21",
+"measurement_height": "9.00 m (on 7.00 m-roof)",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Les Attelas (ATT)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>1.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>2744.21 m (Height a. ground: 9.00 m (on 7.00 m-roof))</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=ATT\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2568196.35,1114693.34]},
+"id":"EVI",
+"properties":{
+"station_name":"Evionnaz",
+"station_symbol":1,
+"value":16.8,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "484.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Evionnaz (EVI)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>16.8 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>484.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=EVI\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2626899.24,1092511.59]},
+"id":"GOR",
+"properties":{
+"station_name":"Gornergrat",
+"station_symbol":1,
+"value":2.9,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "3131.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Gornergrat (GOR)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>2.9 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>3131.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GOR\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2650278.86,1141896.53]},
+"id":"EGH",
+"properties":{
+"station_name":"Eggishorn",
+"station_symbol":1,
+"value":5.9,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "2895.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Eggishorn (EGH)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>5.9 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>2895.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=EGH\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2657320.57,1188979.84]},
+"id":"GIH",
+"properties":{
+"station_name":"Giswil",
+"station_symbol":1,
+"value":20.1,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "473.20",
+"measurement_height": "2.20 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Giswil (GIH)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>20.1 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>473.20 m (Height a. ground: 2.20 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GIH\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2682506.17,1205572.46]},
+"id":"GES",
+"properties":{
+"station_name":"Gersau",
+"station_symbol":1,
+"value":18.6,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "521.60",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Gersau (GES)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>18.6 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>521.60 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=GES\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2769618.27,1205124.93]},
+"id":"SRS",
+"properties":{
+"station_name":"Schiers",
+"station_symbol":1,
+"value":21.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "628.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Schiers (SRS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>21.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>628.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=SRS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2768486.51,1135865.53]},
+"id":"VIO",
+"properties":{
+"station_name":"Vicosoprano",
+"station_symbol":1,
+"value":19.0,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "1091.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Vicosoprano (VIO)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>19.0 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>1091.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=VIO\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2764171.18,1249582.17]},
+"id":"OBR",
+"properties":{
+"station_name":"Oberriet / Kriessern",
+"station_symbol":1,
+"value":22.2,
+"unit": "°C",
+"reference_ts": "2022-06-08T12:50:00Z",
+"altitude": "411.00",
+"measurement_height": "2.00 m",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Oberriet / Kriessern (OBR)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Weather&nbspstation</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td><strong>Air temperature</strong></td><td>22.2 °C (08.06.2022 14:50)</td></tr><tr><td class='text-nowrap'><strong>Measurement height</strong></td><td>411.00 m (Height a. ground: 2.00 m)</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messwerte-lufttemperatur-10min&station=OBR\">Information about this station</a></td></tr></tbody></table>"}
+}
+] }

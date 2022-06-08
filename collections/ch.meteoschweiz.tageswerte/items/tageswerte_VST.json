@@ -1,0 +1,23 @@
+{
+    "id": "tageswerte_VST",
+    "collection": "ch.meteoschweiz.tageswerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.1785664021484665,
+            46.64776558846581
+        ]
+    },
+    "properties": {
+        "station_name": "La Valsainte",
+        "station_symbol": 2,
+        "altitude": "1044",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        7.1785664021484665,
+        46.64776558846581,
+        7.1785664021484665,
+        46.64776558846581
+    ]
+}

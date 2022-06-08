@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_BAS",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.583516440150709,
+            47.54114363967757
+        ]
+    },
+    "properties": {
+        "station_name": "Basel / Binningen",
+        "station_symbol": 1,
+        "altitude": "316",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        7.583516440150709,
+        47.54114363967757,
+        7.583516440150709,
+        47.54114363967757
+    ]
+}

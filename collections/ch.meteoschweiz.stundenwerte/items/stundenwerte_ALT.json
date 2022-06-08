@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_ALT",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.621896388399554,
+            46.88707799786279
+        ]
+    },
+    "properties": {
+        "station_name": "Altdorf",
+        "station_symbol": 1,
+        "altitude": "438",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        8.621896388399554,
+        46.88707799786279,
+        8.621896388399554,
+        46.88707799786279
+    ]
+}

@@ -23,6 +23,7 @@ use ogcapi_types::{
 
 static AWS_S3_BUCKET: &str = "met-oapi-poc";
 static AWS_S3_BUCKET_BASE: &str = "http://met-oapi-poc.s3.amazonaws.com";
+// static AWS_S3_BUCKET_BASE: &str = "http://localhost:9000/met-oapi-poc";
 
 /// STAC Asset loader
 pub(crate) struct AssetLoader;
@@ -47,6 +48,8 @@ struct AssetLoaderInputs {
     collection: String,
     /// Item object to create or existing Item `id`
     item: Item,
+    /// Preperties to update
+    properties: Option<Properties>,
 }
 
 #[derive(Deserialize, Debug, JsonSchema)]
@@ -62,6 +65,11 @@ struct File {
 #[derive(Deserialize, Debug, JsonSchema)]
 struct Item {
     value: ItemValue,
+}
+
+#[derive(Deserialize, Debug, JsonSchema)]
+struct Properties {
+    value: Map<String, Value>,
 }
 
 #[derive(Deserialize, Debug, JsonSchema)]
@@ -148,6 +156,10 @@ impl Processor for AssetLoader {
 
                 item.assets.insert(key, asset);
 
+                if let Some(properties) = inputs.properties {
+                    item.append_properties(properties.value)
+                }
+
                 state.drivers.features.update_feature(&item).await?;
 
                 id.to_owned()
@@ -159,7 +171,22 @@ impl Processor for AssetLoader {
                 item.assets.insert(key, asset);
                 item.collection = Some(inputs.collection.to_owned());
 
-                state.drivers.features.create_feature(&item).await?
+                if state
+                    .drivers
+                    .features
+                    .read_feature(
+                        &inputs.collection,
+                        &item.id.clone().unwrap_or_default(),
+                        &Crs::default(),
+                    )
+                    .await
+                    .is_ok()
+                {
+                    state.drivers.features.update_feature(&item).await?;
+                    item.id.unwrap()
+                } else {
+                    state.drivers.features.create_feature(&item).await?
+                }
             }
         };
 

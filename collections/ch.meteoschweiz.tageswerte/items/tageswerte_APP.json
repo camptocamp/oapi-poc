@@ -1,0 +1,23 @@
+{
+    "id": "tageswerte_APP",
+    "collection": "ch.meteoschweiz.tageswerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.397317799644028,
+            47.339594177977354
+        ]
+    },
+    "properties": {
+        "station_name": "Appenzell",
+        "station_symbol": 2,
+        "altitude": "750",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        9.397317799644028,
+        47.339594177977354,
+        9.397317799644028,
+        47.339594177977354
+    ]
+}

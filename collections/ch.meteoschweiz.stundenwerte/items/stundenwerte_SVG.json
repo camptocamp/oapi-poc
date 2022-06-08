@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_SVG",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.597145680917235,
+            46.594759678514656
+        ]
+    },
+    "properties": {
+        "station_name": "Savognin",
+        "station_symbol": 2,
+        "altitude": "1172",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        9.597145680917235,
+        46.594759678514656,
+        9.597145680917235,
+        46.594759678514656
+    ]
+}

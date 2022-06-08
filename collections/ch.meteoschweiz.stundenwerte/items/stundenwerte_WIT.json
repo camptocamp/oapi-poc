@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_WIT",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.968534714961127,
+            47.480403166148385
+        ]
+    },
+    "properties": {
+        "station_name": "Wittnau",
+        "station_symbol": 2,
+        "altitude": "463",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        7.968534714961127,
+        47.480403166148385,
+        7.968534714961127,
+        47.480403166148385
+    ]
+}

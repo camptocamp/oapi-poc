@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_GSB",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.1707012338797105,
+            45.86908883528795
+        ]
+    },
+    "properties": {
+        "station_name": "Col du Grand St-Bernard",
+        "station_symbol": 1,
+        "altitude": "2472",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        7.1707012338797105,
+        45.86908883528795,
+        7.1707012338797105,
+        45.86908883528795
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "id": "tageswerte_GTT",
+    "collection": "ch.meteoschweiz.tageswerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.291722334162316,
+            46.65645344850032
+        ]
+    },
+    "properties": {
+        "station_name": "Guttannen",
+        "station_symbol": 2,
+        "altitude": "1055",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        8.291722334162316,
+        46.65645344850032,
+        8.291722334162316,
+        46.65645344850032
+    ]
+}

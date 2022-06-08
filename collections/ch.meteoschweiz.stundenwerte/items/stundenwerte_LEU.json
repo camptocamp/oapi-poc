@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_LEU",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.621647959111211,
+            46.36704005022952
+        ]
+    },
+    "properties": {
+        "station_name": "Leukerbad",
+        "station_symbol": 2,
+        "altitude": "1286",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        7.621647959111211,
+        46.36704005022952,
+        7.621647959111211,
+        46.36704005022952
+    ]
+}

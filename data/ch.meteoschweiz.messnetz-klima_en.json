@@ -1,0 +1,840 @@
+{
+"crs": {
+"type":"name",
+"properties":{
+"name":"EPSG:2056"}
+},
+"license": "https://www.meteoswiss.admin.ch/content/dam/meteoswiss/en/service-und-publikationen/produkt/doc/standardservices.pdf",
+"mapname": "ch.meteoschweiz.messnetz-klima",
+"map_long_name": "Stations of the Swiss National Basic Climatological Network",
+"map_short_name": "Climate stations",
+"map_abstract": "The Swiss National Basic Climatological Network (Swiss NBCN) connects the major ground-based stations within the MeteoSwiss monitoring network. It consists of 29 climate monitoring stations and 46 precipitation stations. The measurement series available in digital form for temperature, precipitation and hours of sunshine date back, in some cases, to the mid-nineteenth century.",
+"creation_time": "09.06.2022 05:30",
+"type":"FeatureCollection",
+"features":[
+{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2756911,1209351]},
+"id":"RAG",
+"properties":{
+"station_name":"Bad Ragaz",
+"station_symbol":1,
+"altitude": "497",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Bad Ragaz (RAG)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Northern and central Grisons</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>497 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=RAG\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2732266,1198424]},
+"id":"ELM",
+"properties":{
+"station_name":"Elm",
+"station_symbol":1,
+"altitude": "958",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Elm (ELM)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.2.1878</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Eastern Alpine north slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>958 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=ELM\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2687445,1165044]},
+"id":"ANT",
+"properties":{
+"station_name":"Andermatt",
+"station_symbol":1,
+"altitude": "1435",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Andermatt (ANT)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Central Alpine north slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1435 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=ANT\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2655844,1175930]},
+"id":"MER",
+"properties":{
+"station_name":"Meiringen",
+"station_symbol":1,
+"altitude": "589",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Meiringen (MER)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.7.1889</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western Alpine North- slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>589 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=MER\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2577040,1147655]},
+"id":"CHD",
+"properties":{
+"station_name":"Château-d'Oex",
+"station_symbol":1,
+"altitude": "1028",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Château-d'Oex (CHD)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1879</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western Alpine North- slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1028 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=CHD\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2565060,1211007]},
+"id":"CHM",
+"properties":{
+"station_name":"Chaumont",
+"station_symbol":1,
+"altitude": "1136",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Chaumont (CHM)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western Jura</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1136 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=CHM\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2630738,1116062]},
+"id":"GRC",
+"properties":{
+"station_name":"Grächen",
+"station_symbol":1,
+"altitude": "1605",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Grächen (GRC)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Valais</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1605 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=GRC\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2778576,1144976]},
+"id":"SIA",
+"properties":{
+"station_name":"Segl-Maria",
+"station_symbol":1,
+"altitude": "1804",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Segl-Maria (SIA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.12.1863</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Engadine</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1804 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=SIA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2783519,1187459]},
+"id":"DAV",
+"properties":{
+"station_name":"Davos",
+"station_symbol":1,
+"altitude": "1594",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Davos (DAV)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Northern and central Grisons</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1594 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=DAV\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2787251,1155685]},
+"id":"SAM",
+"properties":{
+"station_name":"Samedan",
+"station_symbol":1,
+"altitude": "1709",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Samedan (SAM)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Engadine</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1709 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=SAM\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2562131,1184612]},
+"id":"PAY",
+"properties":{
+"station_name":"Payerne",
+"station_symbol":1,
+"altitude": "490",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Payerne (PAY)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.8.1964</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss, <a href=\"http://www.meteosuisse.ch\" target=\"_blank\">-</a></td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>490 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=PAY\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2641939,1155287]},
+"id":"JUN",
+"properties":{
+"station_name":"Jungfraujoch",
+"station_symbol":1,
+"altitude": "3571",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Jungfraujoch (JUN)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1933</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western Alpine North- slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>3571 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=JUN\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2744188,1234920]},
+"id":"SAE",
+"properties":{
+"station_name":"Säntis",
+"station_symbol":1,
+"altitude": "2501",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Säntis (SAE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Eastern Alpine north slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>2501 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Characteristics</strong></td><td>Precipitation measurement at an exposed site. Influences due to wind and snow drifts possible.</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=SAE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2690181,1193564]},
+"id":"ALT",
+"properties":{
+"station_name":"Altdorf",
+"station_symbol":1,
+"altitude": "438",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Altdorf (ALT)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Central Alpine north slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>438 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=ALT\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2717874,1095883]},
+"id":"LUG",
+"properties":{
+"station_name":"Lugano",
+"station_symbol":1,
+"altitude": "273",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Lugano (LUG)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Alpine south side</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>273 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Characteristics</strong></td><td>Temperature measurement near a lake.</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=LUG\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2591633,1118584]},
+"id":"SIO",
+"properties":{
+"station_name":"Sion",
+"station_symbol":1,
+"altitude": "482",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Sion (SIO)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Valais</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>482 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=SIO\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2563087,1205560]},
+"id":"NEU",
+"properties":{
+"station_name":"Neuchâtel",
+"station_symbol":1,
+"altitude": "485",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Neuchâtel (NEU)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>485 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=NEU\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2747866,1254588]},
+"id":"STG",
+"properties":{
+"station_name":"St. Gallen",
+"station_symbol":1,
+"altitude": "776",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>St. Gallen (STG)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>North-eastern plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>776 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=STG\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2498904,1122632]},
+"id":"GVE",
+"properties":{
+"station_name":"Genève / Cointrin",
+"station_symbol":1,
+"altitude": "411",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Genève / Cointrin (GVE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1753</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>411 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=GVE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2579191,1079754]},
+"id":"GSB",
+"properties":{
+"station_name":"Col du Grand St-Bernard",
+"station_symbol":1,
+"altitude": "2472",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Col du Grand St-Bernard (GSB)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1818</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Alpine south side</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>2472 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Characteristics</strong></td><td>Precipitation measurement at an exposed site. Influences due to wind and snow drifts possible.</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=GSB\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2550919,1214862]},
+"id":"CDF",
+"properties":{
+"station_name":"La Chaux-de-Fonds",
+"station_symbol":1,
+"altitude": "1017",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>La Chaux-de-Fonds (CDF)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1900</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western Jura</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1017 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=CDF\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2665545,1209850]},
+"id":"LUZ",
+"properties":{
+"station_name":"Luzern",
+"station_symbol":1,
+"altitude": "454",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Luzern (LUZ)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Central plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>454 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Characteristics</strong></td><td>Wind measurment in an exposed location on a building 41 m above ground.</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=LUZ\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2674162,1186069]},
+"id":"ENG",
+"properties":{
+"station_name":"Engelberg",
+"station_symbol":1,
+"altitude": "1036",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Engelberg (ENG)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Central Alpine north slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1036 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=ENG\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2685118,1248066]},
+"id":"SMA",
+"properties":{
+"station_name":"Zürich / Fluntern",
+"station_symbol":1,
+"altitude": "556",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Zürich / Fluntern (SMA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>North-eastern plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>556 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=SMA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2734116,1147294]},
+"id":"SBE",
+"properties":{
+"station_name":"S. Bernardino",
+"station_symbol":1,
+"altitude": "1639",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>S. Bernardino (SBE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Alpine south side</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1639 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=SBE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2610909,1265612]},
+"id":"BAS",
+"properties":{
+"station_name":"Basel / Binningen",
+"station_symbol":1,
+"altitude": "316",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Basel / Binningen (BAS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1755</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Eastern Jura</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>316 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=BAS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2601934,1204410]},
+"id":"BER",
+"properties":{
+"station_name":"Bern / Zollikofen",
+"station_symbol":1,
+"altitude": "553",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Bern / Zollikofen (BER)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Central plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>553 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=BER\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2704167,1114316]},
+"id":"OTL",
+"properties":{
+"station_name":"Locarno / Monti",
+"station_symbol":1,
+"altitude": "367",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Locarno / Monti (OTL)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.12.1882</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Alpine south side</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>367 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=OTL\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2668583,1158215]},
+"id":"GRH",
+"properties":{
+"station_name":"Grimsel Hospiz",
+"station_symbol":1,
+"altitude": "1980",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Grimsel Hospiz (GRH)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>Climatological network (Swiss NBCN)</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1932</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western Alpine North- slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1980 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Temperature, Vapour pressure, Atmospheric pressure, Precipitation, Wind, Sunshine</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=GRH\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2692911,1289775]},
+"id":"LOH",
+"properties":{
+"station_name":"Lohn, SH",
+"station_symbol":2,
+"altitude": "585",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Lohn, SH (LOH)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.10.1863</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>North-eastern plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>585 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=LOH\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2737314,1227576]},
+"id":"STB",
+"properties":{
+"station_name":"Starkenbach",
+"station_symbol":2,
+"altitude": "897",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Starkenbach (STB)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.8.1898</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Eastern Alpine north slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>897 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=STB\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2657996,1135421]},
+"id":"BIN",
+"properties":{
+"station_name":"Binn",
+"station_symbol":2,
+"altitude": "1479",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Binn (BIN)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.8.1899</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Valais</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1479 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=BIN\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2665297,1167601]},
+"id":"GTT",
+"properties":{
+"station_name":"Guttannen",
+"station_symbol":2,
+"altitude": "1055",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Guttannen (GTT)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.8.1876</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western Alpine North- slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1055 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=GTT\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2802003,1181593]},
+"id":"SUS",
+"properties":{
+"station_name":"Susch",
+"station_symbol":2,
+"altitude": "1416",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Susch (SUS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1901</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Engadine</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1416 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=SUS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2699846,1259054]},
+"id":"WIN",
+"properties":{
+"station_name":"Winterthur / Seen",
+"station_symbol":2,
+"altitude": "506",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Winterthur / Seen (WIN)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>North-eastern plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>506 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=WIN\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2721080,1079234]},
+"id":"COL",
+"properties":{
+"station_name":"Coldrerio",
+"station_symbol":2,
+"altitude": "347",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Coldrerio (COL)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1918</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Alpine south side</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>347 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=COL\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2635851,1160291]},
+"id":"LTB",
+"properties":{
+"station_name":"Lauterbrunnen",
+"station_symbol":2,
+"altitude": "815",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Lauterbrunnen (LTB)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.8.1899</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western Alpine North- slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>815 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=LTB\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2639942,1258983]},
+"id":"WIT",
+"properties":{
+"station_name":"Wittnau",
+"station_symbol":2,
+"altitude": "463",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Wittnau (WIT)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1883</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Eastern Jura</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>463 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=WIT\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2614083,1135090]},
+"id":"LEU",
+"properties":{
+"station_name":"Leukerbad",
+"station_symbol":2,
+"altitude": "1286",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Leukerbad (LEU)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.9.1884</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Valais</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1286 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=LEU\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2538976,1153256]},
+"id":"LSN",
+"properties":{
+"station_name":"Lausanne",
+"station_symbol":2,
+"altitude": "601",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Lausanne (LSN)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1874</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>601 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=LSN\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2717943,1199651]},
+"id":"BRW",
+"properties":{
+"station_name":"Braunwald",
+"station_symbol":2,
+"altitude": "1299",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Braunwald (BRW)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.11.1918</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Eastern Alpine north slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1299 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=BRW\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2701842,1210464]},
+"id":"OBI",
+"properties":{
+"station_name":"Oberiberg",
+"station_symbol":2,
+"altitude": "1075",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Oberiberg (OBI)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.10.1883</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Central Alpine north slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1075 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=OBI\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2509387,1150107]},
+"id":"LON",
+"properties":{
+"station_name":"Longirod",
+"station_symbol":2,
+"altitude": "900",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Longirod (LON)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.4.1886</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>900 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=LON\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2624250,1244720]},
+"id":"LAB",
+"properties":{
+"station_name":"Langenbruck",
+"station_symbol":2,
+"altitude": "731",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Langenbruck (LAB)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.12.1884</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western Jura</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>731 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=LAB\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2724984,1221383]},
+"id":"WEE",
+"properties":{
+"station_name":"Weesen",
+"station_symbol":2,
+"altitude": "425",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Weesen (WEE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1888</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Eastern Alpine north slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>425 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=WEE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2688477,1171926]},
+"id":"GOS",
+"properties":{
+"station_name":"Göschenen",
+"station_symbol":2,
+"altitude": "950",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Göschenen (GOS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1883</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Central Alpine north slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>950 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=GOS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2647936,1204165]},
+"id":"ENT",
+"properties":{
+"station_name":"Entlebuch",
+"station_symbol":2,
+"altitude": "768",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Entlebuch (ENT)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.8.1882</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Central Alpine north slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>768 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=ENT\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2753156,1175089]},
+"id":"THS",
+"properties":{
+"station_name":"Thusis",
+"station_symbol":2,
+"altitude": "672",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Thusis (THS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1892</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Northern and central Grisons</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>672 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=THS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2771283,1148119]},
+"id":"BIV",
+"properties":{
+"station_name":"Bivio",
+"station_symbol":2,
+"altitude": "1856",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Bivio (BIV)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1892</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Northern and central Grisons</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1856 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=BIV\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2718535,1132792]},
+"id":"BIA",
+"properties":{
+"station_name":"Biasca",
+"station_symbol":2,
+"altitude": "278",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Biasca (BIA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1900</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Alpine south side</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>278 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=BIA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2806479,1127184]},
+"id":"BRP",
+"properties":{
+"station_name":"Brusio",
+"station_symbol":2,
+"altitude": "856",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Brusio (BRP)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.10.1900</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Alpine south side</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>856 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=BRP\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2761394,1134474]},
+"id":"SOG",
+"properties":{
+"station_name":"Soglio",
+"station_symbol":2,
+"altitude": "1086",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Soglio (SOG)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.2.1884</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Alpine south side</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1086 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=SOG\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2707844,1278214]},
+"id":"ESZ",
+"properties":{
+"station_name":"Eschenz",
+"station_symbol":2,
+"altitude": "414",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Eschenz (ESZ)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.6.1879</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>North-eastern plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>414 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=ESZ\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2540607,1198345]},
+"id":"COU",
+"properties":{
+"station_name":"Couvet",
+"station_symbol":2,
+"altitude": "728",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Couvet (COU)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1897</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western Jura</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>728 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=COU\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2765388,1162663]},
+"id":"SVG",
+"properties":{
+"station_name":"Savognin",
+"station_symbol":2,
+"altitude": "1172",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Savognin (SVG)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.2.1892</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Northern and central Grisons</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1172 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=SVG\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2583491,1102189]},
+"id":"MOB",
+"properties":{
+"station_name":"Montagnier, Bagnes",
+"station_symbol":2,
+"altitude": "839",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Montagnier, Bagnes (MOB)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.3.1906</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Valais</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>839 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=MOB\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2565805,1121511]},
+"id":"BEX",
+"properties":{
+"station_name":"Bex",
+"station_symbol":2,
+"altitude": "402",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Bex (BEX)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.10.1900</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western Alpine North- slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>402 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=BEX\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2569727,1254224]},
+"id":"MMO",
+"properties":{
+"station_name":"Mormont",
+"station_symbol":2,
+"altitude": "535",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Mormont (MMO)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1889</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Eastern Jura</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>535 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=MMO\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2688910,1153417]},
+"id":"AIR",
+"properties":{
+"station_name":"Airolo",
+"station_symbol":2,
+"altitude": "1139",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Airolo (AIR)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.11.1883</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Alpine south side</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1139 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=AIR\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2692803,1117049]},
+"id":"MSG",
+"properties":{
+"station_name":"Mosogno",
+"station_symbol":2,
+"altitude": "771",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Mosogno (MSG)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1901</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Alpine south side</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>771 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=MSG\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2830465,1196986]},
+"id":"MAT",
+"properties":{
+"station_name":"Martina",
+"station_symbol":2,
+"altitude": "1041",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Martina (MAT)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1901</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Engadine</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1041 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=MAT\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2735686,1181965]},
+"id":"ILZ",
+"properties":{
+"station_name":"Ilanz",
+"station_symbol":2,
+"altitude": "698",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Ilanz (ILZ)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1892</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Northern and central Grisons</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>698 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=ILZ\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2765539,1187679]},
+"id":"TST",
+"properties":{
+"station_name":"Tschiertschen",
+"station_symbol":2,
+"altitude": "1273",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Tschiertschen (TST)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.5.1897</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Northern and central Grisons</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1273 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=TST\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2786858,1193366]},
+"id":"KLA",
+"properties":{
+"station_name":"Klosters",
+"station_symbol":2,
+"altitude": "1186",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Klosters (KLA)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.8.1898</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Northern and central Grisons</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1186 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=KLA\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2759910,1250202]},
+"id":"ALS",
+"properties":{
+"station_name":"Altstätten, SG",
+"station_symbol":2,
+"altitude": "430",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Altstätten, SG (ALS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Eastern Alpine north slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>430 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=ALS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2748013,1245040]},
+"id":"APP",
+"properties":{
+"station_name":"Appenzell",
+"station_symbol":2,
+"altitude": "750",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Appenzell (APP)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1891</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Eastern Alpine north slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>750 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=APP\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2707638,1226334]},
+"id":"LAC",
+"properties":{
+"station_name":"Lachen / Galgenen",
+"station_symbol":2,
+"altitude": "468",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Lachen / Galgenen (LAC)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.10.1882</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>North-eastern plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>468 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=LAC\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2644333,1193311]},
+"id":"FLU",
+"properties":{
+"station_name":"Flühli, LU",
+"station_symbol":2,
+"altitude": "940",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Flühli, LU (FLU)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.5.1888</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Central Alpine north slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>940 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=FLU\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2618313,1149198]},
+"id":"KAS",
+"properties":{
+"station_name":"Kandersteg",
+"station_symbol":2,
+"altitude": "1178",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Kandersteg (KAS)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.8.1899</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western Alpine North- slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1178 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=KAS\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2611201,1177640]},
+"id":"THU",
+"properties":{
+"station_name":"Thun",
+"station_symbol":2,
+"altitude": "570",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Thun (THU)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.6.1875</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western Alpine North- slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>570 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=THU\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2580090,1166314]},
+"id":"VST",
+"properties":{
+"station_name":"La Valsainte",
+"station_symbol":2,
+"altitude": "1044",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>La Valsainte (VST)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.9.1882</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western Alpine North- slope</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>1044 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=VST\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2561476,1172622]},
+"id":"ROM",
+"properties":{
+"station_name":"Romont",
+"station_symbol":2,
+"altitude": "692",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Romont (ROM)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.7.1899</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Western plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>692 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=ROM\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2622940,1212500]},
+"id":"AIE",
+"properties":{
+"station_name":"Affoltern i. E.",
+"station_symbol":2,
+"altitude": "755",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Affoltern i. E. (AIE)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.6.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Central plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>755 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=AIE\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2667277,1235323]},
+"id":"MUR",
+"properties":{
+"station_name":"Muri, AG",
+"station_symbol":2,
+"altitude": "577",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Muri, AG (MUR)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1864</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Central plateau</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>577 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=MUR\">Information about this station</a></td></tr></tbody></table>"}
+}
+,{ "type":"Feature",
+"geometry":{
+"type":"Point",
+"coordinates":[2640567,1129069]},
+"id":"BRI",
+"properties":{
+"station_name":"Brig",
+"station_symbol":2,
+"altitude": "665",
+"description":"<table><tbody><tr><td class='text-nowrap'><strong>Station name</strong></td><td>Brig (BRI)</td></tr><tr><td class='text-nowrap'><strong>Station type</strong></td><td>NBCN-P</td></tr><tr><td class='text-nowrap'><strong>Data since</strong></td><td>1.1.1900</td></tr><tr><td class='text-nowrap'><strong>Data Owner</strong></td><td>MeteoSwiss</td></tr><tr><td class='text-nowrap'><strong>Climate region</strong></td><td>Valais</td></tr><tr><td class='text-nowrap'><strong>Station height</strong></td><td>665 m</td></tr><tr><td class='text-nowrap'><strong>Measurements</strong></td><td>Precipitation</td></tr><tr><td class='text-nowrap'><strong>Link</strong></td><td><a target=\"_blank\" href=\"https://www.meteoswiss.admin.ch/home/measurement-values.html?param=messnetz-klima&station=BRI\">Information about this station</a></td></tr></tbody></table>"}
+}
+] }

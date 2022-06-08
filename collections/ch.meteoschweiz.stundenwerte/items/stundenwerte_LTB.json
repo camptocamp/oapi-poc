@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_LTB",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.906463705145715,
+            46.59292631377069
+        ]
+    },
+    "properties": {
+        "station_name": "Lauterbrunnen",
+        "station_symbol": 2,
+        "altitude": "815",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        7.906463705145715,
+        46.59292631377069,
+        7.906463705145715,
+        46.59292631377069
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "id": "ch.meteoschweiz.messwerte-lufttemperatur-10min",
+    "title": "Automatic weather stations – Current measurement values",
+    "description": "Current 10-min values of the following meteorological parameter: Measurement values of air temperature, sunshine duration, precipitation, wind, humidity, global radiation and air pressure. All stations are part of the SwissMetNet. SwissMetNet, the automatic monitoring network of MeteoSwiss, comprises about 160 automatic monitoring stations. The monitoring network is supplemented by 140 automatic precipitation stations.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.96,
+                    45.82,
+                    10.49,
+                    47.81
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "various",
+    "links": [
+        {
+            "href": "https://www.geocat.ch/geonetwork/srv/eng/md.viewer#/full_view/c994a2fa-047d-4a0d-841a-efe70c5815c8/tab/complete",
+            "rel": "metadata",
+            "type": "html/text",
+            "hreflang": "en",
+            "title": "Metadata (geocat.ch)"
+        }
+    ],
+    "crs": [
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_TST",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.60814261457974,
+            46.81966764509569
+        ]
+    },
+    "properties": {
+        "station_name": "Tschiertschen",
+        "station_symbol": 2,
+        "altitude": "1273",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        9.60814261457974,
+        46.81966764509569,
+        9.60814261457974,
+        46.81966764509569
+    ]
+}

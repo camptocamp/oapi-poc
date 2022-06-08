@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_GRH",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.333251588164636,
+            46.57169734244243
+        ]
+    },
+    "properties": {
+        "station_name": "Grimsel Hospiz",
+        "station_symbol": 1,
+        "altitude": "1980",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        8.333251588164636,
+        46.57169734244243,
+        8.333251588164636,
+        46.57169734244243
+    ]
+}

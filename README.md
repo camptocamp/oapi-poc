@@ -1,6 +1,6 @@
 # OAPI - POC
 
-Proof of concept (POC) to ingest geospatial datasets from [MetoSuisse](https://www.meteoswiss.admin.ch/home.html) into a [SpatioTemporal Asset Catalog (STAC)](https://stacspec.org/), expose as [OGC API Features](https://ogcapi.ogc.org/features) and offer [OGC API Environmental Data Retrieval (EDR)](https://ogcapi.ogc.org/edr) capabilities.
+Proof of concept (POC) to ingest geospatial datasets from [MeteoSuisse](https://www.meteoswiss.admin.ch/home.html) into a [SpatioTemporal Asset Catalog (STAC)](https://stacspec.org/), expose as [OGC API Features](https://ogcapi.ogc.org/features) and offer [OGC API Environmental Data Retrieval (EDR)](https://ogcapi.ogc.org/edr) capabilities.
 
 ## Documentation
 
@@ -31,4 +31,4 @@ The created resources can for example be consoumed with the [STAC Browser](https
 
 ## Catalog Trees (advanced & untested)
 
-Potentially catalog trees can be setup by inserting collection resources with the property `type` set to `Catalog` that feature the proper link relations `parent` and `child` and/or `item`. Naturally this relation should be reflected on the linke ressources as well.
+Potentially catalog trees can be created by adding collection resources with the property `type` set to `Catalog` and links with the relations `parent`, `child` and/or `item`. Naturally these relations should be reflected on the linked ressources as well.

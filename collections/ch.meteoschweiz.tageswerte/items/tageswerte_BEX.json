@@ -1,0 +1,23 @@
+{
+    "id": "tageswerte_BEX",
+    "collection": "ch.meteoschweiz.tageswerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.9952903681888845,
+            46.24416147460075
+        ]
+    },
+    "properties": {
+        "station_name": "Bex",
+        "station_symbol": 2,
+        "altitude": "402",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        6.9952903681888845,
+        46.24416147460075,
+        6.9952903681888845,
+        46.24416147460075
+    ]
+}

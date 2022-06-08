@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_BRI",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.9652699275345045,
+            46.311802413150374
+        ]
+    },
+    "properties": {
+        "station_name": "Brig",
+        "station_symbol": 2,
+        "altitude": "665",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        7.9652699275345045,
+        46.311802413150374,
+        7.9652699275345045,
+        46.311802413150374
+    ]
+}

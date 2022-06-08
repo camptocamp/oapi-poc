@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_LAB",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.759579198415984,
+            47.35288562454753
+        ]
+    },
+    "properties": {
+        "station_name": "Langenbruck",
+        "station_symbol": 2,
+        "altitude": "731",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        7.759579198415984,
+        47.35288562454753,
+        7.759579198415984,
+        47.35288562454753
+    ]
+}

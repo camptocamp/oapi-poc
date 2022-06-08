@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_SAE",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.343469713947702,
+            47.249444981729546
+        ]
+    },
+    "properties": {
+        "station_name": "S\u00e4ntis",
+        "station_symbol": 1,
+        "altitude": "2501",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        9.343469713947702,
+        47.249444981729546,
+        9.343469713947702,
+        47.249444981729546
+    ]
+}

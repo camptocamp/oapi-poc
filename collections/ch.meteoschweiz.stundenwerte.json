@@ -1,0 +1,38 @@
+{
+    "id": "ch.meteoschweiz.stundenwerte",
+    "title": "Stations of the Swiss National Basic Climatological Network",
+    "description": "The Swiss National Basic Climatological Network (Swiss NBCN) connects the major ground-based stations within the MeteoSwiss monitoring network. It consists of 29 climate monitoring stations and 46 precipitation stations. The measurement series available in digital form for temperature, precipitation and hours of sunshine date back, in some cases, to the mid-nineteenth century.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.96,
+                    45.82,
+                    10.49,
+                    47.81
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "various",
+    "links": [
+        {
+            "href": "https://www.geocat.ch/geonetwork/srv/eng/md.viewer#/full_view/b46a8f8d-bc48-41d3-b20a-de61d0763318/tab/complete",
+            "rel": "metadata",
+            "type": "html/text",
+            "hreflang": "en",
+            "title": "Metadata (geocat.ch)"
+        }
+    ],
+    "crs": [
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    ]
+}

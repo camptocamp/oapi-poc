@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_BRP",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            10.117248990100782,
+            46.26435765297249
+        ]
+    },
+    "properties": {
+        "station_name": "Brusio",
+        "station_symbol": 2,
+        "altitude": "856",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        10.117248990100782,
+        46.26435765297249,
+        10.117248990100782,
+        46.26435765297249
+    ]
+}

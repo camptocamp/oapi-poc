@@ -1,0 +1,23 @@
+{
+    "id": "tageswerte_STG",
+    "collection": "ch.meteoschweiz.tageswerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.398529420571181,
+            47.42547722691666
+        ]
+    },
+    "properties": {
+        "station_name": "St. Gallen",
+        "station_symbol": 1,
+        "altitude": "776",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        9.398529420571181,
+        47.42547722691666,
+        9.398529420571181,
+        47.42547722691666
+    ]
+}

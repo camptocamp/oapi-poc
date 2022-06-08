@@ -1,0 +1,23 @@
+{
+    "id": "tageswerte_FLU",
+    "collection": "ch.meteoschweiz.tageswerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.020334581085319,
+            46.88943921039045
+        ]
+    },
+    "properties": {
+        "station_name": "Fl\u00fchli, LU",
+        "station_symbol": 2,
+        "altitude": "940",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        8.020334581085319,
+        46.88943921039045,
+        8.020334581085319,
+        46.88943921039045
+    ]
+}

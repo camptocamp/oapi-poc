@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_THS",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.44171565182136,
+            46.70941729180871
+        ]
+    },
+    "properties": {
+        "station_name": "Thusis",
+        "station_symbol": 2,
+        "altitude": "672",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        9.44171565182136,
+        46.70941729180871,
+        9.44171565182136,
+        46.70941729180871
+    ]
+}

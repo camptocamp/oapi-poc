@@ -1,0 +1,23 @@
+{
+    "id": "tageswerte_MSG",
+    "collection": "ch.meteoschweiz.tageswerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.640912334441452,
+            46.1985051067939
+        ]
+    },
+    "properties": {
+        "station_name": "Mosogno",
+        "station_symbol": 2,
+        "altitude": "771",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        8.640912334441452,
+        46.1985051067939,
+        8.640912334441452,
+        46.1985051067939
+    ]
+}

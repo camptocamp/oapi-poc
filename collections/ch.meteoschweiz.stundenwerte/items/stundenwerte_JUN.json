@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_JUN",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.985449915242452,
+            46.54755967549062
+        ]
+    },
+    "properties": {
+        "station_name": "Jungfraujoch",
+        "station_symbol": 1,
+        "altitude": "3571",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        7.985449915242452,
+        46.54755967549062,
+        7.985449915242452,
+        46.54755967549062
+    ]
+}

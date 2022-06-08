@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_ILZ",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.215350234088563,
+            46.77503768774967
+        ]
+    },
+    "properties": {
+        "station_name": "Ilanz",
+        "station_symbol": 2,
+        "altitude": "698",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        9.215350234088563,
+        46.77503768774967,
+        9.215350234088563,
+        46.77503768774967
+    ]
+}

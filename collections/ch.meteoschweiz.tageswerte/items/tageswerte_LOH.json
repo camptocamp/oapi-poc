@@ -1,0 +1,23 @@
+{
+    "id": "tageswerte_LOH",
+    "collection": "ch.meteoschweiz.tageswerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.677643330438558,
+            47.75194813833888
+        ]
+    },
+    "properties": {
+        "station_name": "Lohn, SH",
+        "station_symbol": 2,
+        "altitude": "585",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        8.677643330438558,
+        47.75194813833888,
+        8.677643330438558,
+        47.75194813833888
+    ]
+}

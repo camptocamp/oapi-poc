@@ -1,0 +1,23 @@
+{
+    "id": "stundenwerte_KAS",
+    "collection": "ch.meteoschweiz.stundenwerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.677171138599444,
+            46.49384797276427
+        ]
+    },
+    "properties": {
+        "station_name": "Kandersteg",
+        "station_symbol": 2,
+        "altitude": "1178",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        7.677171138599444,
+        46.49384797276427,
+        7.677171138599444,
+        46.49384797276427
+    ]
+}

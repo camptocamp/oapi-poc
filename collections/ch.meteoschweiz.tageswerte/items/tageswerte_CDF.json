@@ -1,0 +1,23 @@
+{
+    "id": "tageswerte_CDF",
+    "collection": "ch.meteoschweiz.tageswerte",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.792301425447891,
+            47.082942227624976
+        ]
+    },
+    "properties": {
+        "station_name": "La Chaux-de-Fonds",
+        "station_symbol": 1,
+        "altitude": "1017",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        6.792301425447891,
+        47.082942227624976,
+        6.792301425447891,
+        47.082942227624976
+    ]
+}
