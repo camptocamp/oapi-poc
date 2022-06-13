@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: OpenAPI for OAPI POC - MetoSuisse
+  title: OpenAPI for OAPI POC - MeteoSwiss
   description: Sample OpenAPI definition of OGC API & STAC API for MeteoSuiss
   version: 0.1.0
 servers:
