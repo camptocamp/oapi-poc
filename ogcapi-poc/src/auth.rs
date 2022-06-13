@@ -6,10 +6,9 @@ use axum::{
         authorization::{Basic, Credentials},
         Authorization,
     },
-    http::{header::AUTHORIZATION, Response, StatusCode},
+    http::{header::AUTHORIZATION, Method, Request, Response, StatusCode},
     response::IntoResponse,
 };
-use hyper::{Method, Request};
 use once_cell::sync::OnceCell;
 use tower_http::auth::AuthorizeRequest;
 

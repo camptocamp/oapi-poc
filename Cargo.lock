@@ -863,9 +863,9 @@ dependencies = [
 
 [[package]]
 name = "geo-types"
-version = "0.7.4"
+version = "0.7.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a9537881a3d2941ff3fe901e744c45f0fa4c142334f499f27d26be1d72299ba8"
+checksum = "5696e8138fbc44f64edc88b423afbe5a8f635df003376b3a57087e61a8ae7b66"
 dependencies = [
  "num-traits",
 ]
@@ -1357,7 +1357,7 @@ dependencies = [
 [[package]]
 name = "ogcapi-drivers"
 version = "0.1.0"
-source = "git+https://github.com/camptocamp/ogcapi?branch=poc#71b5ee716089f2bc3456cc900ecd716bdbde9082"
+source = "git+https://github.com/camptocamp/ogcapi?branch=poc#33e880b2fb663fd9bb5f70f1344a4fb31bb2b41e"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -1401,7 +1401,7 @@ dependencies = [
 [[package]]
 name = "ogcapi-services"
 version = "0.1.0"
-source = "git+https://github.com/camptocamp/ogcapi?branch=poc#71b5ee716089f2bc3456cc900ecd716bdbde9082"
+source = "git+https://github.com/camptocamp/ogcapi?branch=poc#33e880b2fb663fd9bb5f70f1344a4fb31bb2b41e"
 dependencies = [
  "anyhow",
  "axum",
@@ -1429,7 +1429,7 @@ dependencies = [
 [[package]]
 name = "ogcapi-types"
 version = "0.1.0"
-source = "git+https://github.com/camptocamp/ogcapi?branch=poc#71b5ee716089f2bc3456cc900ecd716bdbde9082"
+source = "git+https://github.com/camptocamp/ogcapi?branch=poc#33e880b2fb663fd9bb5f70f1344a4fb31bb2b41e"
 dependencies = [
  "chrono",
  "geojson",
@@ -2502,9 +2502,9 @@ checksum = "68b90931029ab9b034b300b797048cf23723400aa757e8a2bfb9d748102f9821"
 
 [[package]]
 name = "uuid"
-version = "1.1.1"
+version = "1.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c6d5d669b51467dcf7b2f1a796ce0f955f05f01cafda6c19d6e95f730df29238"
+checksum = "dd6469f4314d5f1ffec476e05f17cc9a78bc7a27a6a857842170bdf8d6f98d2f"
 dependencies = [
  "getrandom",
 ]
