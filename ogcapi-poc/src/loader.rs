@@ -21,9 +21,7 @@ use ogcapi_types::{
     stac::Asset,
 };
 
-static AWS_S3_BUCKET: &str = "met-oapi-poc";
-static AWS_S3_BUCKET_BASE: &str = "http://met-oapi-poc.s3.amazonaws.com";
-// static AWS_S3_BUCKET_BASE: &str = "http://localhost:9000/met-oapi-poc";
+use crate::{AWS_S3_BUCKET, AWS_S3_BUCKET_BASE};
 
 /// STAC Asset loader
 pub(crate) struct AssetLoader;
@@ -47,15 +45,15 @@ struct AssetLoaderInputs {
     /// Collection `id`
     collection: String,
     /// Item object to create or existing Item `id`
-    item: Item,
+    item: Option<Item>,
     /// Preperties to update
     properties: Option<Properties>,
 }
 
 #[derive(Deserialize, Debug, JsonSchema)]
 struct File {
-    /// Binary file data (base46 encoded)
-    value: String,
+    /// File
+    value: FileValue,
     // encoding: Option<String>,
     /// Media Type of the file
     #[serde(rename = "mediaType")]
@@ -63,13 +61,31 @@ struct File {
 }
 
 #[derive(Deserialize, Debug, JsonSchema)]
-struct Item {
-    value: ItemValue,
+#[serde(untagged)]
+enum FileValue {
+    /// File content (base46 encoded)
+    Value(String),
+    /// File uri
+    Reference(FileReference),
 }
 
 #[derive(Deserialize, Debug, JsonSchema)]
-struct Properties {
-    value: Map<String, Value>,
+struct FileReference {
+    uri: String,
+    method: Method,
+}
+
+/// Load or link the referenced filed
+#[derive(Deserialize, Debug, JsonSchema)]
+#[serde(rename_all = "lowercase")]
+enum Method {
+    Link,
+    Load,
+}
+
+#[derive(Deserialize, Debug, JsonSchema)]
+struct Item {
+    value: ItemValue,
 }
 
 #[derive(Deserialize, Debug, JsonSchema)]
@@ -80,6 +96,11 @@ enum ItemValue {
     /// An Item/Feature to create
     Item(Map<String, Value>),
 }
+#[derive(Deserialize, Debug, JsonSchema)]
+struct Properties {
+    value: Map<String, Value>,
+}
+
 /// Asset loader output schema "URI of the crated/updated Item."
 #[derive(JsonSchema)]
 struct AssetLoaderOutputs(String);
@@ -117,85 +138,118 @@ impl Processor for AssetLoader {
         let inputs: AssetLoaderInputs = serde_json::from_value(value)
             .map_err(|e| Error::Exception(StatusCode::BAD_REQUEST, e.to_string()))?;
 
-        // Upload asset
-        let bytes = base64::decode(inputs.file.value).context("Failed to decode base64 string")?;
-        state
-            .s3
-            .client
-            .put_object()
-            .bucket(AWS_S3_BUCKET)
-            .key(&inputs.key)
-            .body(ByteStream::from(bytes))
-            .content_type(&inputs.file.media_type)
-            .acl(ObjectCannedAcl::PublicRead)
-            .send()
-            .await
-            .context("Failed to put object to S3")?;
+        // Create asset
+        let mut asset = match inputs.file.value {
+            FileValue::Value(v) => {
+                let bytes = base64::decode(v).context("Failed to decode base64 string")?;
+                state
+                    .s3
+                    .client
+                    .put_object()
+                    .bucket(AWS_S3_BUCKET)
+                    .key(&inputs.key)
+                    .body(ByteStream::from(bytes))
+                    .content_type(&inputs.file.media_type)
+                    .acl(ObjectCannedAcl::PublicRead)
+                    .send()
+                    .await
+                    .context("Failed to put object to S3")?;
 
-        let asset = Asset {
-            href: format!(
-                "{}/{}",
-                AWS_S3_BUCKET_BASE,
-                inputs.key.trim_start_matches('/')
-            ),
-            title: inputs.title,
-            description: inputs.description,
-            r#type: Some(inputs.file.media_type),
-            roles: inputs.roles,
-            additional_properties: Default::default(),
+                Asset::new(format!(
+                    "{}/{}",
+                    AWS_S3_BUCKET_BASE,
+                    inputs.key.trim_start_matches('/')
+                ))
+            }
+            FileValue::Reference(reference) => match reference.method {
+                Method::Link => Asset::new(reference.uri),
+                Method::Load => {
+                    let stream = if reference.uri.starts_with("http") {
+                        let resp = reqwest::get(reference.uri).await.expect("request failed");
+                        ByteStream::from(resp.bytes().await.unwrap())
+                    } else {
+                        ByteStream::from_path(reference.uri).await.unwrap()
+                    };
+                    state
+                        .s3
+                        .client
+                        .put_object()
+                        .bucket(AWS_S3_BUCKET)
+                        .key(&inputs.key)
+                        .body(stream)
+                        .content_type(&inputs.file.media_type)
+                        .acl(ObjectCannedAcl::PublicRead)
+                        .send()
+                        .await
+                        .context("Failed to put object to S3")?;
+
+                    Asset::new(format!(
+                        "{}/{}",
+                        AWS_S3_BUCKET_BASE,
+                        inputs.key.trim_start_matches('/')
+                    ))
+                }
+            },
         };
+
+        asset.title = inputs.title;
+        asset.description = inputs.description;
+        asset.r#type = Some(inputs.file.media_type);
+        asset.roles = inputs.roles;
+
         let key = inputs.id.unwrap_or_else(|| Uuid::new_v4().to_string());
 
-        let id = match inputs.item.value {
-            ItemValue::String(id) => {
-                let mut item = state
-                    .drivers
-                    .features
-                    .read_feature(&inputs.collection, &id, &Crs::default())
-                    .await?;
+        let location = if let Some(item) = inputs.item {
+            let item_id = match item.value {
+                ItemValue::String(id) => {
+                    let mut item = state
+                        .drivers
+                        .features
+                        .read_feature(&inputs.collection, &id, &Crs::default())
+                        .await?;
 
-                item.assets.insert(key, asset);
+                    item.assets.insert(key, asset);
 
-                if let Some(properties) = inputs.properties {
-                    item.append_properties(properties.value)
-                }
+                    if let Some(properties) = inputs.properties {
+                        item.append_properties(properties.value)
+                    }
 
-                state.drivers.features.update_feature(&item).await?;
-
-                id.to_owned()
-            }
-            ItemValue::Item(object) => {
-                let mut item: Feature = serde_json::from_value(object.into())
-                    .map_err(|e| Error::Exception(StatusCode::BAD_REQUEST, e.to_string()))?;
-
-                item.assets.insert(key, asset);
-                item.collection = Some(inputs.collection.to_owned());
-
-                if state
-                    .drivers
-                    .features
-                    .read_feature(
-                        &inputs.collection,
-                        &item.id.clone().unwrap_or_default(),
-                        &Crs::default(),
-                    )
-                    .await
-                    .is_ok()
-                {
                     state.drivers.features.update_feature(&item).await?;
-                    item.id.unwrap()
-                } else {
-                    state.drivers.features.create_feature(&item).await?
+
+                    id.to_owned()
                 }
-            }
+                ItemValue::Item(object) => {
+                    let mut item: Feature = serde_json::from_value(object.into())
+                        .map_err(|e| Error::Exception(StatusCode::BAD_REQUEST, e.to_string()))?;
+
+                    item.assets.insert(key, asset);
+                    item.collection = Some(inputs.collection.to_owned());
+
+                    if state
+                        .drivers
+                        .features
+                        .read_feature(
+                            &inputs.collection,
+                            &item.id.clone().unwrap_or_default(),
+                            &Crs::default(),
+                        )
+                        .await
+                        .is_ok()
+                    {
+                        state.drivers.features.update_feature(&item).await?;
+                        item.id.unwrap()
+                    } else {
+                        state.drivers.features.create_feature(&item).await?
+                    }
+                }
+            };
+
+            format!("../../collections/{}/items/{}", &inputs.collection, item_id)
+        } else {
+            format!("../../collections/{}", &inputs.collection)
         };
 
-        let location = url
-            .join(&format!(
-                "../../collections/{}/items/{}",
-                &inputs.collection, id
-            ))
-            .unwrap();
+        let location = url.join(&location).unwrap();
 
         Ok(Json(location).into_response())
     }

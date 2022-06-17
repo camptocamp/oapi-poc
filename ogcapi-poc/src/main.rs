@@ -1,12 +1,17 @@
 mod auth;
 mod loader;
+mod registrator;
 
 use tower_http::auth::RequireAuthorizationLayer;
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 
 use ogcapi_services::{Config, ConfigParser, OpenAPI, Service, State};
 
-use crate::{auth::Auth, loader::AssetLoader};
+use crate::{auth::Auth, loader::AssetLoader, registrator::AssetRegistrator};
+
+pub static AWS_S3_BUCKET: &str = "met-oapi-poc";
+pub static AWS_S3_BUCKET_BASE: &str = "http://met-oapi-poc.s3.amazonaws.com";
+// static AWS_S3_BUCKET_BASE: &str = "http://localhost:9000/met-oapi-poc";
 
 pub static OPENAPI: &[u8; 99477] = include_bytes!("../../openapi.yaml");
 
@@ -33,6 +38,7 @@ async fn main() -> anyhow::Result<()> {
         .processors(vec![
             Box::new(ogcapi_services::Greeter),
             Box::new(AssetLoader),
+            Box::new(AssetRegistrator),
         ]);
 
     // create service
