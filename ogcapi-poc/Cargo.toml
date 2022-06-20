@@ -6,9 +6,9 @@ edition = "2021"
 publish = false
 
 [dependencies]
-anyhow = "1.0.57"
+anyhow = "1.0.58"
 aws-sdk-s3 = "0.13.0"
-axum = "0.5.7"
+axum = "0.5.8"
 base64 = "0.13.0"
 chrono = { version = "0.4.19", features = ["serde"] }
 dotenv = "0.15.0"
@@ -19,10 +19,9 @@ schemars = { version = "0.8.10" }
 serde = "1.0.137"
 serde_json = "1.0.81"
 tokio = { version = "1.19.2", features = ["full"] }
-tower = "0.4.12"
+tower = "0.4.13"
 tower-http = { version = "0.3.4", features = ["auth"] }
 tracing = "0.1.35"
-tracing-subscriber = { version = "0.3.11", features = ["env-filter"] }
 url = { version = "2.2.2", features = ["serde"] }
 uuid = { version = "1.1.2", features = ["v4"] }
 

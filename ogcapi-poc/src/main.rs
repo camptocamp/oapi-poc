@@ -3,7 +3,6 @@ mod loader;
 mod registrator;
 
 use tower_http::auth::RequireAuthorizationLayer;
-use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 
 use ogcapi_services::{Config, ConfigParser, OpenAPI, Service, State};
 
@@ -21,12 +20,7 @@ async fn main() -> anyhow::Result<()> {
     dotenv::dotenv().ok();
 
     // setup tracing
-    tracing_subscriber::registry()
-        .with(tracing_subscriber::EnvFilter::new(
-            std::env::var("RUST_LOG").unwrap_or_else(|_| "info".into()),
-        ))
-        .with(tracing_subscriber::fmt::layer())
-        .init();
+    ogcapi_services::telemetry::init();
 
     // parse config
     let config = Config::parse();
