@@ -1,0 +1,23 @@
+{
+    "id": "MER",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.169242235662505,
+            46.73223086254271
+        ]
+    },
+    "properties": {
+        "station_name": "Meiringen",
+        "station_symbol": 1,
+        "altitude": "589",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        8.169242235662505,
+        46.73223086254271,
+        8.169242235662505,
+        46.73223086254271
+    ]
+}

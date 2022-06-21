@@ -1,0 +1,38 @@
+{
+    "id": "ad2b1452-9f3c-4137-9822-9758298bc025",
+    "title": "Stundenwerte Messstationen für PoC",
+    "description": "Temporary data set for internal use only",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.96,
+                    45.82,
+                    10.49,
+                    47.81
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "various",
+    "links": [
+        {
+            "href": "https://www.geocat.ch/geonetwork/srv/eng/md.viewer#/full_view/ad2b1452-9f3c-4137-9822-9758298bc025/tab/complete",
+            "rel": "metadata",
+            "type": "html/text",
+            "hreflang": "en",
+            "title": "Metadata (geocat.ch)"
+        }
+    ],
+    "crs": [
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    ]
+}

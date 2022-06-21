@@ -1,0 +1,23 @@
+{
+    "id": "ALT",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.621896388399554,
+            46.88707799786279
+        ]
+    },
+    "properties": {
+        "station_name": "Altdorf",
+        "station_symbol": 1,
+        "altitude": "438",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        8.621896388399554,
+        46.88707799786279,
+        8.621896388399554,
+        46.88707799786279
+    ]
+}

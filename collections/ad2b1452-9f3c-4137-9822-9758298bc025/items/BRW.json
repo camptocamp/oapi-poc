@@ -1,0 +1,23 @@
+{
+    "id": "BRW",
+    "collection": "ad2b1452-9f3c-4137-9822-9758298bc025",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.987654313690946,
+            46.93747587539255
+        ]
+    },
+    "properties": {
+        "station_name": "Braunwald",
+        "station_symbol": 2,
+        "altitude": "1299",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        8.987654313690946,
+        46.93747587539255,
+        8.987654313690946,
+        46.93747587539255
+    ]
+}

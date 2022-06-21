@@ -1,0 +1,38 @@
+{
+    "id": "e2e5132c-85df-417a-8706-f75068d4937e",
+    "title": "Radarprodukte für PoC MeteoSchweiz",
+    "description": "Temporary data set for internal use only",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.96,
+                    45.82,
+                    10.49,
+                    47.81
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "various",
+    "links": [
+        {
+            "href": "https://www.geocat.ch/geonetwork/srv/eng/md.viewer#/full_view/e2e5132c-85df-417a-8706-f75068d4937e/tab/complete",
+            "rel": "metadata",
+            "type": "html/text",
+            "hreflang": "en",
+            "title": "Metadata (geocat.ch)"
+        }
+    ],
+    "crs": [
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    ]
+}

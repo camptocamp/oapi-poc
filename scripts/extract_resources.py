@@ -13,27 +13,29 @@ NS = {
 # Extract collection info from metadata
 def collection_from_geocat(uuid):
     r = requests.get(
-        f"https://www.geocat.ch/geonetwork/srv/eng/xml.metadata.get?uuid={uuid}"
+        f"https://www.geocat.ch/geonetwork/srv/ger/xml.metadata.get?uuid={uuid}"
     )
 
     root = ET.fromstring(r.text)
 
-    item = {
-        "id": (
-            e.text
-            if (
-                e := root.find(
-                    ".//gmd:citation//gmd:identifier//gco:CharacterString", NS
-                )
-            )
-            else uuid
-        )
-    }
+    item = {"id": uuid}
+    # item = {
+    #     "id": (
+    #         e.text
+    #         if (
+    #             e := root.find(
+    #                 ".//gmd:citation//gmd:identifier//gco:CharacterString", NS
+    #             )
+    #             is not None
+    #         )
+    #         else uuid
+    #     )
+    # }
 
-    if e := root.find(".//gmd:citation//gmd:title//*[@locale='#EN']", NS):
+    if (e := root.find(".//gmd:citation//gmd:title//*[@locale='#EN']", NS)) is not None:
         item["title"] = e.text
 
-    if e := root.find(".//gmd:abstract//*[@locale='#EN']", NS):
+    if (e := root.find(".//gmd:abstract//*[@locale='#EN']", NS)) is not None:
         item["description"] = e.text
 
     item.update(
@@ -60,23 +62,26 @@ def collection_from_geocat(uuid):
 
 
 uuids = [
-    # "c994a2fa-047d-4a0d-841a-efe70c5815c8",
-    # "b46a8f8d-bc48-41d3-b20a-de61d0763318",
-    # "ad2b1452-9f3c-4137-9822-9758298bc025",
-    # "1549b018-f8f0-4a56-bd17-c8a4377afe58", # klima
-    # "e2e5132c-85df-417a-8706-f75068d4937e",
-    # "a6296aa9-d183-45c3-90fc-f03ec7d637be",
-    # "0a3b0af5-bbb4-4dde-bcff-adb27b932d77",
+    "0a62455f-c39c-4084-bd54-36ee2192d3af",
+    "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "ad2b1452-9f3c-4137-9822-9758298bc025",
+    "4ccc5153-cc27-47b8-abee-9d6e12e19701",
+    "e2e5132c-85df-417a-8706-f75068d4937e",
+    "a6296aa9-d183-45c3-90fc-f03ec7d637be",
+    "0a3b0af5-bbb4-4dde-bcff-adb27b932d77",
+    "35ff8133-364a-47eb-a145-0d641b706bff",
 ]
 
 for uuid in uuids:
     try:
         collection = collection_from_geocat(uuid)
         path = Path(f"../collections/{collection['id']}.json")
-        if path.exists():
+        if path.exists() and False:
             continue
         else:
-            path.write_text(json.dumps(collection, indent=4))
+            path.write_bytes(
+                json.dumps(collection, indent=4, ensure_ascii=False).encode("utf8")
+            )
 
     except Exception as e:
         print(e)
@@ -85,7 +90,10 @@ for uuid in uuids:
 path = Path("../data/ch.meteoschweiz.messnetz-klima_en.json")
 file = json.loads(path.read_bytes())
 
-collections = ["ch.meteoschweiz.tageswerte", "ch.meteoschweiz.stundenwerte"]
+collections = [
+    "ad2b1452-9f3c-4137-9822-9758298bc025",
+    "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+]
 
 transformer = Transformer.from_crs("epsg:2056", "epsg:4326")
 
@@ -98,7 +106,7 @@ for feature in file["features"]:
     properties.pop("description")
 
     for collection in collections:
-        id = f"{collection.split('.')[2]}_{feature['id']}"
+        id = feature["id"]
 
         item = {
             "id": id,

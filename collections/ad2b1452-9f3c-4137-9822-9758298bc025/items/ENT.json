@@ -1,0 +1,23 @@
+{
+    "id": "ENT",
+    "collection": "ad2b1452-9f3c-4137-9822-9758298bc025",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.068751066511687,
+            46.98682004722748
+        ]
+    },
+    "properties": {
+        "station_name": "Entlebuch",
+        "station_symbol": 2,
+        "altitude": "768",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        8.068751066511687,
+        46.98682004722748,
+        8.068751066511687,
+        46.98682004722748
+    ]
+}

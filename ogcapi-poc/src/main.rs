@@ -2,6 +2,8 @@ mod auth;
 mod loader;
 mod registrator;
 
+use serde_json::json;
+use tokio_cron_scheduler::{Job, JobScheduler};
 use tower_http::auth::RequireAuthorizationLayer;
 
 use ogcapi_services::{Config, ConfigParser, OpenAPI, Service, State};
@@ -21,6 +23,25 @@ async fn main() -> anyhow::Result<()> {
 
     // setup tracing
     ogcapi_services::telemetry::init();
+
+    // cron
+    let sched = JobScheduler::new()?;
+    sched.add(
+        Job::new_async("0 1/1 * * * *", |_uuid, _l| {
+            Box::pin(async move {
+                let root = "https://poc.meteoschweiz-poc.swisstopo.cloud";
+                reqwest::Client::new()
+                    .post(format!("{root}/processes/register-assets/execution"))
+                    .basic_auth("user", Some("password"))
+                    .json(&json!({}))
+                    .send()
+                    .await
+                    .unwrap();
+            })
+        })
+        .unwrap(),
+    )?;
+    sched.start()?;
 
     // parse config
     let config = Config::parse();

@@ -1,0 +1,23 @@
+{
+    "id": "WIN",
+    "collection": "ad2b1452-9f3c-4137-9822-9758298bc025",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.763192879850129,
+            47.47467643449457
+        ]
+    },
+    "properties": {
+        "station_name": "Winterthur / Seen",
+        "station_symbol": 2,
+        "altitude": "506",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        8.763192879850129,
+        47.47467643449457,
+        8.763192879850129,
+        47.47467643449457
+    ]
+}

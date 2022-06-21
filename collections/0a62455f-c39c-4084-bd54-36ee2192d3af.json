@@ -1,0 +1,38 @@
+{
+    "id": "0a62455f-c39c-4084-bd54-36ee2192d3af",
+    "title": "aktuelle Daten für PoC MeteoSchweiz",
+    "description": "Temporary data set for internal use only",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.96,
+                    45.82,
+                    10.49,
+                    47.81
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "various",
+    "links": [
+        {
+            "href": "https://www.geocat.ch/geonetwork/srv/eng/md.viewer#/full_view/0a62455f-c39c-4084-bd54-36ee2192d3af/tab/complete",
+            "rel": "metadata",
+            "type": "html/text",
+            "hreflang": "en",
+            "title": "Metadata (geocat.ch)"
+        }
+    ],
+    "crs": [
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "id": "DAV",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.843554894259208,
+            46.81297441560229
+        ]
+    },
+    "properties": {
+        "station_name": "Davos",
+        "station_symbol": 1,
+        "altitude": "1594",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        9.843554894259208,
+        46.81297441560229,
+        9.843554894259208,
+        46.81297441560229
+    ]
+}

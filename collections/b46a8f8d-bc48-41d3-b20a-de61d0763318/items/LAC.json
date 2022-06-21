@@ -1,0 +1,23 @@
+{
+    "id": "LAC",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.858685015179901,
+            47.179199834625614
+        ]
+    },
+    "properties": {
+        "station_name": "Lachen / Galgenen",
+        "station_symbol": 2,
+        "altitude": "468",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        8.858685015179901,
+        47.179199834625614,
+        8.858685015179901,
+        47.179199834625614
+    ]
+}

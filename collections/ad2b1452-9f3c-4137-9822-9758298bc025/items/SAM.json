@@ -1,0 +1,23 @@
+{
+    "id": "SAM",
+    "collection": "ad2b1452-9f3c-4137-9822-9758298bc025",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.879477494748897,
+            46.5262503353238
+        ]
+    },
+    "properties": {
+        "station_name": "Samedan",
+        "station_symbol": 1,
+        "altitude": "1709",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        9.879477494748897,
+        46.5262503353238,
+        9.879477494748897,
+        46.5262503353238
+    ]
+}

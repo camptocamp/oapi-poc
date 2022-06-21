@@ -1,0 +1,23 @@
+{
+    "id": "LSN",
+    "collection": "ad2b1452-9f3c-4137-9822-9758298bc025",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.643277887004976,
+            46.52780970059315
+        ]
+    },
+    "properties": {
+        "station_name": "Lausanne",
+        "station_symbol": 2,
+        "altitude": "601",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        6.643277887004976,
+        46.52780970059315,
+        6.643277887004976,
+        46.52780970059315
+    ]
+}

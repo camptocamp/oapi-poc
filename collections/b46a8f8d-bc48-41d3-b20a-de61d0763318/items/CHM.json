@@ -1,0 +1,23 @@
+{
+    "id": "CHM",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.978811939638638,
+            47.04916627788038
+        ]
+    },
+    "properties": {
+        "station_name": "Chaumont",
+        "station_symbol": 1,
+        "altitude": "1136",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        6.978811939638638,
+        47.04916627788038,
+        6.978811939638638,
+        47.04916627788038
+    ]
+}

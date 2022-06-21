@@ -1,0 +1,23 @@
+{
+    "id": "BIA",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.978197938258349,
+            46.33605732573553
+        ]
+    },
+    "properties": {
+        "station_name": "Biasca",
+        "station_symbol": 2,
+        "altitude": "278",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        8.978197938258349,
+        46.33605732573553,
+        8.978197938258349,
+        46.33605732573553
+    ]
+}

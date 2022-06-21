@@ -1,0 +1,23 @@
+{
+    "id": "WEE",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.086094771319626,
+            47.131625123972945
+        ]
+    },
+    "properties": {
+        "station_name": "Weesen",
+        "station_symbol": 2,
+        "altitude": "425",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        9.086094771319626,
+        47.131625123972945,
+        9.086094771319626,
+        47.131625123972945
+    ]
+}

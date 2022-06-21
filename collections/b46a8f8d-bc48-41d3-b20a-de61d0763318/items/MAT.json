@@ -1,0 +1,23 @@
+{
+    "id": "MAT",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            10.463022687007735,
+            46.884011043695395
+        ]
+    },
+    "properties": {
+        "station_name": "Martina",
+        "station_symbol": 2,
+        "altitude": "1041",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        10.463022687007735,
+        46.884011043695395,
+        10.463022687007735,
+        46.884011043695395
+    ]
+}

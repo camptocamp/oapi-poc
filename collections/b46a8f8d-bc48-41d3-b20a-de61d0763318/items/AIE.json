@@ -1,0 +1,23 @@
+{
+    "id": "AIE",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.740603986246512,
+            47.06312637462808
+        ]
+    },
+    "properties": {
+        "station_name": "Affoltern i. E.",
+        "station_symbol": 2,
+        "altitude": "755",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        7.740603986246512,
+        47.06312637462808,
+        7.740603986246512,
+        47.06312637462808
+    ]
+}

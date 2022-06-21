@@ -1,0 +1,23 @@
+{
+    "id": "PAY",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.942469027531863,
+            46.811581540242685
+        ]
+    },
+    "properties": {
+        "station_name": "Payerne",
+        "station_symbol": 1,
+        "altitude": "490",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        6.942469027531863,
+        46.811581540242685,
+        6.942469027531863,
+        46.811581540242685
+    ]
+}

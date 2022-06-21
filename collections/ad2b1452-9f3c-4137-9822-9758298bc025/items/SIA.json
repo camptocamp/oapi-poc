@@ -1,0 +1,23 @@
+{
+    "id": "SIA",
+    "collection": "ad2b1452-9f3c-4137-9822-9758298bc025",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.762331547422026,
+            46.432329986461326
+        ]
+    },
+    "properties": {
+        "station_name": "Segl-Maria",
+        "station_symbol": 1,
+        "altitude": "1804",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        9.762331547422026,
+        46.432329986461326,
+        9.762331547422026,
+        46.432329986461326
+    ]
+}

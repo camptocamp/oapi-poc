@@ -1,0 +1,23 @@
+{
+    "id": "LON",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.258293989913158,
+            46.4961279111113
+        ]
+    },
+    "properties": {
+        "station_name": "Longirod",
+        "station_symbol": 2,
+        "altitude": "900",
+        "datetime": "2022-06-08T09:32:38Z"
+    },
+    "bbox": [
+        6.258293989913158,
+        46.4961279111113,
+        6.258293989913158,
+        46.4961279111113
+    ]
+}
