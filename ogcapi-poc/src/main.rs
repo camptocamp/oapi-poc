@@ -1,18 +1,17 @@
 mod auth;
 mod loader;
-mod registrator;
+mod register;
 
-use serde_json::json;
 use tokio_cron_scheduler::{Job, JobScheduler};
 use tower_http::auth::RequireAuthorizationLayer;
 
 use ogcapi_services::{Config, ConfigParser, OpenAPI, Service, State};
 
-use crate::{auth::Auth, loader::AssetLoader, registrator::AssetRegistrator};
+use crate::{auth::Auth, loader::AssetLoader};
 
 pub static AWS_S3_BUCKET: &str = "met-oapi-poc";
 pub static AWS_S3_BUCKET_BASE: &str = "http://met-oapi-poc.s3.amazonaws.com";
-// static AWS_S3_BUCKET_BASE: &str = "http://localhost:9000/met-oapi-poc";
+// pub static AWS_S3_BUCKET_BASE: &str = "http://localhost:9000/met-oapi-poc";
 
 pub static OPENAPI: &[u8; 99477] = include_bytes!("../../openapi.yaml");
 
@@ -24,25 +23,6 @@ async fn main() -> anyhow::Result<()> {
     // setup tracing
     ogcapi_services::telemetry::init();
 
-    // cron
-    let sched = JobScheduler::new()?;
-    sched.add(
-        Job::new_async("0 1/1 * * * *", |_uuid, _l| {
-            Box::pin(async move {
-                let root = "https://poc.meteoschweiz-poc.swisstopo.cloud";
-                reqwest::Client::new()
-                    .post(format!("{root}/processes/register-assets/execution"))
-                    .basic_auth("user", Some("password"))
-                    .json(&json!({}))
-                    .send()
-                    .await
-                    .unwrap();
-            })
-        })
-        .unwrap(),
-    )?;
-    sched.start()?;
-
     // parse config
     let config = Config::parse();
 
@@ -53,7 +33,6 @@ async fn main() -> anyhow::Result<()> {
         .processors(vec![
             Box::new(ogcapi_services::Greeter),
             Box::new(AssetLoader),
-            Box::new(AssetRegistrator),
         ]);
 
     // create service
@@ -63,6 +42,19 @@ async fn main() -> anyhow::Result<()> {
     service.router = service
         .router
         .route_layer(RequireAuthorizationLayer::custom(Auth));
+
+    // cron job to register assets
+    let sched = JobScheduler::new()?;
+    sched.add(
+        Job::new_async("0 1/1 * * * *", |_uuid, _l| {
+            Box::pin(async {
+                tracing::info!("register assets");
+                register::run().await.unwrap();
+            })
+        })
+        .unwrap(),
+    )?;
+    sched.start()?;
 
     // run service with hyper
     service.serve().await;
