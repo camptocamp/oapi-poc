@@ -59,7 +59,7 @@ impl Processor for AssetRegistrator {
     }
 
     async fn execute(&self, _execute: Execute, state: &State, _url: &Url) -> Result<Response> {
-        // Register assets
+        // List new uploads
         let resp = state
             .s3
             .client
@@ -75,6 +75,7 @@ impl Processor for AssetRegistrator {
             let key = object.key().unwrap_or_default();
             tracing::debug!("key: {}", key);
 
+            // Register asset
             match register(key, &state.db, &state.s3).await {
                 Ok(_) => tracing::info!("finish registering `{key}`"),
                 Err(e) => tracing::error!("error registering`{key}`: {}", e.to_string()),
@@ -92,9 +93,6 @@ async fn register(key: &str, db: &Db, s3: &S3) -> anyhow::Result<()> {
 
     // Collection id (uuid)
     let collection_id = &target.split('/').next().unwrap_or_default();
-    if !["0a62455f-c39c-4084-bd54-36ee2192d3af"].contains(collection_id) {
-        return Ok(());
-    }
 
     // Create asset
     let mut asset = Asset::new(format!("{AWS_S3_BUCKET_BASE}/{target}"));
@@ -114,13 +112,17 @@ async fn register(key: &str, db: &Db, s3: &S3) -> anyhow::Result<()> {
         _ => None,
     };
 
-    let asset_id = p
-        .file_stem()
-        .unwrap_or_default()
-        .to_str()
-        .unwrap_or_default();
+    // Asset id (defaults to file name)
+    let asset_id = match *collection_id {
+        "e2e5132c-85df-417a-8706-f75068d4937e" => "meteoswiss.radar.precip",
+        _ => p
+            .file_name()
+            .unwrap_or_default()
+            .to_str()
+            .unwrap_or_default(),
+    };
 
-    // Get item
+    // Get item (skip key if no item id can be mapped)
     let item_id = match *collection_id {
         "0a62455f-c39c-4084-bd54-36ee2192d3af" => "messwerte-lufttemperatur-10min",
         "e2e5132c-85df-417a-8706-f75068d4937e" => "meteoswiss.radar.precip",
