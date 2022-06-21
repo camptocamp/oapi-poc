@@ -62,11 +62,7 @@ impl Processor for AssetRegistrator {
         // List new uploads
         let resp = state
             .s3
-            .client
-            .list_objects()
-            .bucket(AWS_S3_BUCKET)
-            .prefix(PREFIX)
-            .send()
+            .list_objects(AWS_S3_BUCKET, Some(PREFIX))
             .await
             .context("List objects")?;
 
@@ -156,6 +152,16 @@ async fn register(key: &str, db: &Db, s3: &S3) -> anyhow::Result<()> {
 
     // Cleanup
     s3.delete_object(AWS_S3_BUCKET, key).await?;
+    if *collection_id == "e2e5132c-85df-417a-8706-f75068d4937e" {
+        let resp = s3.list_objects(AWS_S3_BUCKET, Some(*collection_id)).await?;
+
+        for object in resp.contents().unwrap_or_default() {
+            let key = object.key().unwrap_or_default();
+            if key != target {
+                s3.delete_object(AWS_S3_BUCKET, key).await?;
+            }
+        }
+    }
 
     Ok(())
 }
