@@ -247,7 +247,7 @@ dependencies = [
  "percent-encoding",
  "regex",
  "ring",
- "time 0.3.10",
+ "time 0.3.11",
  "tracing",
 ]
 
@@ -363,7 +363,7 @@ dependencies = [
  "itoa",
  "num-integer",
  "ryu",
- "time 0.3.10",
+ "time 0.3.11",
 ]
 
 [[package]]
@@ -1132,9 +1132,9 @@ dependencies = [
 
 [[package]]
 name = "indexmap"
-version = "1.9.0"
+version = "1.9.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6c6392766afd7964e2531940894cffe4bd8d7d17dbc3c1c4857040fd4b33bdb3"
+checksum = "10a35a97730320ffe8e2d410b5d3b69279b98d2c14bdb8b70ea89ecf7888d41e"
 dependencies = [
  "autocfg",
  "hashbrown",
@@ -1426,7 +1426,7 @@ dependencies = [
 [[package]]
 name = "ogcapi-drivers"
 version = "0.1.0"
-source = "git+https://github.com/camptocamp/ogcapi?branch=poc#b88cd33eff5b6a061e2d6c5c082e8b8ceb9c4121"
+source = "git+https://github.com/camptocamp/ogcapi?branch=poc#219a51cf2d6cc5552cf1f459ae64bf5a6a436532"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -1474,7 +1474,7 @@ dependencies = [
 [[package]]
 name = "ogcapi-services"
 version = "0.1.0"
-source = "git+https://github.com/camptocamp/ogcapi?branch=poc#b88cd33eff5b6a061e2d6c5c082e8b8ceb9c4121"
+source = "git+https://github.com/camptocamp/ogcapi?branch=poc#219a51cf2d6cc5552cf1f459ae64bf5a6a436532"
 dependencies = [
  "anyhow",
  "axum",
@@ -1502,7 +1502,7 @@ dependencies = [
 [[package]]
 name = "ogcapi-types"
 version = "0.1.0"
-source = "git+https://github.com/camptocamp/ogcapi?branch=poc#b88cd33eff5b6a061e2d6c5c082e8b8ceb9c4121"
+source = "git+https://github.com/camptocamp/ogcapi?branch=poc#219a51cf2d6cc5552cf1f459ae64bf5a6a436532"
 dependencies = [
  "chrono",
  "geojson",
@@ -2373,9 +2373,9 @@ dependencies = [
 
 [[package]]
 name = "time"
-version = "0.3.10"
+version = "0.3.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "82501a4c1c0330d640a6e176a3d6a204f5ec5237aca029029d21864a902e27b0"
+checksum = "72c91f41dcb2f096c05f0873d667dceec1087ce5bcf984ec8ffb19acddbb3217"
 dependencies = [
  "libc",
  "num_threads",

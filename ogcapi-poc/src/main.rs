@@ -6,6 +6,7 @@ use tokio_cron_scheduler::{Job, JobScheduler};
 use tower_http::auth::RequireAuthorizationLayer;
 
 use ogcapi_services::{Config, ConfigParser, OpenAPI, Service, State};
+use ogcapi_types::common::{link_rel::CHILD, LandingPage, Link};
 
 use crate::{auth::Auth, loader::AssetLoader};
 
@@ -26,9 +27,16 @@ async fn main() -> anyhow::Result<()> {
     // parse config
     let config = Config::parse();
 
+    // landing page
+    let root = LandingPage::new("root")
+        .title("PoC MeteoSchweiz")
+        .description(include_str!("../../README.md"))
+        .links(vec![Link::new("collections/test-child", CHILD)]);
+
     // application state
     let state = State::new_from(&config)
         .await
+        .root(root)
         .openapi(OpenAPI::from_slice(OPENAPI))
         .processors(vec![
             Box::new(ogcapi_services::Greeter),

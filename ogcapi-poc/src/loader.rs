@@ -206,7 +206,8 @@ impl Processor for AssetLoader {
                         .drivers
                         .features
                         .read_feature(&inputs.collection, &id, &Crs::default())
-                        .await?;
+                        .await?
+                        .expect("existing item");
 
                     item.assets.insert(key, asset);
 

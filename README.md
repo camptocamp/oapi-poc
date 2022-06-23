@@ -24,11 +24,11 @@ The created resources can for example be consoumed with the [STAC Browser](https
 
 * Only the data on S3 is persisted, the rest lives in the containers of the docker composition.
 * The asset content is not parsed, nor are any attributes derived.
-* Only `base64` encoded string are supported as file value for now.
+* Only `base64` encoded string are supported as file value for now. Alternatively a `URI` to an acessible resource can be used to link or upload from a local file.
 * An asset can be replaced by specifying the asset `id`, the S3 `key` and the `item id` as value in the inputs.
 * It is currently not possible to updat the Feature/Item on upload.
-* Catalog trees can only be created from the collection downwards as the root catalog is immutable for now.
+* The `landing page` respectively `root catalog` is defined statically and loaded on startup/compilation.
 
-## Catalog Trees (advanced & untested)
+## Catalog Trees
 
-Potentially catalog trees can be created by adding collection resources with the property `type` set to `Catalog` and links with the relations `parent`, `child` and/or `item`. Naturally these relations should be reflected on the linked ressources as well.
+Catalog trees can be created by adding collection resources with the property `type` set to `Catalog` and links with the relations `parent`, `child` and/or `item`. Naturally these relations should be reflected on the linked ressources as well.

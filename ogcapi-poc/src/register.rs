@@ -116,7 +116,8 @@ async fn asset_to_item(
     };
     let mut item = db
         .read_feature(collection_id, item_id, &Crs::default())
-        .await?;
+        .await?
+        .expect("existing feature");
 
     // Add/update datetime
     let datetime = Utc::now().to_rfc3339_opts(SecondsFormat::Secs, true);
@@ -140,7 +141,10 @@ async fn asset_to_collection(
     db: &Db,
 ) -> anyhow::Result<()> {
     // Get collection
-    let mut collection = db.read_collection(collection_id).await?;
+    let mut collection = db
+        .read_collection(collection_id)
+        .await?
+        .expect("existing collection");
 
     // Add/update asset
     collection.assets.insert(asset_id.to_string(), asset);
