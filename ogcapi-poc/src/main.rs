@@ -14,7 +14,7 @@ pub static AWS_S3_BUCKET: &str = "met-oapi-poc";
 pub static AWS_S3_BUCKET_BASE: &str = "http://met-oapi-poc.s3.amazonaws.com";
 // pub static AWS_S3_BUCKET_BASE: &str = "http://localhost:9000/met-oapi-poc";
 
-pub static OPENAPI: &[u8; 99477] = include_bytes!("../../openapi.yaml");
+pub static OPENAPI: &[u8; 100375] = include_bytes!("../../openapi.yaml");
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {

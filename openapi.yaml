@@ -15,8 +15,8 @@ tags:
     description: Description of the information available from the collections
   - name: Collection data queries
     description: Data queries available.
-  - name: Processes
-    description: Descripton of the processes endpoints
+  # - name: Processes
+  #   description: Descripton of the processes endpoints
 paths:
   /:
     get:
@@ -114,382 +114,382 @@ paths:
     parameters:
       - $ref: "#/components/parameters/collectionId"
       - $ref: "#/components/parameters/f"
-  /collections/{collectionId}/position:
-    get:
-      tags:
-        - Collection data queries
-      summary: "Query end point for position queries  of collection {collectionId}"
-      description: Query end point for position queries
-      operationId: getDataForPoint
-      parameters:
-        - $ref: "#/components/parameters/collectionId"
-        - $ref: "#/components/parameters/positionCoords"
-        - $ref: "#/components/parameters/z"
-        - $ref: "#/components/parameters/datetime"
-        - $ref: "#/components/parameters/parameter-name"
-        - $ref: "#/components/parameters/crs"
-        - $ref: "#/components/parameters/f"
-      responses:
-        "200":
-          description: Data ranges required to construct valid queries for the choosen data collection
-          content:
-            application/prs.coverage+json:
-              schema:
-                $ref: "#/components/schemas/coverageJSON"
-            application/geo+json:
-              schema:
-                $ref: "#/components/schemas/edrFeatureCollectionGeoJSON"
-            application/x-netcdf: {}
-            text/xml: {}
-        "202":
-          description: Data request still being processed
-        "308":
-          description: Request will take a significant time to process
-        "400":
-          description: Invalid request.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        "404":
-          description: Requested data not found.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        "413":
-          description: Requested data volume to large to be handled by this service.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        default:
-          description: An error occured.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/html:
-              schema:
-                type: string
-  /collections/{collectionId}/radius:
-    get:
-      tags:
-        - Collection data queries
-      summary: "Query end point for radius queries  of collection {collectionId}"
-      description: Query end point for to return values within a defined radius of a point queries
-      operationId: getDataForRadius
-      parameters:
-        - $ref: "#/components/parameters/collectionId"
-        - $ref: "#/components/parameters/radiusCoords"
-        - $ref: "#/components/parameters/within"
-        - $ref: "#/components/parameters/within-units"
-        - $ref: "#/components/parameters/z"
-        - $ref: "#/components/parameters/datetime"
-        - $ref: "#/components/parameters/parameter-name"
-        - $ref: "#/components/parameters/crs"
-        - $ref: "#/components/parameters/f"
-      responses:
-        "200":
-          description: Data ranges required to construct valid queries for the choosen data collection
-          content:
-            application/prs.coverage+json:
-              schema:
-                $ref: "#/components/schemas/coverageJSON"
-            application/geo+json:
-              schema:
-                $ref: "#/components/schemas/edrFeatureCollectionGeoJSON"
-            application/x-netcdf: {}
-            text/xml: {}
-        "202":
-          description: Data request still being processed
-        "308":
-          description: Request will take a significant time to process
-        "400":
-          description: Invalid request.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        "404":
-          description: Requested data not found.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        "413":
-          description: Requested data volume to large to be handled by this service.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        default:
-          description: An error occured.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/html:
-              schema:
-                type: string
-  /collections/{collectionId}/area:
-    get:
-      tags:
-        - Collection data queries
-      summary: "Query end point for area queries  of collection {collectionId} defined by a polygon"
-      description: Return the data values for the data area defined by the query parameters
-      operationId: GetDataForArea
-      parameters:
-        - $ref: "#/components/parameters/collectionId"
-        - $ref: "#/components/parameters/areaCoords"
-        - $ref: "#/components/parameters/z"
-        - $ref: "#/components/parameters/datetime"
-        - $ref: "#/components/parameters/parameter-name"
-        - $ref: "#/components/parameters/crs"
-        - $ref: "#/components/parameters/resolution-x"
-        - $ref: "#/components/parameters/resolution-y"
-        - $ref: "#/components/parameters/f"
-      responses:
-        "200":
-          description: Data ranges required to construct valid queries for the choosen data collection
-          content:
-            application/prs.coverage+json:
-              schema:
-                $ref: "#/components/schemas/coverageJSON"
-            application/geo+json:
-              schema:
-                $ref: "#/components/schemas/edrFeatureCollectionGeoJSON"
-            application/x-netcdf: {}
-            text/xml: {}
-        "202":
-          description: Data request still being processed
-        "308":
-          description: Request will take a significant time to process
-        "400":
-          description: Invalid request.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        "404":
-          description: Requested data not found.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        "413":
-          description: Requested data volume to large to be handled by this service.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        default:
-          description: An error occured.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/html:
-              schema:
-                type: string
-  /collections/{collectionId}/cube:
-    get:
-      tags:
-        - Collection data queries
-      summary: "Query end point for Cube queries  of collection {collectionId} defined by a cube"
-      description: Return the data values for the data Cube defined by the query parameters
-      operationId: GetDataForCube
-      parameters:
-        - $ref: "#/components/parameters/collectionId"
-        - $ref: "#/components/parameters/bbox"
-        - $ref: "#/components/parameters/cube-z"
-        - $ref: "#/components/parameters/datetime"
-        - $ref: "#/components/parameters/parameter-name"
-        - $ref: "#/components/parameters/crs"
-        - $ref: "#/components/parameters/f"
-      responses:
-        "200":
-          description: Data ranges required to construct valid queries for the choosen data collection
-          content:
-            application/prs.coverage+json:
-              schema:
-                $ref: "#/components/schemas/coverageJSON"
-            application/geo+json:
-              schema:
-                $ref: "#/components/schemas/edrFeatureCollectionGeoJSON"
-            application/x-netcdf: {}
-            text/xml: {}
-        "202":
-          description: Data request still being processed
-        "308":
-          description: Request will take a significant time to process
-        "400":
-          description: Invalid request.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        "404":
-          description: Requested data not found.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        "413":
-          description: Requested data volume to large to be handled by this service.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        default:
-          description: An error occured.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/html:
-              schema:
-                type: string
-  /collections/{collectionId}/trajectory:
-    get:
-      tags:
-        - Collection data queries
-      summary: "Query end point for trajectory queries  of collection {collectionId} defined by a wkt linestring and a iso8601 time period"
-      description: Return the data values for the data Polygon defined by the query parameters
-      operationId: GetDataForTrajectory
-      parameters:
-        - $ref: "#/components/parameters/collectionId"
-        - $ref: "#/components/parameters/trajectoryCoords"
-        - $ref: "#/components/parameters/z"
-        - $ref: "#/components/parameters/datetime"
-        - $ref: "#/components/parameters/parameter-name"
-        - $ref: "#/components/parameters/crs"
-        - $ref: "#/components/parameters/f"
-      responses:
-        "200":
-          description: Data ranges required to construct valid queries for the choosen data collection
-          content:
-            application/prs.coverage+json:
-              schema:
-                $ref: "#/components/schemas/coverageJSON"
-            application/geo+json:
-              schema:
-                $ref: "#/components/schemas/edrFeatureCollectionGeoJSON"
-            application/x-netcdf: {}
-            text/xml: {}
-        "202":
-          description: Data request still being processed
-        "308":
-          description: Request will take a significant time to process
-        "400":
-          description: Invalid request.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        "404":
-          description: Requested data not found.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        "413":
-          description: Requested data volume to large to be handled by this service.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        default:
-          description: An error occured.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/html:
-              schema:
-                type: string
-  /collections/{collectionId}/corridor:
-    get:
-      tags:
-        - Collection data queries
-      summary: "Query end point for Corridor queries  of collection {collectionId} defined by a polygon"
-      description: Return the data values for the Corridor defined by the query parameters
-      operationId: GetDataForCorridor
-      parameters:
-        - $ref: "#/components/parameters/collectionId"
-        - $ref: "#/components/parameters/trajectoryCoords"
-        - $ref: "#/components/parameters/z"
-        - $ref: "#/components/parameters/datetime"
-        - $ref: "#/components/parameters/parameter-name"
-        - $ref: "#/components/parameters/corridor-width"
-        - $ref: "#/components/parameters/width-units"
-        - $ref: "#/components/parameters/corridor-height"
-        - $ref: "#/components/parameters/height-units"
-        - $ref: "#/components/parameters/resolution-x"
-        - $ref: "#/components/parameters/resolution-z"
-        - $ref: "#/components/parameters/crs"
-        - $ref: "#/components/parameters/f"
-      responses:
-        "200":
-          description: Data ranges required to construct valid queries for the choosen data collection
-          content:
-            application/prs.coverage+json:
-              schema:
-                $ref: "#/components/schemas/coverageJSON"
-            application/geo+json:
-              schema:
-                $ref: "#/components/schemas/edrFeatureCollectionGeoJSON"
-            application/x-netcdf: {}
-            text/xml: {}
-        "202":
-          description: Data request still being processed
-        "308":
-          description: Request will take a significant time to process
-        "400":
-          description: Invalid request.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        "404":
-          description: Requested data not found.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        "413":
-          description: Requested data volume to large to be handled by this service.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/xml: {}
-        default:
-          description: An error occured.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/exception"
-            text/html:
-              schema:
-                type: string
+  # /collections/{collectionId}/position:
+  #   get:
+  #     tags:
+  #       - Collection data queries
+  #     summary: "Query end point for position queries  of collection {collectionId}"
+  #     description: Query end point for position queries
+  #     operationId: getDataForPoint
+  #     parameters:
+  #       - $ref: "#/components/parameters/collectionId"
+  #       - $ref: "#/components/parameters/positionCoords"
+  #       - $ref: "#/components/parameters/z"
+  #       - $ref: "#/components/parameters/datetime"
+  #       - $ref: "#/components/parameters/parameter-name"
+  #       - $ref: "#/components/parameters/crs"
+  #       - $ref: "#/components/parameters/f"
+  #     responses:
+  #       "200":
+  #         description: Data ranges required to construct valid queries for the choosen data collection
+  #         content:
+  #           application/prs.coverage+json:
+  #             schema:
+  #               $ref: "#/components/schemas/coverageJSON"
+  #           application/geo+json:
+  #             schema:
+  #               $ref: "#/components/schemas/edrFeatureCollectionGeoJSON"
+  #           application/x-netcdf: {}
+  #           text/xml: {}
+  #       "202":
+  #         description: Data request still being processed
+  #       "308":
+  #         description: Request will take a significant time to process
+  #       "400":
+  #         description: Invalid request.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       "404":
+  #         description: Requested data not found.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       "413":
+  #         description: Requested data volume to large to be handled by this service.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       default:
+  #         description: An error occured.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/html:
+  #             schema:
+  #               type: string
+  # /collections/{collectionId}/radius:
+  #   get:
+  #     tags:
+  #       - Collection data queries
+  #     summary: "Query end point for radius queries  of collection {collectionId}"
+  #     description: Query end point for to return values within a defined radius of a point queries
+  #     operationId: getDataForRadius
+  #     parameters:
+  #       - $ref: "#/components/parameters/collectionId"
+  #       - $ref: "#/components/parameters/radiusCoords"
+  #       - $ref: "#/components/parameters/within"
+  #       - $ref: "#/components/parameters/within-units"
+  #       - $ref: "#/components/parameters/z"
+  #       - $ref: "#/components/parameters/datetime"
+  #       - $ref: "#/components/parameters/parameter-name"
+  #       - $ref: "#/components/parameters/crs"
+  #       - $ref: "#/components/parameters/f"
+  #     responses:
+  #       "200":
+  #         description: Data ranges required to construct valid queries for the choosen data collection
+  #         content:
+  #           application/prs.coverage+json:
+  #             schema:
+  #               $ref: "#/components/schemas/coverageJSON"
+  #           application/geo+json:
+  #             schema:
+  #               $ref: "#/components/schemas/edrFeatureCollectionGeoJSON"
+  #           application/x-netcdf: {}
+  #           text/xml: {}
+  #       "202":
+  #         description: Data request still being processed
+  #       "308":
+  #         description: Request will take a significant time to process
+  #       "400":
+  #         description: Invalid request.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       "404":
+  #         description: Requested data not found.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       "413":
+  #         description: Requested data volume to large to be handled by this service.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       default:
+  #         description: An error occured.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/html:
+  #             schema:
+  #               type: string
+  # /collections/{collectionId}/area:
+  #   get:
+  #     tags:
+  #       - Collection data queries
+  #     summary: "Query end point for area queries  of collection {collectionId} defined by a polygon"
+  #     description: Return the data values for the data area defined by the query parameters
+  #     operationId: GetDataForArea
+  #     parameters:
+  #       - $ref: "#/components/parameters/collectionId"
+  #       - $ref: "#/components/parameters/areaCoords"
+  #       - $ref: "#/components/parameters/z"
+  #       - $ref: "#/components/parameters/datetime"
+  #       - $ref: "#/components/parameters/parameter-name"
+  #       - $ref: "#/components/parameters/crs"
+  #       - $ref: "#/components/parameters/resolution-x"
+  #       - $ref: "#/components/parameters/resolution-y"
+  #       - $ref: "#/components/parameters/f"
+  #     responses:
+  #       "200":
+  #         description: Data ranges required to construct valid queries for the choosen data collection
+  #         content:
+  #           application/prs.coverage+json:
+  #             schema:
+  #               $ref: "#/components/schemas/coverageJSON"
+  #           application/geo+json:
+  #             schema:
+  #               $ref: "#/components/schemas/edrFeatureCollectionGeoJSON"
+  #           application/x-netcdf: {}
+  #           text/xml: {}
+  #       "202":
+  #         description: Data request still being processed
+  #       "308":
+  #         description: Request will take a significant time to process
+  #       "400":
+  #         description: Invalid request.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       "404":
+  #         description: Requested data not found.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       "413":
+  #         description: Requested data volume to large to be handled by this service.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       default:
+  #         description: An error occured.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/html:
+  #             schema:
+  #               type: string
+  # /collections/{collectionId}/cube:
+  #   get:
+  #     tags:
+  #       - Collection data queries
+  #     summary: "Query end point for Cube queries  of collection {collectionId} defined by a cube"
+  #     description: Return the data values for the data Cube defined by the query parameters
+  #     operationId: GetDataForCube
+  #     parameters:
+  #       - $ref: "#/components/parameters/collectionId"
+  #       - $ref: "#/components/parameters/bbox"
+  #       - $ref: "#/components/parameters/cube-z"
+  #       - $ref: "#/components/parameters/datetime"
+  #       - $ref: "#/components/parameters/parameter-name"
+  #       - $ref: "#/components/parameters/crs"
+  #       - $ref: "#/components/parameters/f"
+  #     responses:
+  #       "200":
+  #         description: Data ranges required to construct valid queries for the choosen data collection
+  #         content:
+  #           application/prs.coverage+json:
+  #             schema:
+  #               $ref: "#/components/schemas/coverageJSON"
+  #           application/geo+json:
+  #             schema:
+  #               $ref: "#/components/schemas/edrFeatureCollectionGeoJSON"
+  #           application/x-netcdf: {}
+  #           text/xml: {}
+  #       "202":
+  #         description: Data request still being processed
+  #       "308":
+  #         description: Request will take a significant time to process
+  #       "400":
+  #         description: Invalid request.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       "404":
+  #         description: Requested data not found.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       "413":
+  #         description: Requested data volume to large to be handled by this service.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       default:
+  #         description: An error occured.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/html:
+  #             schema:
+  #               type: string
+  # /collections/{collectionId}/trajectory:
+  #   get:
+  #     tags:
+  #       - Collection data queries
+  #     summary: "Query end point for trajectory queries  of collection {collectionId} defined by a wkt linestring and a iso8601 time period"
+  #     description: Return the data values for the data Polygon defined by the query parameters
+  #     operationId: GetDataForTrajectory
+  #     parameters:
+  #       - $ref: "#/components/parameters/collectionId"
+  #       - $ref: "#/components/parameters/trajectoryCoords"
+  #       - $ref: "#/components/parameters/z"
+  #       - $ref: "#/components/parameters/datetime"
+  #       - $ref: "#/components/parameters/parameter-name"
+  #       - $ref: "#/components/parameters/crs"
+  #       - $ref: "#/components/parameters/f"
+  #     responses:
+  #       "200":
+  #         description: Data ranges required to construct valid queries for the choosen data collection
+  #         content:
+  #           application/prs.coverage+json:
+  #             schema:
+  #               $ref: "#/components/schemas/coverageJSON"
+  #           application/geo+json:
+  #             schema:
+  #               $ref: "#/components/schemas/edrFeatureCollectionGeoJSON"
+  #           application/x-netcdf: {}
+  #           text/xml: {}
+  #       "202":
+  #         description: Data request still being processed
+  #       "308":
+  #         description: Request will take a significant time to process
+  #       "400":
+  #         description: Invalid request.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       "404":
+  #         description: Requested data not found.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       "413":
+  #         description: Requested data volume to large to be handled by this service.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       default:
+  #         description: An error occured.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/html:
+  #             schema:
+  #               type: string
+  # /collections/{collectionId}/corridor:
+  #   get:
+  #     tags:
+  #       - Collection data queries
+  #     summary: "Query end point for Corridor queries  of collection {collectionId} defined by a polygon"
+  #     description: Return the data values for the Corridor defined by the query parameters
+  #     operationId: GetDataForCorridor
+  #     parameters:
+  #       - $ref: "#/components/parameters/collectionId"
+  #       - $ref: "#/components/parameters/trajectoryCoords"
+  #       - $ref: "#/components/parameters/z"
+  #       - $ref: "#/components/parameters/datetime"
+  #       - $ref: "#/components/parameters/parameter-name"
+  #       - $ref: "#/components/parameters/corridor-width"
+  #       - $ref: "#/components/parameters/width-units"
+  #       - $ref: "#/components/parameters/corridor-height"
+  #       - $ref: "#/components/parameters/height-units"
+  #       - $ref: "#/components/parameters/resolution-x"
+  #       - $ref: "#/components/parameters/resolution-z"
+  #       - $ref: "#/components/parameters/crs"
+  #       - $ref: "#/components/parameters/f"
+  #     responses:
+  #       "200":
+  #         description: Data ranges required to construct valid queries for the choosen data collection
+  #         content:
+  #           application/prs.coverage+json:
+  #             schema:
+  #               $ref: "#/components/schemas/coverageJSON"
+  #           application/geo+json:
+  #             schema:
+  #               $ref: "#/components/schemas/edrFeatureCollectionGeoJSON"
+  #           application/x-netcdf: {}
+  #           text/xml: {}
+  #       "202":
+  #         description: Data request still being processed
+  #       "308":
+  #         description: Request will take a significant time to process
+  #       "400":
+  #         description: Invalid request.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       "404":
+  #         description: Requested data not found.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       "413":
+  #         description: Requested data volume to large to be handled by this service.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/xml: {}
+  #       default:
+  #         description: An error occured.
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/exception"
+  #           text/html:
+  #             schema:
+  #               type: string
   /collections/{collectionId}/items:
     get:
       tags:
@@ -584,77 +584,77 @@ paths:
             text/html:
               schema:
                 type: string
-  /processes:
-    get:
-      operationId: getProcesses
-      summary: retrieve available processes
-      description: |-
-        Lists all available processes this server offers.
-      tags:
-        - Processes
-      parameters:
-        - $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/parameters/limit.yaml"
-      responses:
-        "200":
-          $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/ProcessList.yaml"
-        default:
-          description: unexpected error
-          content:
-            application/json:
-              schema:
-                $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/ServerError.yaml"
-  /processes/{processID}:
-    get:
-      operationId: getProcessDescription
-      summary: retrieve a process description
-      description: |-
-        Describes a process.
-      tags:
-        - Processes
-      parameters:
-        - $ref: "#/components/parameters/processId"
-      responses:
-        "200":
-          $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/swagger/ProcessDescription.yaml"
-        "404":
-          $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/NotFound.yaml"
-        default:
-          description: unexpected error
-          content:
-            application/json:
-              schema:
-                $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/ServerError.yaml"
-  /processes/{processID}/execution:
-    post:
-      summary: execute a process.
-      description: Submits a new job.
-      operationId: execute
-      tags:
-        - Processes
-      parameters:
-        - $ref: "#/components/parameters/processId"
-      requestBody:
-        description: Mandatory execute request JSON
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/schemas/execute.yaml"
-      responses:
-        "200":
-          $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/ExecuteSync.yaml"
-        "201":
-          $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/ExecuteAsync.yaml"
-        "204":
-          $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/ExecuteSyncRawRef.yaml"
-        "404":
-          $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/NotFound.yaml"
-        default:
-          description: unexpected error
-          content:
-            application/json:
-              schema:
-                $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/ServerError.yaml"
+  # /processes:
+  #   get:
+  #     operationId: getProcesses
+  #     summary: retrieve available processes
+  #     description: |-
+  #       Lists all available processes this server offers.
+  #     tags:
+  #       - Processes
+  #     parameters:
+  #       - $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/parameters/limit.yaml"
+  #     responses:
+  #       "200":
+  #         $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/ProcessList.yaml"
+  #       default:
+  #         description: unexpected error
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/ServerError.yaml"
+  # /processes/{processID}:
+  #   get:
+  #     operationId: getProcessDescription
+  #     summary: retrieve a process description
+  #     description: |-
+  #       Describes a process.
+  #     tags:
+  #       - Processes
+  #     parameters:
+  #       - $ref: "#/components/parameters/processId"
+  #     responses:
+  #       "200":
+  #         $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/swagger/ProcessDescription.yaml"
+  #       "404":
+  #         $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/NotFound.yaml"
+  #       default:
+  #         description: unexpected error
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/ServerError.yaml"
+  # /processes/{processID}/execution:
+  #   post:
+  #     summary: execute a process.
+  #     description: Submits a new job.
+  #     operationId: execute
+  #     tags:
+  #       - Processes
+  #     parameters:
+  #       - $ref: "#/components/parameters/processId"
+  #     requestBody:
+  #       description: Mandatory execute request JSON
+  #       required: true
+  #       content:
+  #         application/json:
+  #           schema:
+  #             $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/schemas/execute.yaml"
+  #     responses:
+  #       "200":
+  #         $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/ExecuteSync.yaml"
+  #       "201":
+  #         $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/ExecuteAsync.yaml"
+  #       "204":
+  #         $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/ExecuteSyncRawRef.yaml"
+  #       "404":
+  #         $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/NotFound.yaml"
+  #       default:
+  #         description: unexpected error
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "https://raw.githubusercontent.com/opengeospatial/ogcapi-processes/master/core/openapi/responses/ServerError.yaml"
 components:
   headers:
     Content-Crs:
