@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Brusio",
         "station_symbol": 2,
-        "altitude": "856",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "856"
     },
     "bbox": [
         10.117248990100782,

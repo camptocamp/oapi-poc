@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Ch\u00e2teau-d'Oex",
         "station_symbol": 1,
-        "altitude": "1028",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "1028"
     },
     "bbox": [
         7.139658974931736,

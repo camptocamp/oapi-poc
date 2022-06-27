@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Lohn, SH",
         "station_symbol": 2,
-        "altitude": "585",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "585"
     },
     "bbox": [
         8.677643330438558,

@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Wittnau",
         "station_symbol": 2,
-        "altitude": "463",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "463"
     },
     "bbox": [
         7.968534714961127,

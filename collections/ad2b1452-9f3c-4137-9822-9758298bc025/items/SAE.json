@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "S\u00e4ntis",
         "station_symbol": 1,
-        "altitude": "2501",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "2501"
     },
     "bbox": [
         9.343469713947702,

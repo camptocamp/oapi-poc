@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Martina",
         "station_symbol": 2,
-        "altitude": "1041",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "1041"
     },
     "bbox": [
         10.463022687007735,

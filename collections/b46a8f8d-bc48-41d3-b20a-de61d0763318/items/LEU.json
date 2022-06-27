@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Leukerbad",
         "station_symbol": 2,
-        "altitude": "1286",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "1286"
     },
     "bbox": [
         7.621647959111211,

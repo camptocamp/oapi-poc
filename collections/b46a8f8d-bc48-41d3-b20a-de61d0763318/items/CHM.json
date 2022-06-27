@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Chaumont",
         "station_symbol": 1,
-        "altitude": "1136",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "1136"
     },
     "bbox": [
         6.978811939638638,

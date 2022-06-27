@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Sion",
         "station_symbol": 1,
-        "altitude": "482",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "482"
     },
     "bbox": [
         7.330214435500073,

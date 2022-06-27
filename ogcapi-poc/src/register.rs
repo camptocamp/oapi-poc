@@ -13,7 +13,6 @@ use ogcapi_types::{
 use crate::{AWS_S3_BUCKET, AWS_S3_BUCKET_BASE};
 
 static PREFIX: &str = "mhs-upload";
-static mut INIT: bool = true;
 
 pub(crate) async fn run() -> anyhow::Result<()> {
     // Setup drivers
@@ -21,14 +20,7 @@ pub(crate) async fn run() -> anyhow::Result<()> {
     let s3 = S3::new().await;
 
     // List new uploads
-    let resp = unsafe {
-        if INIT {
-            INIT = false; // requires unsafe for concurent mutability
-            s3.list_objects(AWS_S3_BUCKET, Some("")).await?
-        } else {
-            s3.list_objects(AWS_S3_BUCKET, Some(PREFIX)).await?
-        }
-    };
+    let resp = s3.list_objects(AWS_S3_BUCKET, Some(PREFIX)).await?;
 
     for object in resp.contents().unwrap_or_default() {
         // Source key
@@ -69,21 +61,20 @@ async fn ingest(key: &str, db: &Db, s3: &S3) -> anyhow::Result<()> {
     asset.r#type = match p.extension().unwrap_or_default().to_str() {
         Some("json") => Some(JSON.to_string()),
         Some("csv") => Some("text/csv".to_string()),
-        Some("h5") => Some("application/octet-stream".to_string()),
+        Some("h5") => Some("application/x-hdf5".to_string()),
         Some("nc") => Some("application/netcdf".to_string()),
         _ => None,
     };
 
     // Copy object
-    // TODO: handle error from init (copy to itself)
-    let _ = s3.client
+    s3.client
         .copy_object()
         .copy_source(format!("{AWS_S3_BUCKET}/{key}"))
         .bucket(AWS_S3_BUCKET)
         .key(target)
         .acl(ObjectCannedAcl::PublicRead)
         .send()
-        .await;
+        .await?;
 
     // Update collection/item
     if collection_id == "0a62455f-c39c-4084-bd54-36ee2192d3af" {
@@ -119,7 +110,6 @@ async fn asset_to_item(
 ) -> anyhow::Result<()> {
     // Get item (skip key if no mapping)
     let item_id = match collection_id {
-        "0a62455f-c39c-4084-bd54-36ee2192d3af" => "messwerte-lufttemperatur-10min",
         "e2e5132c-85df-417a-8706-f75068d4937e"
         | "e74c17ea-0822-44db-bef9-f37135a68245"
         | "7880287e-5d4b-4e15-b13f-846df89979a3" => "meteoswiss.radar.precip",

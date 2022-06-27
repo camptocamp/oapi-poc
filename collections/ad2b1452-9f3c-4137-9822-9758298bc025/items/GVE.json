@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Gen\u00e8ve / Cointrin",
         "station_symbol": 1,
-        "altitude": "411",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "411"
     },
     "bbox": [
         6.127751907699121,

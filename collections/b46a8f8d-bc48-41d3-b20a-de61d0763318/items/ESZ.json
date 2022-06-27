@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Eschenz",
         "station_symbol": 2,
-        "altitude": "414",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "414"
     },
     "bbox": [
         8.873922129562256,

@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Brig",
         "station_symbol": 2,
-        "altitude": "665",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "665"
     },
     "bbox": [
         7.9652699275345045,

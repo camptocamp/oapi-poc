@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Winterthur / Seen",
         "station_symbol": 2,
-        "altitude": "506",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "506"
     },
     "bbox": [
         8.763192879850129,

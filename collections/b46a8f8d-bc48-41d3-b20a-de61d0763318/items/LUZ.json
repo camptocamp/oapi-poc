@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Luzern",
         "station_symbol": 1,
-        "altitude": "454",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "454"
     },
     "bbox": [
         8.301026515813577,

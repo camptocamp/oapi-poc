@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Langenbruck",
         "station_symbol": 2,
-        "altitude": "731",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "731"
     },
     "bbox": [
         7.759579198415984,

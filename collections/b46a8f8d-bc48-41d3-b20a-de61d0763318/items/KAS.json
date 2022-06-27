@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Kandersteg",
         "station_symbol": 2,
-        "altitude": "1178",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "1178"
     },
     "bbox": [
         7.677171138599444,

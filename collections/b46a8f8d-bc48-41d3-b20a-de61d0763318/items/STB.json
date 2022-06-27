@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Starkenbach",
         "station_symbol": 2,
-        "altitude": "897",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "897"
     },
     "bbox": [
         9.250451377428552,

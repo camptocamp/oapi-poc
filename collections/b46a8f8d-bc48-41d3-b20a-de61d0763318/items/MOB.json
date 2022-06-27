@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Montagnier, Bagnes",
         "station_symbol": 2,
-        "altitude": "839",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "839"
     },
     "bbox": [
         7.225280747615407,

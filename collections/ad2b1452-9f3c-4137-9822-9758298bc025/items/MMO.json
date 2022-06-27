@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Mormont",
         "station_symbol": 2,
-        "altitude": "535",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "535"
     },
     "bbox": [
         7.037311439546168,

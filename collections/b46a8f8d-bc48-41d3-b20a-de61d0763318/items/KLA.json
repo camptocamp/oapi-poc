@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Klosters",
         "station_symbol": 2,
-        "altitude": "1186",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "1186"
     },
     "bbox": [
         9.889700489203989,

@@ -114,7 +114,7 @@ for feature in file["features"]:
             "id": id,
             "collection": collection,
             "geometry": feature["geometry"],
-            "properties": {**properties, "datetime": "2022-06-08T09:32:38Z"},
+            "properties": properties,
             "bbox": [c for cs in [transformed, transformed] for c in cs],
         }
 

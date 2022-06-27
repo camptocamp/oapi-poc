@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Bern / Zollikofen",
         "station_symbol": 1,
-        "altitude": "553",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "553"
     },
     "bbox": [
         7.464055758866119,

@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Bad Ragaz",
         "station_symbol": 1,
-        "altitude": "497",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "497"
     },
     "bbox": [
         9.502590916721502,

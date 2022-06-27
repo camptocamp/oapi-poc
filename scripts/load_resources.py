@@ -1,3 +1,4 @@
+import collections
 import json
 from pathlib import Path
 import requests
@@ -9,6 +10,17 @@ AUTH = ("user", "password")
 ROOT = "https://poc.meteoschweiz-poc.swisstopo.cloud"
 # ROOT = "http://0.0.0.0:8484"
 
+
+def update(d, u):
+    """Update two dictionaries recursively"""
+    for k, v in u.items():
+        if isinstance(v, collections.abc.Mapping):
+            d[k] = update(d.get(k, {}), v)
+        else:
+            d[k] = v
+    return d
+
+
 # Create or update collections and items
 for path in Path("../collections").glob("*.json"):
     # Create or update collection
@@ -17,9 +29,12 @@ for path in Path("../collections").glob("*.json"):
 
     assert path.stem == collection_id, "Collection `id` must match file name"
 
-    if requests.get(f"{ROOT}/collections/{collection_id}").ok:
+    response = requests.get(f"{ROOT}/collections/{collection_id}")
+    if response.ok:
         requests.put(
-            f"{ROOT}/collections/{collection_id}", auth=AUTH, json=collection
+            f"{ROOT}/collections/{collection_id}",
+            auth=AUTH,
+            json=update(response.json(), collection),
         ).raise_for_status()
     else:
         requests.post(
@@ -35,11 +50,12 @@ for path in Path("../collections").glob("*.json"):
             item["collection"] == collection_id
         ), "Item `collection` must match folder name"
 
-        if requests.get(f"{ROOT}/collections/{collection_id}/items/{item_id}").ok:
+        response = requests.get(f"{ROOT}/collections/{collection_id}/items/{item_id}")
+        if response.ok:
             requests.put(
                 f"{ROOT}/collections/{collection_id}/items/{item['id']}",
                 auth=AUTH,
-                json=item,
+                json=update(response.json(), item),
             )
         else:
             requests.post(

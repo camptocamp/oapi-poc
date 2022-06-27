@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Gr\u00e4chen",
         "station_symbol": 1,
-        "altitude": "1605",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "1605"
     },
     "bbox": [
         7.836820277140952,

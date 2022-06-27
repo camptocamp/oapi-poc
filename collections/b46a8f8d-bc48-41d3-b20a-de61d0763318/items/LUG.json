@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Lugano",
         "station_symbol": 1,
-        "altitude": "273",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "273"
     },
     "bbox": [
         8.960317362611917,

@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Biasca",
         "station_symbol": 2,
-        "altitude": "278",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "278"
     },
     "bbox": [
         8.978197938258349,

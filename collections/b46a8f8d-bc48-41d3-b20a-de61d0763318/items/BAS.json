@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Basel / Binningen",
         "station_symbol": 1,
-        "altitude": "316",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "316"
     },
     "bbox": [
         7.583516440150709,

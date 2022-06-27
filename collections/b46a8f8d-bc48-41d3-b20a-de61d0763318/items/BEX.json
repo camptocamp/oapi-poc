@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Bex",
         "station_symbol": 2,
-        "altitude": "402",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "402"
     },
     "bbox": [
         6.9952903681888845,

@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Grimsel Hospiz",
         "station_symbol": 1,
-        "altitude": "1980",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "1980"
     },
     "bbox": [
         8.333251588164636,

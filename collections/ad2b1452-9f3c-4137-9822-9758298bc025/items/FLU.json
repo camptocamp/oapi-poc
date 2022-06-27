@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "Fl\u00fchli, LU",
         "station_symbol": 2,
-        "altitude": "940",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "940"
     },
     "bbox": [
         8.020334581085319,

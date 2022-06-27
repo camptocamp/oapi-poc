@@ -11,8 +11,7 @@
     "properties": {
         "station_name": "S. Bernardino",
         "station_symbol": 1,
-        "altitude": "1639",
-        "datetime": "2022-06-08T09:32:38Z"
+        "altitude": "1639"
     },
     "bbox": [
         9.184696116512734,
