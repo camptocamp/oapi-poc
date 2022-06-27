@@ -75,14 +75,15 @@ async fn ingest(key: &str, db: &Db, s3: &S3) -> anyhow::Result<()> {
     };
 
     // Copy object
-    s3.client
+    // TODO: handle error from init (copy to itself)
+    let _ = s3.client
         .copy_object()
         .copy_source(format!("{AWS_S3_BUCKET}/{key}"))
         .bucket(AWS_S3_BUCKET)
         .key(target)
         .acl(ObjectCannedAcl::PublicRead)
         .send()
-        .await?;
+        .await;
 
     // Update collection/item
     if collection_id == "0a62455f-c39c-4084-bd54-36ee2192d3af" {
