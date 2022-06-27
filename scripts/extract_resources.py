@@ -13,7 +13,7 @@ NS = {
 # Extract collection info from metadata
 def collection_from_geocat(uuid):
     r = requests.get(
-        f"https://www.geocat.ch/geonetwork/srv/ger/xml.metadata.get?uuid={uuid}"
+        f"https://www.geocat.ch/geonetwork/srv/eng/xml.metadata.get?uuid={uuid}"
     )
 
     root = ET.fromstring(r.text)
@@ -67,6 +67,8 @@ uuids = [
     "ad2b1452-9f3c-4137-9822-9758298bc025",
     "4ccc5153-cc27-47b8-abee-9d6e12e19701",
     "e2e5132c-85df-417a-8706-f75068d4937e",
+    "e74c17ea-0822-44db-bef9-f37135a68245",
+    "7880287e-5d4b-4e15-b13f-846df89979a3",
     "a6296aa9-d183-45c3-90fc-f03ec7d637be",
     "0a3b0af5-bbb4-4dde-bcff-adb27b932d77",
     "35ff8133-364a-47eb-a145-0d641b706bff",

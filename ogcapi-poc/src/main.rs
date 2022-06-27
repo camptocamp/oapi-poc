@@ -30,8 +30,8 @@ async fn main() -> anyhow::Result<()> {
     // landing page
     let root = LandingPage::new("root")
         .title("PoC MeteoSchweiz")
-        .description(include_str!("../../README.md"))
-        .links(vec![Link::new("collections/test-child", CHILD)]);
+        .description(include_str!("../../README.md"));
+    // .links(vec![Link::new("collections/test-child", CHILD)]);
 
     // application state
     let state = State::new_from(&config)

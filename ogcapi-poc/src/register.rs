@@ -13,6 +13,7 @@ use ogcapi_types::{
 use crate::{AWS_S3_BUCKET, AWS_S3_BUCKET_BASE};
 
 static PREFIX: &str = "mhs-upload";
+static mut INIT: bool = true;
 
 pub(crate) async fn run() -> anyhow::Result<()> {
     // Setup drivers
@@ -20,12 +21,19 @@ pub(crate) async fn run() -> anyhow::Result<()> {
     let s3 = S3::new().await;
 
     // List new uploads
-    let resp = s3.list_objects(AWS_S3_BUCKET, Some(PREFIX)).await?;
+    let resp = unsafe {
+        if INIT {
+            INIT = false; // requires unsafe for concurent mutability
+            s3.list_objects(AWS_S3_BUCKET, Some("")).await?
+        } else {
+            s3.list_objects(AWS_S3_BUCKET, Some(PREFIX)).await?
+        }
+    };
 
     for object in resp.contents().unwrap_or_default() {
         // Source key
         let key = object.key().unwrap_or_default();
-        if key.ends_with('/') || key.is_empty() {
+        if key.is_empty() || key.ends_with('/') || key.contains("/.") {
             continue;
         }
 
@@ -111,7 +119,9 @@ async fn asset_to_item(
     // Get item (skip key if no mapping)
     let item_id = match collection_id {
         "0a62455f-c39c-4084-bd54-36ee2192d3af" => "messwerte-lufttemperatur-10min",
-        "e2e5132c-85df-417a-8706-f75068d4937e" => "meteoswiss.radar.precip",
+        "e2e5132c-85df-417a-8706-f75068d4937e"
+        | "e74c17ea-0822-44db-bef9-f37135a68245"
+        | "7880287e-5d4b-4e15-b13f-846df89979a3" => "meteoswiss.radar.precip",
         _ => return Ok(()),
     };
     let mut item = db

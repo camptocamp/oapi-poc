@@ -29,7 +29,7 @@ with path.open("rb") as file:
                 "mediaType": "application/pdf",
             },
             "key": f"mhs-upload/0a62455f-c39c-4084-bd54-36ee2192d3af/{path.name}",
-            "id": f"{path.stem}",
+            "id": f"{path.name}",
             "collection": "0a62455f-c39c-4084-bd54-36ee2192d3af",
             "item": {
                 # "value": {
