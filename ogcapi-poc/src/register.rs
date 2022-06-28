@@ -6,11 +6,14 @@ use serde_json::{json, Map, Value};
 
 use ogcapi_drivers::{postgres::Db, s3::S3, CollectionTransactions, FeatureTransactions};
 use ogcapi_types::{
-    common::{media_type::JSON, Crs},
+    common::{
+        media_type::{GEO_JSON, JSON},
+        Crs,
+    },
     stac::Asset,
 };
 
-use crate::{AWS_S3_BUCKET, AWS_S3_BUCKET_BASE};
+use crate::{AWS_S3_BUCKET, AWS_S3_BUCKET_BASE, ROOT};
 
 static PREFIX: &str = "mhs-upload";
 
@@ -49,10 +52,7 @@ async fn ingest(key: &str, db: &Db, s3: &S3) -> anyhow::Result<()> {
     // Asset id (defaults to file name)
     let p = Path::new(target);
 
-    let asset_id = match collection_id {
-        "e2e5132c-85df-417a-8706-f75068d4937e" => "meteoswiss.radar.precip",
-        _ => p.file_name().unwrap_or_default().to_str().unwrap(),
-    };
+    let asset_id = p.file_name().unwrap_or_default().to_str().unwrap();
 
     // Create asset
     let mut asset = Asset::new(format!("{AWS_S3_BUCKET_BASE}/{target}"));
@@ -63,6 +63,7 @@ async fn ingest(key: &str, db: &Db, s3: &S3) -> anyhow::Result<()> {
         Some("csv") => Some("text/csv".to_string()),
         Some("h5") => Some("application/x-hdf5".to_string()),
         Some("nc") => Some("application/netcdf".to_string()),
+        Some("tiff") => Some("image/tiff".to_string()),
         _ => None,
     };
 
@@ -88,16 +89,6 @@ async fn ingest(key: &str, db: &Db, s3: &S3) -> anyhow::Result<()> {
 
     // Cleanup
     s3.delete_object(AWS_S3_BUCKET, key).await?;
-    if collection_id == "e2e5132c-85df-417a-8706-f75068d4937e" {
-        let resp = s3.list_objects(AWS_S3_BUCKET, Some(collection_id)).await?;
-
-        for object in resp.contents().unwrap_or_default() {
-            let key = object.key().unwrap_or_default();
-            if key != target {
-                s3.delete_object(AWS_S3_BUCKET, key).await?;
-            }
-        }
-    }
 
     Ok(())
 }
@@ -194,16 +185,24 @@ async fn load_items_from_object(
                     properties.insert("datetime".to_string(), datetime);
                 }
 
+                let mut assets = std::collections::HashMap::new();
+                let asset = Asset::new(format!("{ROOT}/collections/{collection_id}/items/{id}"))
+                    .media_type(GEO_JSON)
+                    .roles(&["data"]);
+                assets.insert(id.to_string(), asset);
+
                 sqlx::query(&format!(
                     r#"
                     INSERT INTO items."{}" (
                         id,
                         properties,
-                        geom
+                        geom,
+                        assets
                     ) VALUES (
                         $1,
                         $2,
-                        ST_Transform(ST_SetSRID(ST_GeomFromGeoJSON($3), 2056), 4326)
+                        ST_Transform(ST_SetSRID(ST_GeomFromGeoJSON($3), 2056), 4326),
+                        $4
                     )
                     "#,
                     collection_id
@@ -211,6 +210,7 @@ async fn load_items_from_object(
                 .bind(id)
                 .bind(Value::from(feature.properties.take().unwrap()))
                 .bind(feature.geometry.take().unwrap().value.to_string())
+                .bind(sqlx::types::Json(assets))
                 .execute(&mut tx)
                 .await?;
             }

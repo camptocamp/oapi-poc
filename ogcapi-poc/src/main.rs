@@ -10,6 +10,7 @@ use ogcapi_types::common::{link_rel::CHILD, LandingPage, Link};
 
 use crate::{auth::Auth, loader::AssetLoader};
 
+pub static ROOT: &str = "https://poc.meteoschweiz-poc.swisstopo.cloud";
 pub static AWS_S3_BUCKET: &str = "met-oapi-poc";
 pub static AWS_S3_BUCKET_BASE: &str = "http://met-oapi-poc.s3.amazonaws.com";
 // pub static AWS_S3_BUCKET_BASE: &str = "http://localhost:9000/met-oapi-poc";

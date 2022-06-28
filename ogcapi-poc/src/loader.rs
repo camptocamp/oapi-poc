@@ -234,8 +234,8 @@ impl Processor for AssetLoader {
                             &item.id.clone().unwrap_or_default(),
                             &Crs::default(),
                         )
-                        .await
-                        .is_ok()
+                        .await?
+                        .is_some()
                     {
                         state.drivers.features.update_feature(&item).await?;
                         item.id.unwrap()
