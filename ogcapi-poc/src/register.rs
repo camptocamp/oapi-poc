@@ -119,10 +119,14 @@ async fn asset_to_item(
         "b46a8f8d-bc48-41d3-b20a-de61d0763318" => asset_id.split('_').nth(1).unwrap(),
         _ => bail!("no mapping for collection `{collection_id}`"),
     };
-    let mut item = db
+
+    let mut item = match db
         .read_feature(collection_id, item_id, &Crs::default())
         .await?
-        .expect("existing feature");
+    {
+        Some(feature) => feature,
+        None => bail!("expected existing feature `{item_id}` in collection `{collection_id}`"),
+    };
 
     // Add/update datetime
     let mut map = Map::new();
