@@ -1,7 +1,9 @@
 use std::path::Path;
 
+use anyhow::bail;
 use aws_sdk_s3::model::ObjectCannedAcl;
-use chrono::{SecondsFormat, Utc};
+use aws_smithy_types_convert::date_time::DateTimeExt;
+use chrono::{DateTime, SecondsFormat, Utc};
 use serde_json::{json, Map, Value};
 
 use ogcapi_drivers::{postgres::Db, s3::S3, CollectionTransactions, FeatureTransactions};
@@ -15,80 +17,88 @@ use ogcapi_types::{
 
 use crate::{AWS_S3_BUCKET, AWS_S3_BUCKET_BASE, ROOT};
 
-static PREFIX: &str = "mhs-upload";
-
-pub(crate) async fn run() -> anyhow::Result<()> {
+pub(crate) async fn run(prefix: &str) -> anyhow::Result<()> {
     // Setup drivers
     let db = Db::new().await?;
     let s3 = S3::new().await;
 
     // List new uploads
-    let resp = s3.list_objects(AWS_S3_BUCKET, Some(PREFIX)).await?;
+    let resp = s3.list_objects(AWS_S3_BUCKET, Some(prefix)).await?;
 
+    // Register assets
     for object in resp.contents().unwrap_or_default() {
         // Source key
         let key = object.key().unwrap_or_default();
-        if key.is_empty() || key.ends_with('/') || key.contains("/.") {
+        if key.is_empty()
+            || key.ends_with('/')
+            || key.contains("/.")
+            || (prefix.is_empty() && key.starts_with("mhs-upload"))
+        {
             continue;
         }
 
-        // Register asset
-        match ingest(key, &db, &s3).await {
-            Ok(_) => {}
-            Err(e) => tracing::error!("Failed registering `{key}`: {}", e),
+        // Target key
+        let target = key.trim_start_matches(prefix).trim_start_matches('/');
+
+        // Collection id (uuid)
+        let collection_id = target.split('/').next().unwrap_or_default();
+
+        // Asset id (defaults to file name)
+        let asset_id = Path::new(target)
+            .file_name()
+            .unwrap_or_default()
+            .to_str()
+            .unwrap();
+
+        // Create asset
+        let mut asset = Asset::new(format!("{AWS_S3_BUCKET_BASE}/{target}"));
+        asset.roles = vec!["data".to_string()];
+        asset.r#type = match target.split('.').last() {
+            Some("json") => Some(JSON.to_string()),
+            Some("csv") => Some("text/csv".to_string()),
+            Some("h5") => Some("application/x-hdf5".to_string()),
+            Some("nc") => Some("application/netcdf".to_string()),
+            Some("tiff") => Some("image/tiff".to_string()),
+            _ => None,
+        };
+
+        // Last modified
+        let datetime = object.last_modified.unwrap().to_chrono_utc();
+
+        // Copy object
+        if key != target {
+            s3.client
+                .copy_object()
+                .copy_source(format!("{AWS_S3_BUCKET}/{key}"))
+                .bucket(AWS_S3_BUCKET)
+                .key(target)
+                .acl(ObjectCannedAcl::PublicRead)
+                .send()
+                .await?;
+        }
+
+        // Update collection/item
+        let result = if collection_id == "0a62455f-c39c-4084-bd54-36ee2192d3af" {
+            if key.ends_with("ch.meteoschweiz.messwerte-lufttemperatur-10min_en.json") {
+                load_items_from_object(key, collection_id, &db, &s3).await?;
+            }
+            asset_to_collection(collection_id, asset_id, asset, &db).await
+        } else {
+            asset_to_item(collection_id, asset_id, asset, &datetime, &db).await
+        };
+
+        // Cleanup
+        match result {
+            Ok(_) => {
+                if !prefix.is_empty() {
+                    s3.delete_object(AWS_S3_BUCKET, key).await?;
+                }
+            }
+            Err(e) => {
+                tracing::error!("failed to load asset: {}", e);
+            }
         }
     }
-
-    Ok(())
-}
-
-async fn ingest(key: &str, db: &Db, s3: &S3) -> anyhow::Result<()> {
-    // Target key
-    let target = key.trim_start_matches(PREFIX).trim_start_matches('/');
-
-    // Collection id (uuid)
-    let collection_id = target.split('/').next().unwrap_or_default();
-
-    // Asset id (defaults to file name)
-    let p = Path::new(target);
-
-    let asset_id = p.file_name().unwrap_or_default().to_str().unwrap();
-
-    // Create asset
-    let mut asset = Asset::new(format!("{AWS_S3_BUCKET_BASE}/{target}"));
-
-    asset.roles = vec!["data".to_string()];
-    asset.r#type = match p.extension().unwrap_or_default().to_str() {
-        Some("json") => Some(JSON.to_string()),
-        Some("csv") => Some("text/csv".to_string()),
-        Some("h5") => Some("application/x-hdf5".to_string()),
-        Some("nc") => Some("application/netcdf".to_string()),
-        Some("tiff") => Some("image/tiff".to_string()),
-        _ => None,
-    };
-
-    // Copy object
-    s3.client
-        .copy_object()
-        .copy_source(format!("{AWS_S3_BUCKET}/{key}"))
-        .bucket(AWS_S3_BUCKET)
-        .key(target)
-        .acl(ObjectCannedAcl::PublicRead)
-        .send()
-        .await?;
-
-    // Update collection/item
-    if collection_id == "0a62455f-c39c-4084-bd54-36ee2192d3af" {
-        asset_to_collection(collection_id, asset_id, asset, db).await?;
-        if key.ends_with("ch.meteoschweiz.messwerte-lufttemperatur-10min_en.json") {
-            load_items_from_object(key, collection_id, db, s3).await?;
-        }
-    } else {
-        asset_to_item(collection_id, asset_id, asset, db).await?;
-    }
-
-    // Cleanup
-    s3.delete_object(AWS_S3_BUCKET, key).await?;
 
     Ok(())
 }
@@ -97,6 +107,7 @@ async fn asset_to_item(
     collection_id: &str,
     asset_id: &str,
     asset: Asset,
+    datetime: &DateTime<Utc>,
     db: &Db,
 ) -> anyhow::Result<()> {
     // Get item (skip key if no mapping)
@@ -104,7 +115,9 @@ async fn asset_to_item(
         "e2e5132c-85df-417a-8706-f75068d4937e"
         | "e74c17ea-0822-44db-bef9-f37135a68245"
         | "7880287e-5d4b-4e15-b13f-846df89979a3" => "meteoswiss.radar.precip",
-        _ => return Ok(()),
+        "ed6a30c9-672e-4d8f-95e4-8c5bef8ab417" => "klimanormwerte.temperatur.1961-1990",
+        "b46a8f8d-bc48-41d3-b20a-de61d0763318" => asset_id.split('_').nth(1).unwrap(),
+        _ => bail!("no mapping for collection `{collection_id}`"),
     };
     let mut item = db
         .read_feature(collection_id, item_id, &Crs::default())
@@ -112,9 +125,11 @@ async fn asset_to_item(
         .expect("existing feature");
 
     // Add/update datetime
-    let datetime = Utc::now().to_rfc3339_opts(SecondsFormat::Secs, true);
     let mut map = Map::new();
-    map.insert("datetime".to_string(), json!(datetime));
+    map.insert(
+        "datetime".to_string(),
+        json!(datetime.to_rfc3339_opts(SecondsFormat::Secs, true)),
+    );
     item.append_properties(map);
 
     // Add/update asset

@@ -1,0 +1,40 @@
+{
+    "id": "klimanormwerte.temperatur.1961-1990",
+    "collection": "ed6a30c9-672e-4d8f-95e4-8c5bef8ab417",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    5.96,
+                    45.82
+                ],
+                [
+                    10.49,
+                    45.82
+                ],
+                [
+                    10.49,
+                    47.81
+                ],
+                [
+                    5.96,
+                    47.81
+                ],
+                [
+                    5.96,
+                    45.82
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        5.96,
+        45.82,
+        10.49,
+        47.81
+    ],
+    "properties": {
+        "datetime": "2022-06-08T09:32:38Z"
+    }
+}
