@@ -1,0 +1,22 @@
+{
+    "id": "MAR",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.01659722222222,
+            46.1189027777778
+        ]
+    },
+    "properties": {
+        "station_name": "Les Marécottes",
+        "nat_abbr": "MAR",
+        "wigos_id": "0-20000-0-06614"
+    },
+    "bbox": [
+        7.01659722222222,
+        46.1189027777778,
+        7.01659722222222,
+        46.1189027777778
+    ]
+}

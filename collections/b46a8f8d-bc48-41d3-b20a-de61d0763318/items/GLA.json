@@ -1,0 +1,22 @@
+{
+    "id": "GLA",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.0669,
+            47.0345833333333
+        ]
+    },
+    "properties": {
+        "station_name": "Glarus",
+        "nat_abbr": "GLA",
+        "wigos_id": "0-20000-0-06685"
+    },
+    "bbox": [
+        9.0669,
+        47.0345833333333,
+        9.0669,
+        47.0345833333333
+    ]
+}

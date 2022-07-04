@@ -1,0 +1,22 @@
+{
+    "id": "MVE",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.46076944444444,
+            46.2987416666667
+        ]
+    },
+    "properties": {
+        "station_name": "Montana",
+        "nat_abbr": "MVE",
+        "wigos_id": "0-20000-0-06724"
+    },
+    "bbox": [
+        7.46076944444444,
+        46.2987416666667,
+        7.46076944444444,
+        46.2987416666667
+    ]
+}

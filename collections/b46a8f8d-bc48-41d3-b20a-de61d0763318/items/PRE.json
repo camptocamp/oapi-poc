@@ -1,0 +1,22 @@
+{
+    "id": "PRE",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.443,
+            46.4836833333333
+        ]
+    },
+    "properties": {
+        "station_name": "St-Prex",
+        "nat_abbr": "PRE",
+        "wigos_id": "0-20000-0-06706"
+    },
+    "bbox": [
+        6.443,
+        46.4836833333333,
+        6.443,
+        46.4836833333333
+    ]
+}

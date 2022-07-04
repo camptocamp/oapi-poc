@@ -1,0 +1,22 @@
+{
+    "id": "VAB",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.55443333333333,
+            46.7550388888889
+        ]
+    },
+    "properties": {
+        "station_name": "Valbella",
+        "nat_abbr": "VAB",
+        "wigos_id": "0-20000-0-06793"
+    },
+    "bbox": [
+        9.55443333333333,
+        46.7550388888889,
+        9.55443333333333,
+        46.7550388888889
+    ]
+}

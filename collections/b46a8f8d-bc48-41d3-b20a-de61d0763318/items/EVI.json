@@ -1,0 +1,22 @@
+{
+    "id": "EVI",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.02674722222222,
+            46.1829527777778
+        ]
+    },
+    "properties": {
+        "station_name": "Evionnaz",
+        "nat_abbr": "EVI",
+        "wigos_id": "0-20000-0-06715"
+    },
+    "bbox": [
+        7.02674722222222,
+        46.1829527777778,
+        7.02674722222222,
+        46.1829527777778
+    ]
+}

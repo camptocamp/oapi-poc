@@ -10,12 +10,12 @@ use ogcapi_drivers::{postgres::Db, s3::S3, CollectionTransactions, FeatureTransa
 use ogcapi_types::{
     common::{
         media_type::{GEO_JSON, JSON},
-        Crs,
+        Crs, Datetime,
     },
     stac::Asset,
 };
 
-use crate::{AWS_S3_BUCKET, AWS_S3_BUCKET_BASE, ROOT};
+use crate::{observation::Observation, AWS_S3_BUCKET, AWS_S3_BUCKET_BASE, ROOT};
 
 pub(crate) async fn run(prefix: &str) -> anyhow::Result<()> {
     // Setup drivers
@@ -78,13 +78,16 @@ pub(crate) async fn run(prefix: &str) -> anyhow::Result<()> {
         }
 
         // Update collection/item
-        let result = if collection_id == "0a62455f-c39c-4084-bd54-36ee2192d3af" {
-            if key.ends_with("ch.meteoschweiz.messwerte-lufttemperatur-10min_en.json") {
-                load_items_from_object(key, collection_id, &db, &s3).await?;
+        let result = match collection_id {
+            "0a62455f-c39c-4084-bd54-36ee2192d3af" | "ad2b1452-9f3c-4137-9822-9758298bc025" => {
+                if key.ends_with("ch.meteoschweiz.messwerte-lufttemperatur-10min_en.json")
+                    || key.ends_with("observations-hourly.csv")
+                {
+                    load_items_from_object(key, collection_id, &db, &s3).await?;
+                }
+                asset_to_collection(collection_id, asset_id, asset, &db).await
             }
-            asset_to_collection(collection_id, asset_id, asset, &db).await
-        } else {
-            asset_to_item(collection_id, asset_id, asset, &datetime, &db).await
+            _ => asset_to_item(collection_id, asset_id, asset, &datetime, &db).await,
         };
 
         // Cleanup
@@ -117,6 +120,7 @@ async fn asset_to_item(
         | "7880287e-5d4b-4e15-b13f-846df89979a3" => "meteoswiss.radar.precip",
         "ed6a30c9-672e-4d8f-95e4-8c5bef8ab417" => "klimanormwerte.temperatur.1961-1990",
         "b46a8f8d-bc48-41d3-b20a-de61d0763318" => asset_id.split('_').nth(1).unwrap(),
+        "4ccc5153-cc27-47b8-abee-9d6e12e19701" => &asset_id.split('_').last().unwrap()[..8],
         _ => bail!("no mapping for collection `{collection_id}`"),
     };
 
@@ -125,7 +129,34 @@ async fn asset_to_item(
         .await?
     {
         Some(feature) => feature,
-        None => bail!("expected existing feature `{item_id}` in collection `{collection_id}`"),
+        None => {
+            if collection_id == "4ccc5153-cc27-47b8-abee-9d6e12e19701" {
+                let feature = serde_json::from_value(json!(
+                    {
+                        "id": item_id,
+                        "collection": collection_id,
+                        "geometry": {
+                            "type": "Polygon",
+                            "coordinates": [[
+                                [5.96, 45.82],
+                                [10.49,45.82],
+                                [10.49,47.81],
+                                [5.96,47.81],
+                                [5.96,45.82]
+                            ]]
+                        },
+                        "bbox": [5.96, 45.82, 10.49, 47.81],
+                        "properties": {}
+                    }
+                ))
+                .unwrap();
+
+                db.create_feature(&feature).await?;
+                feature
+            } else {
+                bail!("expected existing feature `{item_id}` in collection `{collection_id}`")
+            }
+        }
     };
 
     // Add/update datetime
@@ -155,15 +186,13 @@ async fn asset_to_collection(
     let mut collection = db
         .read_collection(collection_id)
         .await?
-        .expect("existing collection");
+        .unwrap_or_else(|| panic!("missing collection `{collection_id}`"));
 
     // Add/update asset
     collection.assets.insert(asset_id.to_string(), asset);
 
     // Write ollection
-    db.update_collection(&collection).await?;
-
-    Ok(())
+    db.update_collection(&collection).await
 }
 
 async fn load_items_from_object(
@@ -172,72 +201,89 @@ async fn load_items_from_object(
     db: &Db,
     s3: &S3,
 ) -> anyhow::Result<()> {
-    // Load data
+    // Extract features
     let resp = s3.get_object(AWS_S3_BUCKET, key).await?;
     let data = resp.body.collect().await?.into_bytes();
-    let geojson_str = std::str::from_utf8(&data)?;
-    let geojson = geojson_str.parse::<geojson::GeoJson>()?;
 
-    match geojson {
-        geojson::GeoJson::FeatureCollection(mut fc) => {
-            let mut tx = db.pool.begin().await?;
+    let mut features = if key.ends_with("json") {
+        let value = serde_json::from_slice(&data)?;
+        let fc = geojson::FeatureCollection::from_json_value(value)?;
+        fc.features
+    } else {
+        let mut rdr = csv::ReaderBuilder::new()
+            .delimiter(b';')
+            .from_reader(&*data);
 
-            sqlx::query(&format!(r#"TRUNCATE TABLE items."{}""#, collection_id))
-                .execute(&mut tx)
-                .await?;
-
-            for (i, feature) in fc.features.iter_mut().enumerate() {
-                let id = if let Some(id) = &feature.id {
-                    match id {
-                        geojson::feature::Id::String(id) => id.to_owned(),
-                        geojson::feature::Id::Number(id) => id.to_string(),
-                    }
-                } else {
-                    i.to_string()
-                };
-
-                if let Some(properties) = feature.properties.as_mut() {
-                    properties.remove("description");
-                    let datetime = properties.get("reference_ts").cloned().unwrap_or_else(|| {
-                        json!(Utc::now().to_rfc3339_opts(SecondsFormat::Secs, true))
-                    });
-                    properties.insert("datetime".to_string(), datetime);
-                }
-
-                let mut assets = std::collections::HashMap::new();
-                let asset = Asset::new(format!("{ROOT}/collections/{collection_id}/items/{id}"))
-                    .media_type(GEO_JSON)
-                    .roles(&["data"]);
-                assets.insert(id.to_string(), asset);
-
-                sqlx::query(&format!(
-                    r#"
-                    INSERT INTO items."{}" (
-                        id,
-                        properties,
-                        geom,
-                        assets
-                    ) VALUES (
-                        $1,
-                        $2,
-                        ST_Transform(ST_SetSRID(ST_GeomFromGeoJSON($3), 2056), 4326),
-                        $4
-                    )
-                    "#,
-                    collection_id
-                ))
-                .bind(id)
-                .bind(Value::from(feature.properties.take().unwrap()))
-                .bind(feature.geometry.take().unwrap().value.to_string())
-                .bind(sqlx::types::Json(assets))
-                .execute(&mut tx)
-                .await?;
-            }
-
-            tx.commit().await?;
+        let mut features = Vec::new();
+        for result in rdr.deserialize() {
+            // Notice that we need to provide a type hint for automatic
+            // deserialization.
+            let record: Observation = result?;
+            features.push(record.to_feature());
         }
-        _ => unimplemented!(),
+        features
+    };
+
+    // Load features
+    let mut tx = db.pool.begin().await?;
+
+    sqlx::query(&format!(r#"TRUNCATE TABLE items."{}""#, collection_id))
+        .execute(&mut tx)
+        .await?;
+
+    for (i, feature) in features.iter_mut().enumerate() {
+        // id
+        let id = if let Some(id) = &feature.id {
+            match id {
+                geojson::feature::Id::String(id) => id.to_owned(),
+                geojson::feature::Id::Number(id) => id.to_string(),
+            }
+        } else {
+            i.to_string()
+        };
+
+        // properties
+        if let Some(properties) = feature.properties.as_mut() {
+            properties.remove("description");
+            if let Some(value) = properties.get("reference_ts") {
+                if let Ok(datetime) = serde_json::from_value::<Datetime>(value.to_owned()) {
+                    properties.insert("datetime".to_string(), json!(datetime.to_string()));
+                }
+            }
+        }
+
+        // assets
+        let mut assets = std::collections::HashMap::new();
+        let asset = Asset::new(format!("{ROOT}/collections/{collection_id}/items/{id}"))
+            .media_type(GEO_JSON)
+            .roles(&["data"]);
+        assets.insert(id.to_owned(), asset);
+
+        sqlx::query(&format!(
+            r#"
+            INSERT INTO items."{}" (
+                id,
+                properties,
+                geom,
+                assets
+            ) VALUES (
+                $1,
+                $2,
+                ST_Transform(ST_SetSRID(ST_GeomFromGeoJSON($3), 2056), 4326),
+                $4
+            )
+            "#,
+            collection_id
+        ))
+        .bind(id)
+        .bind(Value::from(feature.properties.take().unwrap()))
+        .bind(feature.geometry.take().unwrap().value.to_string())
+        .bind(sqlx::types::Json(assets))
+        .execute(&mut tx)
+        .await?;
     }
+
+    tx.commit().await?;
 
     Ok(())
 }

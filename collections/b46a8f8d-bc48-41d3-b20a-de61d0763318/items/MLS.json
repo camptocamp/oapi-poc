@@ -1,0 +1,22 @@
+{
+    "id": "MLS",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.01782222222222,
+            46.5461722222222
+        ]
+    },
+    "properties": {
+        "station_name": "Le Moléson",
+        "nat_abbr": "MLS",
+        "wigos_id": "0-20000-0-06609"
+    },
+    "bbox": [
+        7.01782222222222,
+        46.5461722222222,
+        7.01782222222222,
+        46.5461722222222
+    ]
+}

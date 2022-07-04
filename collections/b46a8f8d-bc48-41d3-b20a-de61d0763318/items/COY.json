@@ -1,0 +1,22 @@
+{
+    "id": "COY",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.09063333333333,
+            47.1808611111111
+        ]
+    },
+    "properties": {
+        "station_name": "Courtelary",
+        "nat_abbr": "COY",
+        "wigos_id": "0-20000-0-06710"
+    },
+    "bbox": [
+        7.09063333333333,
+        47.1808611111111,
+        7.09063333333333,
+        47.1808611111111
+    ]
+}

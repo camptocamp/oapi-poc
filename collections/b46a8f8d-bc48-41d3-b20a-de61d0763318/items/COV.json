@@ -1,0 +1,22 @@
+{
+    "id": "COV",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.82131944444444,
+            46.4180305555555
+        ]
+    },
+    "properties": {
+        "station_name": "Piz Corvatsch",
+        "nat_abbr": "COV",
+        "wigos_id": "0-20000-0-06791"
+    },
+    "bbox": [
+        9.82131944444444,
+        46.4180305555555,
+        9.82131944444444,
+        46.4180305555555
+    ]
+}

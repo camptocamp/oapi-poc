@@ -10,7 +10,6 @@ AUTH = ("user", "password")
 ROOT = "https://poc.meteoschweiz-poc.swisstopo.cloud"
 # ROOT = "http://0.0.0.0:8484"
 
-
 def update(d, u):
     """Update two dictionaries recursively"""
     for k, v in u.items():

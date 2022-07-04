@@ -1,0 +1,22 @@
+{
+    "id": "BIZ",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.26689166666667,
+            47.5087972222222
+        ]
+    },
+    "properties": {
+        "station_name": "Bischofszell / Sitterdorf",
+        "nat_abbr": "BIZ",
+        "wigos_id": "0-20000-0-06678"
+    },
+    "bbox": [
+        9.26689166666667,
+        47.5087972222222,
+        9.26689166666667,
+        47.5087972222222
+    ]
+}

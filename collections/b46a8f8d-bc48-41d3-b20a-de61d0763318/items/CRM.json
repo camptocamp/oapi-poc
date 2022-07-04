@@ -1,0 +1,22 @@
+{
+    "id": "CRM",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.05911111111111,
+            47.0476055555555
+        ]
+    },
+    "properties": {
+        "station_name": "Cressier",
+        "nat_abbr": "CRM",
+        "wigos_id": "0-20000-0-06606"
+    },
+    "bbox": [
+        7.05911111111111,
+        47.0476055555555,
+        7.05911111111111,
+        47.0476055555555
+    ]
+}

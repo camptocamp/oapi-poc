@@ -1,0 +1,22 @@
+{
+    "id": "GES",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.52338611111111,
+            46.9960777777778
+        ]
+    },
+    "properties": {
+        "station_name": "Gersau",
+        "nat_abbr": "GES",
+        "wigos_id": "0-20000-0-06653"
+    },
+    "bbox": [
+        8.52338611111111,
+        46.9960777777778,
+        8.52338611111111,
+        46.9960777777778
+    ]
+}

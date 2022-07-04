@@ -1,0 +1,22 @@
+{
+    "id": "PLF",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.26599722222222,
+            46.7476555555555
+        ]
+    },
+    "properties": {
+        "station_name": "Plaffeien",
+        "nat_abbr": "PLF",
+        "wigos_id": "0-20000-0-06628"
+    },
+    "bbox": [
+        7.26599722222222,
+        46.7476555555555,
+        7.26599722222222,
+        46.7476555555555
+    ]
+}

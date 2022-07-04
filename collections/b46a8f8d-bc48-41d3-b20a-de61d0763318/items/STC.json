@@ -1,0 +1,22 @@
+{
+    "id": "STC",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.68709444444444,
+            47.5717666666667
+        ]
+    },
+    "properties": {
+        "station_name": "St. Chrischona",
+        "nat_abbr": "STC",
+        "wigos_id": "0-20000-0-06600"
+    },
+    "bbox": [
+        7.68709444444444,
+        47.5717666666667,
+        7.68709444444444,
+        47.5717666666667
+    ]
+}

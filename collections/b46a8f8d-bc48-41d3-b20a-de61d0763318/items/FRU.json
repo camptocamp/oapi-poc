@@ -1,0 +1,22 @@
+{
+    "id": "FRU",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.65754166666667,
+            46.5990027777778
+        ]
+    },
+    "properties": {
+        "station_name": "Frutigen",
+        "nat_abbr": "FRU",
+        "wigos_id": "0-20000-0-06613"
+    },
+    "bbox": [
+        7.65754166666667,
+        46.5990027777778,
+        7.65754166666667,
+        46.5990027777778
+    ]
+}

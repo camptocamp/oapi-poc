@@ -1,0 +1,22 @@
+{
+    "id": "WAE",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.67697222222222,
+            47.2217944444444
+        ]
+    },
+    "properties": {
+        "station_name": "Wädenswil",
+        "nat_abbr": "WAE",
+        "wigos_id": "0-20000-0-06673"
+    },
+    "bbox": [
+        8.67697222222222,
+        47.2217944444444,
+        8.67697222222222,
+        47.2217944444444
+    ]
+}

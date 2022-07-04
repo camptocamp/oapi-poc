@@ -1,0 +1,22 @@
+{
+    "id": "SIM",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.05541666666667,
+            46.1969388888889
+        ]
+    },
+    "properties": {
+        "station_name": "Simplon-Dorf",
+        "nat_abbr": "SIM",
+        "wigos_id": "0-20000-0-06654"
+    },
+    "bbox": [
+        8.05541666666667,
+        46.1969388888889,
+        8.05541666666667,
+        46.1969388888889
+    ]
+}

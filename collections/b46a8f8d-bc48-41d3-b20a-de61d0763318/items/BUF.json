@@ -1,0 +1,22 @@
+{
+    "id": "BUF",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            10.2671972222222,
+            46.6481361111111
+        ]
+    },
+    "properties": {
+        "station_name": "Buffalora",
+        "nat_abbr": "BUF",
+        "wigos_id": "0-20000-0-06778"
+    },
+    "bbox": [
+        10.2671972222222,
+        46.6481361111111,
+        10.2671972222222,
+        46.6481361111111
+    ]
+}

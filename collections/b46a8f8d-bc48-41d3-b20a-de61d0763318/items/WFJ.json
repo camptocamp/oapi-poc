@@ -1,0 +1,22 @@
+{
+    "id": "WFJ",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.80639444444444,
+            46.833325
+        ]
+    },
+    "properties": {
+        "station_name": "Weissfluhjoch",
+        "nat_abbr": "WFJ",
+        "wigos_id": "0-20000-0-06780"
+    },
+    "bbox": [
+        9.80639444444444,
+        46.833325,
+        9.80639444444444,
+        46.833325
+    ]
+}

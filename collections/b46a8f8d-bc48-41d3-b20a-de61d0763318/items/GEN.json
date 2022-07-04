@@ -1,0 +1,22 @@
+{
+    "id": "GEN",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.017875,
+            45.9275916666667
+        ]
+    },
+    "properties": {
+        "station_name": "Monte Generoso",
+        "nat_abbr": "GEN",
+        "wigos_id": "0-20000-0-06777"
+    },
+    "bbox": [
+        9.017875,
+        45.9275916666667,
+        9.017875,
+        45.9275916666667
+    ]
+}

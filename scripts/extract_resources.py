@@ -2,7 +2,6 @@ import json
 from pathlib import Path
 import requests
 import xml.etree.ElementTree as ET
-from pyproj import Transformer
 
 NS = {
     "che": "http://www.geocat.ch/2008/che",
@@ -90,35 +89,29 @@ for uuid in uuids:
         print(e)
 
 # Extract resources from file
-path = Path("../data/ch.meteoschweiz.messnetz-klima_en.json")
-file = json.loads(path.read_bytes())
+collection = "b46a8f8d-bc48-41d3-b20a-de61d0763318"
 
-collections = [
-    "ad2b1452-9f3c-4137-9822-9758298bc025",
-    "b46a8f8d-bc48-41d3-b20a-de61d0763318",
-]
+path = Path("../data/observations-hourly.csv")
 
-transformer = Transformer.from_crs("epsg:2056", "epsg:4326")
+for line in path.open("r").readlines()[1:]:
+    parts = line.split(";")
 
-for feature in file["features"]:
-    coordinates = feature["geometry"]["coordinates"]
-    transformed = transformer.transform(coordinates[0], coordinates[1])[::-1]
-    feature["geometry"]["coordinates"] = transformed
+    id = parts[3]
 
-    properties = feature["properties"]
-    properties.pop("description")
+    lat, lng = float(parts[7]), float(parts[8])
 
-    for collection in collections:
-        id = feature["id"]
+    item = {
+        "id": id,
+        "collection": collection,
+        "geometry": {"type": "Point", "coordinates": [lng, lat]},
+        "properties": {
+            "station_name": parts[2],
+            "nat_abbr": parts[3],
+            "wigos_id": parts[4],
+        },
+        "bbox": [lng, lat, lng, lat],
+    }
 
-        item = {
-            "id": id,
-            "collection": collection,
-            "geometry": feature["geometry"],
-            "properties": properties,
-            "bbox": [c for cs in [transformed, transformed] for c in cs],
-        }
-
-        p = Path(f"../collections/{collection}/items/{id}.json")
-        p.parent.mkdir(parents=True, exist_ok=True)
-        p.write_text(json.dumps(item, indent=4))
+    p = Path(f"../collections/{collection}/items/{id}.json")
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(item, indent=4, ensure_ascii=False))

@@ -1,18 +1,19 @@
 mod auth;
 mod loader;
+mod observation;
 mod register;
 
 use tokio_cron_scheduler::{Job, JobScheduler};
 use tower_http::auth::RequireAuthorizationLayer;
 
 use ogcapi_services::{Config, ConfigParser, OpenAPI, Service, State};
-use ogcapi_types::common::{link_rel::CHILD, LandingPage, Link};
+use ogcapi_types::common::LandingPage;
 
 use crate::{auth::Auth, loader::AssetLoader};
 
 pub static ROOT: &str = "https://poc.meteoschweiz-poc.swisstopo.cloud";
 pub static AWS_S3_BUCKET: &str = "met-oapi-poc";
-pub static AWS_S3_BUCKET_BASE: &str = "http://met-oapi-poc.s3.amazonaws.com";
+pub static AWS_S3_BUCKET_BASE: &str = "https://s3.meteoschweiz-poc.swisstopo.cloud";
 // pub static AWS_S3_BUCKET_BASE: &str = "http://localhost:9000/met-oapi-poc";
 
 pub static OPENAPI: &[u8; 100375] = include_bytes!("../../openapi.yaml");
@@ -64,7 +65,7 @@ async fn main() -> anyhow::Result<()> {
         .unwrap(),
     )?;
     sched.add(
-        Job::new_async("0 1/1 * * * *", |_uuid, _l| {
+        Job::new_async("30 1/1 * * * *", |_uuid, _l| {
             Box::pin(async {
                 tracing::info!("register assets");
                 register::run("mhs-upload").await.unwrap();

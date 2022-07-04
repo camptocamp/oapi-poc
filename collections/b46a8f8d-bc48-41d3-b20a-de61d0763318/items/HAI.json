@@ -1,0 +1,22 @@
+{
+    "id": "HAI",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.02391111111111,
+            47.6512416666667
+        ]
+    },
+    "properties": {
+        "station_name": "Salen-Reutenen",
+        "nat_abbr": "HAI",
+        "wigos_id": "0-20000-0-06623"
+    },
+    "bbox": [
+        9.02391111111111,
+        47.6512416666667,
+        9.02391111111111,
+        47.6512416666667
+    ]
+}

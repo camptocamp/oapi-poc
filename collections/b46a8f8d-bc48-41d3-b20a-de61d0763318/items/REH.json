@@ -1,0 +1,22 @@
+{
+    "id": "REH",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.51789722222222,
+            47.4275944444444
+        ]
+    },
+    "properties": {
+        "station_name": "Zürich / Affoltern",
+        "nat_abbr": "REH",
+        "wigos_id": "0-20000-0-06664"
+    },
+    "bbox": [
+        8.51789722222222,
+        47.4275944444444,
+        8.51789722222222,
+        47.4275944444444
+    ]
+}

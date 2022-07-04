@@ -1,0 +1,22 @@
+{
+    "id": "SBO",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.93236388888889,
+            45.8434444444444
+        ]
+    },
+    "properties": {
+        "station_name": "Stabio",
+        "nat_abbr": "SBO",
+        "wigos_id": "0-20000-0-06771"
+    },
+    "bbox": [
+        8.93236388888889,
+        45.8434444444444,
+        8.93236388888889,
+        45.8434444444444
+    ]
+}

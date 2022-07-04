@@ -1,0 +1,22 @@
+{
+    "id": "TAE",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.90489444444444,
+            47.4798638888889
+        ]
+    },
+    "properties": {
+        "station_name": "Aadorf / Tänikon",
+        "nat_abbr": "TAE",
+        "wigos_id": "0-20000-0-06679"
+    },
+    "bbox": [
+        8.90489444444444,
+        47.4798638888889,
+        8.90489444444444,
+        47.4798638888889
+    ]
+}

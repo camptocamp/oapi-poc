@@ -1,7 +1,7 @@
 {
     "id": "4ccc5153-cc27-47b8-abee-9d6e12e19701",
-    "title": "Klimadaten für PoC MeteoSchweiz",
-    "description": "Temporary data set for internal use only",
+    "title": "Gridded dataset of global radiation (PoC)",
+    "description": "Grid data on spatial values of the mean monthly distribution of global radiation over Switzerland.\n\"Surface Incoming Shortwave Radiation\" (SIS) is the spatial mean global radiation over the whole of Switzerland. The global radiation is calculated based on data from the geostationary satellite \"Meteosat Second Generation\" (MSG) of MeteoSwiss.\nTemporary data set for internal use only",
     "extent": {
         "spatial": {
             "bbox": [

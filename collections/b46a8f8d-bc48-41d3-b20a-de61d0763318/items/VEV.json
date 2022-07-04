@@ -1,0 +1,22 @@
+{
+    "id": "VEV",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.81509444444444,
+            46.4712916666667
+        ]
+    },
+    "properties": {
+        "station_name": "Vevey / Corseaux",
+        "nat_abbr": "VEV",
+        "wigos_id": "0-20000-0-06603"
+    },
+    "bbox": [
+        6.81509444444444,
+        46.4712916666667,
+        6.81509444444444,
+        46.4712916666667
+    ]
+}

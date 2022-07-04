@@ -1,0 +1,22 @@
+{
+    "id": "CMA",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.18004166666667,
+            46.842275
+        ]
+    },
+    "properties": {
+        "station_name": "Crap Masegn",
+        "nat_abbr": "CMA",
+        "wigos_id": "0-20000-0-06688"
+    },
+    "bbox": [
+        9.18004166666667,
+        46.842275,
+        9.18004166666667,
+        46.842275
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": "KLO",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.53589166666667,
+            47.4795833333333
+        ]
+    },
+    "properties": {
+        "station_name": "Zürich / Kloten",
+        "nat_abbr": "KLO",
+        "wigos_id": "0-20000-0-06670"
+    },
+    "bbox": [
+        8.53589166666667,
+        47.4795833333333,
+        8.53589166666667,
+        47.4795833333333
+    ]
+}

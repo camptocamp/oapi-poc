@@ -1,0 +1,22 @@
+{
+    "id": "SRS",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.668075,
+            46.9755055555556
+        ]
+    },
+    "properties": {
+        "station_name": "Schiers",
+        "nat_abbr": "SRS",
+        "wigos_id": "0-20000-0-06790"
+    },
+    "bbox": [
+        9.668075,
+        46.9755055555556,
+        9.668075,
+        46.9755055555556
+    ]
+}

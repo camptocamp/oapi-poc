@@ -1,0 +1,22 @@
+{
+    "id": "PIO",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.68803888888889,
+            46.5148111111111
+        ]
+    },
+    "properties": {
+        "station_name": "Piotta",
+        "nat_abbr": "PIO",
+        "wigos_id": "0-20000-0-06753"
+    },
+    "bbox": [
+        8.68803888888889,
+        46.5148111111111,
+        8.68803888888889,
+        46.5148111111111
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": "ATT",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.26865,
+            46.0991
+        ]
+    },
+    "properties": {
+        "station_name": "Les Attelas",
+        "nat_abbr": "ATT",
+        "wigos_id": "0-20000-0-06723"
+    },
+    "bbox": [
+        7.26865,
+        46.0991,
+        7.26865,
+        46.0991
+    ]
+}

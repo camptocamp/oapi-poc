@@ -1,0 +1,22 @@
+{
+    "id": "GIH",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.190225,
+            46.84945
+        ]
+    },
+    "properties": {
+        "station_name": "Giswil",
+        "nat_abbr": "GIH",
+        "wigos_id": "0-20000-0-06657"
+    },
+    "bbox": [
+        8.190225,
+        46.84945,
+        8.190225,
+        46.84945
+    ]
+}

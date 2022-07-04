@@ -1,0 +1,22 @@
+{
+    "id": "MTR",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.92474166666667,
+            46.4101027777778
+        ]
+    },
+    "properties": {
+        "station_name": "Matro",
+        "nat_abbr": "MTR",
+        "wigos_id": "0-20000-0-06754"
+    },
+    "bbox": [
+        8.92474166666667,
+        46.4101027777778,
+        8.92474166666667,
+        46.4101027777778
+    ]
+}

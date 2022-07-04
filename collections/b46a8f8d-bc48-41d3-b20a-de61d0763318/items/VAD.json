@@ -1,0 +1,22 @@
+{
+    "id": "VAD",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.51757777777778,
+            47.1274722222222
+        ]
+    },
+    "properties": {
+        "station_name": "Vaduz",
+        "nat_abbr": "VAD",
+        "wigos_id": "0-20000-0-06990"
+    },
+    "bbox": [
+        9.51757777777778,
+        47.1274722222222,
+        9.51757777777778,
+        47.1274722222222
+    ]
+}

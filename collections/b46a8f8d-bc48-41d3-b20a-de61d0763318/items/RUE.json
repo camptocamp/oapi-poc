@@ -1,0 +1,22 @@
+{
+    "id": "RUE",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.87936111111111,
+            47.4345555555555
+        ]
+    },
+    "properties": {
+        "station_name": "Rünenberg",
+        "nat_abbr": "RUE",
+        "wigos_id": "0-20000-0-06645"
+    },
+    "bbox": [
+        7.87936111111111,
+        47.4345555555555,
+        7.87936111111111,
+        47.4345555555555
+    ]
+}

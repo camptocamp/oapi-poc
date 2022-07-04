@@ -1,0 +1,22 @@
+{
+    "id": "DIA",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.20378055555556,
+            46.32675
+        ]
+    },
+    "properties": {
+        "station_name": "Les Diablerets",
+        "nat_abbr": "DIA",
+        "wigos_id": "0-20000-0-06714"
+    },
+    "bbox": [
+        7.20378055555556,
+        46.32675,
+        7.20378055555556,
+        46.32675
+    ]
+}

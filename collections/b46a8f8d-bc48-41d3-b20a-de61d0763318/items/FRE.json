@@ -1,0 +1,22 @@
+{
+    "id": "FRE",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.57634722222222,
+            46.8406805555556
+        ]
+    },
+    "properties": {
+        "station_name": "Bullet / La Frétaz",
+        "nat_abbr": "FRE",
+        "wigos_id": "0-20000-0-06619"
+    },
+    "bbox": [
+        6.57634722222222,
+        46.8406805555556,
+        6.57634722222222,
+        46.8406805555556
+    ]
+}

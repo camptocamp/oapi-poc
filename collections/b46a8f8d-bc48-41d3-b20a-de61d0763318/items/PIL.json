@@ -1,0 +1,22 @@
+{
+    "id": "PIL",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.25230277777778,
+            46.9788722222222
+        ]
+    },
+    "properties": {
+        "station_name": "Pilatus",
+        "nat_abbr": "PIL",
+        "wigos_id": "0-20000-0-06659"
+    },
+    "bbox": [
+        8.25230277777778,
+        46.9788722222222,
+        8.25230277777778,
+        46.9788722222222
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": "GUE",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.61553055555556,
+            46.652475
+        ]
+    },
+    "properties": {
+        "station_name": "Gütsch, Andermatt",
+        "nat_abbr": "GUE",
+        "wigos_id": "0-20000-0-06750"
+    },
+    "bbox": [
+        8.61553055555556,
+        46.652475,
+        8.61553055555556,
+        46.652475
+    ]
+}

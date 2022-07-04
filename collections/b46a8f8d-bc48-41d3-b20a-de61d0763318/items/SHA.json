@@ -1,0 +1,22 @@
+{
+    "id": "SHA",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.62014166666667,
+            47.6898416666667
+        ]
+    },
+    "properties": {
+        "station_name": "Schaffhausen",
+        "nat_abbr": "SHA",
+        "wigos_id": "0-20000-0-06620"
+    },
+    "bbox": [
+        8.62014166666667,
+        47.6898416666667,
+        8.62014166666667,
+        47.6898416666667
+    ]
+}

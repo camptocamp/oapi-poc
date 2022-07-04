@@ -1,0 +1,22 @@
+{
+    "id": "DIS",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.85346666666667,
+            46.706525
+        ]
+    },
+    "properties": {
+        "station_name": "Disentis",
+        "nat_abbr": "DIS",
+        "wigos_id": "0-20000-0-06782"
+    },
+    "bbox": [
+        8.85346666666667,
+        46.706525,
+        8.85346666666667,
+        46.706525
+    ]
+}

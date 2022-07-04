@@ -1,0 +1,22 @@
+{
+    "id": "NAS",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            10.2614,
+            46.8171638888889
+        ]
+    },
+    "properties": {
+        "station_name": "Naluns / Schlivera",
+        "nat_abbr": "NAS",
+        "wigos_id": "0-20000-0-06799"
+    },
+    "bbox": [
+        10.2614,
+        46.8171638888889,
+        10.2614,
+        46.8171638888889
+    ]
+}

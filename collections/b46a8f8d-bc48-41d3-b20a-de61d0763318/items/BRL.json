@@ -1,0 +1,22 @@
+{
+    "id": "BRL",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.61029722222222,
+            46.9838444444444
+        ]
+    },
+    "properties": {
+        "station_name": "La Brévine",
+        "nat_abbr": "BRL",
+        "wigos_id": "0-20000-0-06617"
+    },
+    "bbox": [
+        6.61029722222222,
+        46.9838444444444,
+        6.61029722222222,
+        46.9838444444444
+    ]
+}

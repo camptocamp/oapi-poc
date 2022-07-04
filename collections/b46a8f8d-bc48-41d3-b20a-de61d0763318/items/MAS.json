@@ -1,0 +1,22 @@
+{
+    "id": "MAS",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.06971666666667,
+            46.656525
+        ]
+    },
+    "properties": {
+        "station_name": "Marsens",
+        "nat_abbr": "MAS",
+        "wigos_id": "0-20000-0-06640"
+    },
+    "bbox": [
+        7.06971666666667,
+        46.656525,
+        7.06971666666667,
+        46.656525
+    ]
+}

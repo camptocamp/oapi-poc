@@ -1,0 +1,22 @@
+{
+    "id": "VIS",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.84291388888889,
+            46.302875
+        ]
+    },
+    "properties": {
+        "station_name": "Visp",
+        "nat_abbr": "VIS",
+        "wigos_id": "0-20000-0-06727"
+    },
+    "bbox": [
+        7.84291388888889,
+        46.302875,
+        7.84291388888889,
+        46.302875
+    ]
+}

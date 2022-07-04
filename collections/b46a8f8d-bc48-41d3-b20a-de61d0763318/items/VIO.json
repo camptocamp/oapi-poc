@@ -1,0 +1,22 @@
+{
+    "id": "VIO",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            9.6278,
+            46.3530194444444
+        ]
+    },
+    "properties": {
+        "station_name": "Vicosoprano",
+        "nat_abbr": "VIO",
+        "wigos_id": "0-20000-0-06788"
+    },
+    "bbox": [
+        9.6278,
+        46.3530194444444,
+        9.6278,
+        46.3530194444444
+    ]
+}

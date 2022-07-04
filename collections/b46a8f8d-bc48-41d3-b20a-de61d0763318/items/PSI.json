@@ -1,0 +1,22 @@
+{
+    "id": "PSI",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.22694444444444,
+            47.536475
+        ]
+    },
+    "properties": {
+        "station_name": "Würenlingen / PSI",
+        "nat_abbr": "PSI",
+        "wigos_id": "0-20000-0-06647"
+    },
+    "bbox": [
+        8.22694444444444,
+        47.536475,
+        8.22694444444444,
+        47.536475
+    ]
+}

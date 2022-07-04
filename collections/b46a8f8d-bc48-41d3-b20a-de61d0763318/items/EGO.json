@@ -1,0 +1,22 @@
+{
+    "id": "EGO",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.00476388888889,
+            47.1794222222222
+        ]
+    },
+    "properties": {
+        "station_name": "Egolzwil",
+        "nat_abbr": "EGO",
+        "wigos_id": "0-20000-0-06648"
+    },
+    "bbox": [
+        8.00476388888889,
+        47.1794222222222,
+        8.00476388888889,
+        47.1794222222222
+    ]
+}

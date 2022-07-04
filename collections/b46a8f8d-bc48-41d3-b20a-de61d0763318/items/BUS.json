@@ -1,0 +1,22 @@
+{
+    "id": "BUS",
+    "collection": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            8.07949722222222,
+            47.3843
+        ]
+    },
+    "properties": {
+        "station_name": "Buchs / Aarau",
+        "nat_abbr": "BUS",
+        "wigos_id": "0-20000-0-06633"
+    },
+    "bbox": [
+        8.07949722222222,
+        47.3843,
+        8.07949722222222,
+        47.3843
+    ]
+}
