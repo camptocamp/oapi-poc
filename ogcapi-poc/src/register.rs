@@ -1,16 +1,21 @@
+use std::convert::TryInto;
 use std::path::Path;
 
 use anyhow::bail;
 use aws_sdk_s3::model::ObjectCannedAcl;
 use aws_smithy_types_convert::date_time::DateTimeExt;
 use chrono::{DateTime, SecondsFormat, Utc};
-use serde_json::{json, Map, Value};
+use geo::Transform;
+use geojson::GeoJson;
+use proj::Proj;
+use serde_json::{json, Map};
+use wkt::ToWkt;
 
 use ogcapi_drivers::{postgres::Db, s3::S3, CollectionTransactions, FeatureTransactions};
 use ogcapi_types::{
     common::{
         media_type::{GEO_JSON, JSON},
-        Crs, Datetime,
+        Crs,
     },
     stac::Asset,
 };
@@ -225,11 +230,20 @@ async fn load_items_from_object(
     };
 
     // Load features
+    let proj = PJ::new("EPSG:2056", "EPSG:4326");
+
     let mut tx = db.pool.begin().await?;
 
     sqlx::query(&format!(r#"TRUNCATE TABLE items."{}""#, collection_id))
         .execute(&mut tx)
         .await?;
+
+    let mut pb = pbr::ProgressBar::new(features.len() as u64);
+
+    let mut ids_list: Vec<String> = Vec::new();
+    let mut properties_list: Vec<String> = Vec::new();
+    let mut assets_list: Vec<String> = Vec::new();
+    let mut geom_list: Vec<String> = Vec::new();
 
     for (i, feature) in features.iter_mut().enumerate() {
         // id
@@ -241,49 +255,70 @@ async fn load_items_from_object(
         } else {
             i.to_string()
         };
+        ids_list.push(id.to_owned());
 
         // properties
         if let Some(properties) = feature.properties.as_mut() {
             properties.remove("description");
             if let Some(value) = properties.get("reference_ts") {
-                if let Ok(datetime) = serde_json::from_value::<Datetime>(value.to_owned()) {
-                    properties.insert("datetime".to_string(), json!(datetime.to_string()));
+                if let Ok(s) = serde_json::from_value::<DateTime<Utc>>(value.to_owned()) {
+                    properties.insert(
+                        "datetime".to_string(),
+                        json!(s.to_rfc3339_opts(SecondsFormat::Secs, true)),
+                    );
                 }
             }
         }
+        properties_list.push(
+            feature
+                .properties
+                .take()
+                .map(|p| serde_json::to_string(&p).unwrap())
+                .unwrap_or_else(|| "{}".to_string()),
+        );
 
         // assets
-        let mut assets = std::collections::HashMap::new();
         let asset = Asset::new(format!("{ROOT}/collections/{collection_id}/items/{id}"))
             .media_type(GEO_JSON)
             .roles(&["data"]);
-        assets.insert(id.to_owned(), asset);
 
-        sqlx::query(&format!(
-            r#"
-            INSERT INTO items."{}" (
-                id,
-                properties,
-                geom,
-                assets
-            ) VALUES (
-                $1,
-                $2,
-                ST_Transform(ST_SetSRID(ST_GeomFromGeoJSON($3), 2056), 4326),
-                $4
-            )
-            "#,
-            collection_id
-        ))
-        .bind(id)
-        .bind(Value::from(feature.properties.take().unwrap()))
-        .bind(feature.geometry.take().unwrap().value.to_string())
-        .bind(sqlx::types::Json(assets))
-        .execute(&mut tx)
-        .await?;
+        assets_list.push(serde_json::to_string(&json!({ id: asset }))?);
+
+        // geom
+        let mut geom: geo::Geometry = GeoJson::Feature(feature.to_owned()).try_into()?;
+        geom.transform(&proj.0).unwrap();
+        geom_list.push(format!("SRID=4326;{}", geom.to_wkt()));
+
+        pb.inc();
     }
+
+    sqlx::query(&format!(
+        r#"
+        INSERT INTO items."{}" (id, properties, geom, assets)
+        SELECT * FROM UNNEST ($1::text[], $2::jsonb[], $3::text[], $4::jsonb[])
+        "#,
+        collection_id
+    ))
+    .bind(&ids_list[..])
+    .bind(&properties_list[..])
+    .bind(&geom_list[..])
+    .bind(&assets_list[..])
+    .execute(&mut tx)
+    .await?;
 
     tx.commit().await?;
 
+    pb.finish_println("");
+
     Ok(())
 }
+
+struct PJ(Proj);
+
+impl PJ {
+    fn new(from: &str, to: &str) -> Self {
+        PJ(Proj::new_known_crs(from, to, None).unwrap())
+    }
+}
+
+unsafe impl Send for PJ {}

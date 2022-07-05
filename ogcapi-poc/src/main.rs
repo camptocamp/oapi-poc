@@ -1,4 +1,5 @@
 mod auth;
+mod initialization;
 mod loader;
 mod observation;
 mod register;
@@ -29,6 +30,11 @@ async fn main() -> anyhow::Result<()> {
     // parse config
     let config = Config::parse();
 
+    // initialize
+    if std::env::var("INITIALIZE").unwrap_or_else(|_| "false".to_string()) == "true" {
+        initialization::init(&config.database_url).await?;
+    }
+
     // landing page
     let root = LandingPage::new("root")
         .title("PoC MeteoSchweiz")
@@ -57,7 +63,7 @@ async fn main() -> anyhow::Result<()> {
     let sched = JobScheduler::new()?;
     sched.add(
         Job::new_one_shot_async(std::time::Duration::from_secs(5), |_uuid, _l| {
-            Box::pin(async {
+            Box::pin(async move {
                 tracing::info!("run full registration");
                 register::run("").await.unwrap();
             })
@@ -66,7 +72,7 @@ async fn main() -> anyhow::Result<()> {
     )?;
     sched.add(
         Job::new_async("30 1/1 * * * *", |_uuid, _l| {
-            Box::pin(async {
+            Box::pin(async move {
                 tracing::info!("register assets");
                 register::run("mhs-upload").await.unwrap();
             })
