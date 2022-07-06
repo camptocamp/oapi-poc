@@ -1784,7 +1784,7 @@ dependencies = [
 [[package]]
 name = "ogcapi-drivers"
 version = "0.1.0"
-source = "git+https://github.com/camptocamp/ogcapi?branch=poc#f88cadbbf36b27638aa76f1ffc163f7fe4cc1a78"
+source = "git+https://github.com/camptocamp/ogcapi?branch=poc#07d38fa5efddef63299ef0e85f1caad12df253cc"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -1839,7 +1839,7 @@ dependencies = [
 [[package]]
 name = "ogcapi-services"
 version = "0.1.0"
-source = "git+https://github.com/camptocamp/ogcapi?branch=poc#f88cadbbf36b27638aa76f1ffc163f7fe4cc1a78"
+source = "git+https://github.com/camptocamp/ogcapi?branch=poc#07d38fa5efddef63299ef0e85f1caad12df253cc"
 dependencies = [
  "anyhow",
  "axum",
@@ -1867,7 +1867,7 @@ dependencies = [
 [[package]]
 name = "ogcapi-types"
 version = "0.1.0"
-source = "git+https://github.com/camptocamp/ogcapi?branch=poc#f88cadbbf36b27638aa76f1ffc163f7fe4cc1a78"
+source = "git+https://github.com/camptocamp/ogcapi?branch=poc#07d38fa5efddef63299ef0e85f1caad12df253cc"
 dependencies = [
  "chrono",
  "geojson",

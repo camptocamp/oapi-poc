@@ -64,6 +64,7 @@ pub(crate) async fn run(prefix: &str) -> anyhow::Result<()> {
             Some("h5") => Some("application/x-hdf5".to_string()),
             Some("nc") => Some("application/netcdf".to_string()),
             Some("tiff") => Some("image/tiff".to_string()),
+            Some("cap") => Some("text/xml".to_string()),
             _ => None,
         };
 
@@ -126,6 +127,7 @@ async fn asset_to_item(
         "ed6a30c9-672e-4d8f-95e4-8c5bef8ab417" => "klimanormwerte.temperatur.1961-1990",
         "b46a8f8d-bc48-41d3-b20a-de61d0763318" => asset_id.split('_').nth(1).unwrap(),
         "4ccc5153-cc27-47b8-abee-9d6e12e19701" => &asset_id.split('_').last().unwrap()[..8],
+        "35ff8133-364a-47eb-a145-0d641b706bff" => asset_id.trim_end_matches(".cap"),
         _ => bail!("no mapping for collection `{collection_id}`"),
     };
 
@@ -135,7 +137,9 @@ async fn asset_to_item(
     {
         Some(feature) => feature,
         None => {
-            if collection_id == "4ccc5153-cc27-47b8-abee-9d6e12e19701" {
+            if collection_id == "4ccc5153-cc27-47b8-abee-9d6e12e19701"
+                || collection_id == "35ff8133-364a-47eb-a145-0d641b706bff"
+            {
                 let feature = serde_json::from_value(json!(
                     {
                         "id": item_id,
@@ -165,11 +169,17 @@ async fn asset_to_item(
     };
 
     // Add/update datetime
+    let d = if collection_id == "35ff8133-364a-47eb-a145-0d641b706bff" {
+        let parsed = DateTime::parse_from_str(
+            &format!("{}+0000", asset_id.split('.').nth(2).unwrap()),
+            "%Y%m%d%H%M%z",
+        )?;
+        parsed.to_rfc3339_opts(SecondsFormat::Secs, true)
+    } else {
+        datetime.to_rfc3339_opts(SecondsFormat::Secs, true)
+    };
     let mut map = Map::new();
-    map.insert(
-        "datetime".to_string(),
-        json!(datetime.to_rfc3339_opts(SecondsFormat::Secs, true)),
-    );
+    map.insert("datetime".to_string(), json!(d));
     item.append_properties(map);
 
     // Add/update asset

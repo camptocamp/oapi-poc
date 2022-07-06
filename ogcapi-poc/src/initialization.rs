@@ -48,5 +48,9 @@ pub(crate) async fn init(database_url: &Url) -> anyhow::Result<()> {
         }
     }
 
+    // register/load assets
+    tracing::info!("run full registration");
+    crate::register::run("").await.unwrap();
+
     Ok(())
 }

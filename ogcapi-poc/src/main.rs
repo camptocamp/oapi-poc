@@ -62,15 +62,6 @@ async fn main() -> anyhow::Result<()> {
     // cron job to register assets
     let sched = JobScheduler::new()?;
     sched.add(
-        Job::new_one_shot_async(std::time::Duration::from_secs(5), |_uuid, _l| {
-            Box::pin(async move {
-                tracing::info!("run full registration");
-                register::run("").await.unwrap();
-            })
-        })
-        .unwrap(),
-    )?;
-    sched.add(
         Job::new_async("30 1/1 * * * *", |_uuid, _l| {
             Box::pin(async move {
                 tracing::info!("register assets");
