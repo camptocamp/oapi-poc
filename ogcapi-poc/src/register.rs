@@ -65,6 +65,7 @@ pub(crate) async fn run(prefix: &str) -> anyhow::Result<()> {
             Some("nc") => Some("application/netcdf".to_string()),
             Some("tiff") => Some("image/tiff".to_string()),
             Some("cap") => Some("text/xml".to_string()),
+            Some("zip") => Some("application/zip".to_string()),
             _ => None,
         };
 
