@@ -19,6 +19,7 @@ use ogcapi_types::{
 use crate::{AWS_S3_BUCKET, AWS_S3_BUCKET_BASE, ROOT};
 
 pub(crate) async fn run(prefix: &str) -> anyhow::Result<()> {
+    let now = Utc::now();
     // Setup drivers
     let db = Db::new().await?;
     let s3 = S3::new().await;
@@ -28,12 +29,18 @@ pub(crate) async fn run(prefix: &str) -> anyhow::Result<()> {
 
     // Register assets
     for object in resp.contents().unwrap_or_default() {
+        // Last modified
+        let datetime = object.last_modified.unwrap().to_chrono_utc();
+        let age = now - datetime;
+
         // Source key
         let key = object.key().unwrap_or_default();
         if key.is_empty()
             || key.ends_with('/')
             || key.contains("/.")
             || (prefix.is_empty() && key.starts_with("mhs-upload"))
+            || (!prefix.is_empty() && age.num_seconds() < 10)
+            || (!prefix.is_empty() && age.num_seconds() >= 70 && age.num_minutes() % 5 != 0)
         {
             continue;
         }
@@ -64,9 +71,6 @@ pub(crate) async fn run(prefix: &str) -> anyhow::Result<()> {
             Some("zip") => Some("application/zip".to_string()),
             _ => None,
         };
-
-        // Last modified
-        let datetime = object.last_modified.unwrap().to_chrono_utc();
 
         // Copy object
         if key != target {
