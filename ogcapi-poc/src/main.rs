@@ -2,6 +2,7 @@ mod auth;
 mod initialization;
 mod loader;
 mod observation;
+mod proj;
 mod register;
 
 use tokio_cron_scheduler::{Job, JobScheduler};

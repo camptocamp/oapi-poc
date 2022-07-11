@@ -1,4 +1,3 @@
-use std::convert::TryInto;
 use std::path::Path;
 
 use anyhow::bail;
@@ -6,10 +5,7 @@ use aws_sdk_s3::model::ObjectCannedAcl;
 use aws_smithy_types_convert::date_time::DateTimeExt;
 use chrono::{DateTime, SecondsFormat, Utc};
 use geo::Transform;
-use geojson::GeoJson;
-use proj::Proj;
-use serde_json::{json, Map};
-use wkt::ToWkt;
+use serde_json::json;
 
 use ogcapi_drivers::{postgres::Db, s3::S3, CollectionTransactions, FeatureTransactions};
 use ogcapi_types::{
@@ -20,7 +16,7 @@ use ogcapi_types::{
     stac::Asset,
 };
 
-use crate::{observation::Observation, AWS_S3_BUCKET, AWS_S3_BUCKET_BASE, ROOT};
+use crate::{AWS_S3_BUCKET, AWS_S3_BUCKET_BASE, ROOT};
 
 pub(crate) async fn run(prefix: &str) -> anyhow::Result<()> {
     // Setup drivers
@@ -179,7 +175,7 @@ async fn asset_to_item(
     } else {
         datetime.to_rfc3339_opts(SecondsFormat::Secs, true)
     };
-    let mut map = Map::new();
+    let mut map = serde_json::Map::new();
     map.insert("datetime".to_string(), json!(d));
     item.append_properties(map);
 
@@ -234,14 +230,17 @@ async fn load_items_from_object(
         for result in rdr.deserialize() {
             // Notice that we need to provide a type hint for automatic
             // deserialization.
-            let record: Observation = result?;
+            let record: crate::observation::Observation = result?;
             features.push(record.to_feature());
         }
         features
     };
 
     // Load features
-    let proj = PJ::new("EPSG:2056", "EPSG:4326");
+    let now = std::time::Instant::now();
+    let count = features.len();
+
+    let proj = crate::proj::Proj::new("EPSG:2056", "EPSG:4326");
 
     let mut tx = db.pool.begin().await?;
 
@@ -249,12 +248,10 @@ async fn load_items_from_object(
         .execute(&mut tx)
         .await?;
 
-    let mut pb = pbr::ProgressBar::new(features.len() as u64);
-
-    let mut ids_list: Vec<String> = Vec::new();
-    let mut properties_list: Vec<String> = Vec::new();
-    let mut assets_list: Vec<String> = Vec::new();
-    let mut geom_list: Vec<String> = Vec::new();
+    let mut ids_list = Vec::new();
+    let mut properties_list = Vec::new();
+    let mut assets_list = Vec::new();
+    let mut geom_list = Vec::new();
 
     for (i, feature) in features.iter_mut().enumerate() {
         // id
@@ -280,33 +277,25 @@ async fn load_items_from_object(
                 }
             }
         }
-        properties_list.push(
-            feature
-                .properties
-                .take()
-                .map(|p| serde_json::to_string(&p).unwrap())
-                .unwrap_or_else(|| "{}".to_string()),
-        );
+        properties_list.push(feature.properties.to_owned().map(sqlx::types::Json));
 
         // assets
         let asset = Asset::new(format!("{ROOT}/collections/{collection_id}/items/{id}"))
             .media_type(GEO_JSON)
             .roles(&["data"]);
 
-        assets_list.push(serde_json::to_string(&json!({ id: asset }))?);
+        assets_list.push(sqlx::types::Json(json!({ id: asset })));
 
         // geom
-        let mut geom: geo::Geometry = GeoJson::Feature(feature.to_owned()).try_into()?;
-        geom.transform(&proj.0).unwrap();
-        geom_list.push(format!("SRID=4326;{}", geom.to_wkt()));
-
-        pb.inc();
+        let mut geom: geo::Geometry = feature.geometry.to_owned().unwrap().try_into()?;
+        geom.transform(&proj.0)?;
+        geom_list.push(wkb::geom_to_wkb(&geom).unwrap());
     }
 
     sqlx::query(&format!(
         r#"
         INSERT INTO items."{}" (id, properties, geom, assets)
-        SELECT * FROM UNNEST ($1::text[], $2::jsonb[], $3::text[], $4::jsonb[])
+        SELECT * FROM UNNEST ($1::text[], $2::jsonb[], $3::bytea[], $4::jsonb[])
         "#,
         collection_id
     ))
@@ -319,17 +308,12 @@ async fn load_items_from_object(
 
     tx.commit().await?;
 
-    pb.finish_println("");
+    // stats
+    let elapsed = now.elapsed().as_millis() as f64 / 1000.0;
+    tracing::info!(
+        "Loaded {count} features in {elapsed} seconds ({:.2}/s)",
+        count as f64 / elapsed
+    );
 
     Ok(())
 }
-
-struct PJ(Proj);
-
-impl PJ {
-    fn new(from: &str, to: &str) -> Self {
-        PJ(Proj::new_known_crs(from, to, None).unwrap())
-    }
-}
-
-unsafe impl Send for PJ {}
