@@ -28,6 +28,10 @@ impl<B> AuthorizeRequest<B> for Auth {
             Method::GET | Method::HEAD => Ok(()),
             // Reqire basic authroization for everything else
             _ => {
+                // Exempt STAC /search
+                if request.uri() == "/search" {
+                    return Ok(())
+                }
                 if let Some(auth) = request.headers().get(AUTHORIZATION) {
                     let basic = BASIC.get_or_try_init(|| -> Result<Basic, VarError> {
                         Ok(Authorization::basic(
