@@ -5,20 +5,21 @@ mod observation;
 mod proj;
 mod register;
 
+use axum::{handler::Handler, response::IntoResponse};
 use tokio_cron_scheduler::{Job, JobScheduler};
 use tower_http::auth::RequireAuthorizationLayer;
 
-use ogcapi_services::{Config, ConfigParser, OpenAPI, Service, State};
+use ogcapi_services::{Config, ConfigParser, Error, OpenAPI, Service, State};
 use ogcapi_types::common::LandingPage;
 
 use crate::{auth::Auth, loader::AssetLoader};
 
-pub static ROOT: &str = "https://poc.meteoschweiz-poc.swisstopo.cloud";
+pub static ROOT: &str = "https://poc.meteoschweiz-poc.swisstopo.cloud/root";
 pub static AWS_S3_BUCKET: &str = "met-oapi-poc";
 pub static AWS_S3_BUCKET_BASE: &str = "https://s3.meteoschweiz-poc.swisstopo.cloud";
 // pub static AWS_S3_BUCKET_BASE: &str = "http://localhost:9000/met-oapi-poc";
 
-pub static OPENAPI: &[u8; 100375] = include_bytes!("../../openapi.yaml");
+pub static OPENAPI: &[u8; 63433] = include_bytes!("../../openapi.yaml");
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
@@ -56,9 +57,14 @@ async fn main() -> anyhow::Result<()> {
     let mut service = Service::new_with(&config, state).await;
 
     // add custom basic auth
-    service.router = service
-        .router
-        .route_layer(RequireAuthorizationLayer::custom(Auth));
+    service.router = axum::Router::new()
+        .nest(
+            "/root/",
+            service
+                .router
+                .route_layer(RequireAuthorizationLayer::custom(Auth)),
+        )
+        .fallback(handler_404.into_service());
 
     // cron job to register assets
     let sched = JobScheduler::new()?;
@@ -77,4 +83,8 @@ async fn main() -> anyhow::Result<()> {
     service.serve().await;
 
     Ok(())
+}
+
+pub async fn handler_404() -> impl IntoResponse {
+    Error::NotFound
 }

@@ -658,9 +658,9 @@ dependencies = [
 
 [[package]]
 name = "clap"
-version = "3.2.8"
+version = "3.2.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "190814073e85d238f31ff738fcb0bf6910cedeb73376c87cd69291028966fd83"
+checksum = "69c5a7f9997be616e47f0577ee38c91decb33392c5be4866494f34cdf329a9aa"
 dependencies = [
  "atty",
  "bitflags",
@@ -1774,7 +1774,7 @@ dependencies = [
 [[package]]
 name = "ogcapi-drivers"
 version = "0.1.0"
-source = "git+https://github.com/camptocamp/ogcapi?branch=poc#372ac5abb508ea5af08e9dd712d88206165daf20"
+source = "git+https://github.com/camptocamp/ogcapi?branch=poc#b0ffc80a05c2119e1d84582e2742f802f0aac4de"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -1828,11 +1828,11 @@ dependencies = [
 [[package]]
 name = "ogcapi-services"
 version = "0.1.0"
-source = "git+https://github.com/camptocamp/ogcapi?branch=poc#372ac5abb508ea5af08e9dd712d88206165daf20"
+source = "git+https://github.com/camptocamp/ogcapi?branch=poc#b0ffc80a05c2119e1d84582e2742f802f0aac4de"
 dependencies = [
  "anyhow",
  "axum",
- "clap 3.2.8",
+ "clap 3.2.10",
  "dotenv",
  "hyper",
  "ogcapi-drivers",
@@ -1856,7 +1856,7 @@ dependencies = [
 [[package]]
 name = "ogcapi-types"
 version = "0.1.0"
-source = "git+https://github.com/camptocamp/ogcapi?branch=poc#372ac5abb508ea5af08e9dd712d88206165daf20"
+source = "git+https://github.com/camptocamp/ogcapi?branch=poc#b0ffc80a05c2119e1d84582e2742f802f0aac4de"
 dependencies = [
  "chrono",
  "geojson",

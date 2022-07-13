@@ -15,7 +15,7 @@ url = "https://poc.meteoschweiz-poc.swisstopo.cloud"
 # print(json.dumps(r.json(), indent=4, sort_keys=True))
 
 # Process execution
-path = Path("../data/ch.meteoschweiz.messwerte-lufttemperatur-10min_en.json")
+path = Path("../data/observations-hourly.csv")
 
 with path.open("rb") as file:
     inputs = {
@@ -26,27 +26,27 @@ with path.open("rb") as file:
                 #     "uri": "https://www.meteoswiss.admin.ch/content/dam/meteoswiss/en/service-und-publikationen/produkt/doc/standardservices.pdf",
                 #     "method": "link"
                 # },
-                "mediaType": "application/pdf",
+                "mediaType": "text/csv",
             },
-            "key": f"mhs-upload/0a62455f-c39c-4084-bd54-36ee2192d3af/{path.name}",
+            "key": f"mhs-upload/ad2b1452-9f3c-4137-9822-9758298bc025/{path.name}",
             "id": f"{path.name}",
-            "collection": "0a62455f-c39c-4084-bd54-36ee2192d3af",
+            "collection": "ad2b1452-9f3c-4137-9822-9758298bc025",
             "item": {
-                # "value": {
-                #     "geometry": {
-                #         "type": "Polygon",
-                #         "coordinates": [
-                #             [
-                #                 [5.96, 45.82],
-                #                 [10.49, 45.82],
-                #                 [10.49, 47.81],
-                #                 [5.96, 47.81],
-                #                 [5.96, 45.82],
-                #             ]
-                #         ],
-                #     }
-                # }
-                "value": "messwerte-lufttemperatur-10min"
+                "value": {
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [5.96, 45.82],
+                                [10.49, 45.82],
+                                [10.49, 47.81],
+                                [5.96, 47.81],
+                                [5.96, 45.82],
+                            ]
+                        ],
+                    }
+                }
+                # "value": "ARO"
             },
         }
     }

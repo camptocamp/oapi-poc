@@ -30,7 +30,7 @@ impl<B> AuthorizeRequest<B> for Auth {
             _ => {
                 // Exempt STAC /search
                 if request.uri() == "/search" {
-                    return Ok(())
+                    return Ok(());
                 }
                 if let Some(auth) = request.headers().get(AUTHORIZATION) {
                     let basic = BASIC.get_or_try_init(|| -> Result<Basic, VarError> {
