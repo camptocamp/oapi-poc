@@ -4,9 +4,9 @@ info:
   description: Sample OpenAPI definition of OGC API & STAC API for MeteoSuiss
   version: 0.1.0
 servers:
-  - url: "http://localhost:8484/root"
+  - url: "http://localhost:8484/root/"
     description: "Local development server"
-  - url: "https://poc.meteoschweiz-poc.swisstopo.cloud/root"
+  - url: "https://poc.meteoschweiz-poc.swisstopo.cloud/root/"
     description: "Public test server"
 tags:
   - name: Capabilities
@@ -142,6 +142,7 @@ paths:
       operationId: ListDataItems
       parameters:
         - $ref: "#/components/parameters/collectionId"
+        - $ref: "#/components/parameters/limit"
         - $ref: "#/components/parameters/bbox"
         - $ref: "#/components/parameters/datetime"
       responses:

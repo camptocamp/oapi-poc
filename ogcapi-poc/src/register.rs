@@ -4,7 +4,7 @@ use anyhow::bail;
 use aws_sdk_s3::model::ObjectCannedAcl;
 use aws_smithy_types_convert::date_time::DateTimeExt;
 use chrono::{DateTime, SecondsFormat, Utc};
-use geo::Transform;
+use geo::{BoundingRect, Transform};
 use serde_json::json;
 
 use ogcapi_drivers::{postgres::Db, s3::S3, CollectionTransactions, FeatureTransactions};
@@ -256,6 +256,7 @@ async fn load_items_from_object(
     let mut properties_list = Vec::new();
     let mut assets_list = Vec::new();
     let mut geom_list = Vec::new();
+    let mut bbox_list = Vec::new();
 
     for (i, feature) in features.iter_mut().enumerate() {
         // id
@@ -294,12 +295,22 @@ async fn load_items_from_object(
         let mut geom: geo::Geometry = feature.geometry.to_owned().unwrap().try_into()?;
         geom.transform(&proj.0)?;
         geom_list.push(wkb::geom_to_wkb(&geom).unwrap());
+
+        // bbox
+        let bounds = geom.bounding_rect().unwrap();
+        let bbox = json!([
+            bounds.min().x,
+            bounds.min().y,
+            bounds.max().x,
+            bounds.max().y
+        ]);
+        bbox_list.push(sqlx::types::Json(bbox));
     }
 
     sqlx::query(&format!(
         r#"
-        INSERT INTO items."{}" (id, properties, geom, assets)
-        SELECT * FROM UNNEST ($1::text[], $2::jsonb[], $3::bytea[], $4::jsonb[])
+        INSERT INTO items."{}" (id, properties, geom, assets, bbox)
+        SELECT * FROM UNNEST ($1::text[], $2::jsonb[], $3::bytea[], $4::jsonb[], $5::jsonb[])
         "#,
         collection_id
     ))
@@ -307,6 +318,7 @@ async fn load_items_from_object(
     .bind(&properties_list[..])
     .bind(&geom_list[..])
     .bind(&assets_list[..])
+    .bind(&bbox_list[..])
     .execute(&mut tx)
     .await?;
 
