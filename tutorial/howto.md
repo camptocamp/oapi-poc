@@ -42,6 +42,9 @@ The API provides currently the following datasets (collections):
 
 ## Some example queries
 
+>**Note**
+>For the collections [Aktuelle Daten Temperatur](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/0a62455f-c39c-4084-bd54-36ee2192d3af) and [Stundenwerte Messstationen](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025) all item properties can be used as key-value pair in the query URL. 
+
 Here a list of example queries you can test within a browser. Use Firefox, which has a built-in json viewer. Copy&paste the example querie in URL bar of the browser:
 
 - Get the description of a collection:
