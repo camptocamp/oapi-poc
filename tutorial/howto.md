@@ -79,7 +79,7 @@ Here a list of example queries you can test within a browser. Use Firefox, which
 
 ## Working with the STAC Browser
 >**Note**
->At this [link]([https://github.com/opengeospatial/ogcapi-features/tree/master/implementations/clients](https://stacindex.org/ecosystem?category=Client)) you will find a list of clients that can be used to work with APIs implementing OAFeat. Here the basic usage with the STAC Browser will be shortly discussed.
+>At this [link](https://stacindex.org/ecosystem?category=Client) you will find a list of clients that can be used to work with APIs implementing OAFeat. Here the basic usage with the STAC Browser will be shortly discussed.
 
 ## Working with the STAC API Browser Plugin in QGIS
 
