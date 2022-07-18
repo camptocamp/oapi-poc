@@ -28,6 +28,9 @@ The API provides the following endpoints:
 
 The API provides currently the following datasets (collections):
 
+>**Note**
+>The collections [Aktuelle Daten Temperatur](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/0a62455f-c39c-4084-bd54-36ee2192d3af) and [Stundenwerte Messstationen](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025) have been implemented as STAC and as OAFeat resources. The STAC assets (the complete datasets) are available directly at collection level. The assets at item level do not link to packaged files but to the API call to the item itself. 
+
 - [Aktuelle Daten Temperatur](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/0a62455f-c39c-4084-bd54-36ee2192d3af) - ID: 0a62455f-c39c-4084-bd54-36ee2192d3af (OAFeat)
 - [Climate normals temperature 1961-1990](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ed6a30c9-672e-4d8f-95e4-8c5bef8ab417) - ID: ed6a30c9-672e-4d8f-95e4-8c5bef8ab417 (STAC)
 - [CombiPrecip Niederschlagmenge akkumuliert 1h](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/e74c17ea-0822-44db-bef9-f37135a68245) - ID: e74c17ea-0822-44db-bef9-f37135a68245 (STAC)
@@ -73,6 +76,20 @@ Here a list of example queries you can test within a browser. Use Firefox, which
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025/items?station_name=Bantiger (OAFeat)
 - Get all observations of the parameter `pp0qnhh0` for all stations at the `datetime` 2022-07-17T00:00:00Z:
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025/items?datetime=2022-07-17T00:00:00Z&param_short=pp0qnhh0 (OAFeat)
+
+## Working with the STAC Browser
+
+## Working with the STAC API Browser Plugin in QGIS
+
+## Working with the OAFeat interface in QGIS
+
+## Working with the command line
+
+
+
+
+
+
 
 
 
