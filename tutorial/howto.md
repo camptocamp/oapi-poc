@@ -79,9 +79,23 @@ Here a list of example queries you can test within a browser. Use Firefox, which
 
 ## Working with the STAC Browser
 >**Note**
->At this [link](https://stacindex.org/ecosystem?category=Client) you will find a list of clients that can be used to work with APIs implementing OAFeat. Here the basic usage with the STAC Browser will be shortly discussed.
+>At this [link](https://stacindex.org/ecosystem?category=Client) you will find a list of clients that can be used to work with APIs implementing the STAC API Specification. Here the basic usage with the STAC Browser will be shortly discussed.
+
+An easy way to consume the API is to use the STAC Browser:
+- Go to https://radiantearth.github.io/stac-browser/#/
+- Copy&Paste the URL https://poc.meteoschweiz-poc.swisstopo.cloud/root/ under `Please specify a STAC Catalog or API...`
+- Click `Load`
+
+You will get a HTML presentation of the Landing Page with a description and a list of collections and additional links. You can visualize the collections as List or as Tiles and you can order them alphabetically by title.
+Then you just [follow your nose](https://www.w3.org/wiki/FollowLinksForMoreInformation) to browse the different resources. Meaning: click on a collection of interest, click on an item of interest, download the asset files.
+
+>**Note**
+>For the collections [Aktuelle Daten Temperatur](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/0a62455f-c39c-4084-bd54-36ee2192d3af) and [Stundenwerte Messstationen](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025) the asset files are available directly at collection level.
 
 ## Working with the STAC API Browser Plugin in QGIS
+In order to consume the API with the STAC API Browser Plugin in QGIS proceed as follows:
+
+
 
 ## Working with the OAFeat interface in QGIS
 >**Note**
@@ -89,6 +103,9 @@ Here a list of example queries you can test within a browser. Use Firefox, which
 
 
 ## Working with the command line
+>**Note**
+>At this [link](https://stacindex.org/ecosystem?category=CLI) you will find a list of CLI clients that can be used to work with APIs implementing the STAC API Specification. For the following examples we will be using [`curl`](https://curl.se/), [`jq`](https://stedolan.github.io/jq/) and [`wget`](https://www.gnu.org/software/wget/)
+
 
 
 
