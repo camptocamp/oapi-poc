@@ -60,7 +60,17 @@ Here a list of example queries you can test within a browser. Use Firefox, which
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/search?bbox=7.222133596513244,46.8348382353821,7.632747610185119,47.022404503762395&collections=b46a8f8d-bc48-41d3-b20a-de61d0763318 (STAC /search)
 - Get all items of a collection with a specific `datetime` in a given `BBOX`:
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025/items?bbox=7.36427035898788,46.89164576822265,7.569577365823817,46.98541165749452&datetime=2022-07-10T16:00:00Z (OAFeat)
-  - https://poc.meteoschweiz-poc.swisstopo.cloud/root/search?collections=ad2b1452-9f3c-4137-9822-9758298bc025&bbox=7.36427035898788,46.89164576822265,7.569577365823817,46.98541165749452&datetime=2022-07-10T16:00:00Z (STAC /search)   
+  - https://poc.meteoschweiz-poc.swisstopo.cloud/root/search?collections=ad2b1452-9f3c-4137-9822-9758298bc025&bbox=7.36427035898788,46.89164576822265,7.569577365823817,46.98541165749452&datetime=2022-07-10T16:00:00Z (STAC /search)
+- Get the information on the current temperature at the Arosa station:
+  - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/0a62455f-c39c-4084-bd54-36ee2192d3af/items/ARO (OAFeat)
+  - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/0a62455f-c39c-4084-bd54-36ee2192d3af/items?station_name=Arosa (OAFeat)
+  - https://poc.meteoschweiz-poc.swisstopo.cloud/root/search?collections=0a62455f-c39c-4084-bd54-36ee2192d3af&ids=ARO (STAC /search)
+- Get all hourly observations of the last seven days at the Bantiger station:
+  - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025/items?nat_abbr=BAN (OAFeat)
+  - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025/items?station_name=Bantiger (OAFeat)
+- Get all observations of the parameter `pp0qnhh0` for all stations at the `datetime` 2022-07-17T00:00:00Z:
+  - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025/items?datetime=2022-07-17T00:00:00Z&param_short=pp0qnhh0 (OAFeat)
+
 
 
 
