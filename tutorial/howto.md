@@ -149,7 +149,18 @@ It is additionally possible to filter by `datetime`, `BBOX` and by other item pr
 >**Note**
 >At this [link](https://stacindex.org/ecosystem?category=CLI) you will find a list of CLI clients that can be used to work with APIs implementing the STAC API Specification. For the following examples we will be using [`curl`](https://curl.se/), [`jq`](https://stedolan.github.io/jq/) and [`wget`](https://www.gnu.org/software/wget/)
 
-
+- Get the tile and the ID of all available collections:
+  -  `curl "https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections" | jq ".collections[] | .title, .id"`
+- Get all items of specific collection:
+  -  `curl "https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/4ccc5153-cc27-47b8-abee-9d6e12e19701/items" | jq ".features[].id"`
+- Get the URL of the assets of a specific item:
+  -  `curl "https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/4ccc5153-cc27-47b8-abee-9d6e12e19701/items/20220301" | jq ".assets[].href"`
+-  Download an asset file:
+  - `wget "https://s3.meteoschweiz-poc.swisstopo.cloud/4ccc5153-cc27-47b8-abee-9d6e12e19701/msg.SIS-No-Horizon.M_ch02.lonlat_20220301000000.nc"`
+- Get the URL of the assets of an item with a specific `datetime` (assuming there is only one item with that datetime:
+  - `curl "https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/35ff8133-364a-47eb-a145-0d641b706bff/items?datetime=2022-07-04T13:24:00Z" | jq ".features[].assets[].href"`
+- Get the URL of all assets of all item in a given `BBOX`:
+  -  `curl "https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/b46a8f8d-bc48-41d3-b20a-de61d0763318/items?bbox=7.222133596513244,46.8348382353821,7.632747610185119,47.022404503762395" | jq ".features[].assets[].href"`
 
 
 
