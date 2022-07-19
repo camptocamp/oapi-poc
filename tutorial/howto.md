@@ -86,8 +86,12 @@ An easy way to consume the API is to use the STAC Browser:
 - Copy&Paste the URL https://poc.meteoschweiz-poc.swisstopo.cloud/root/ under `Please specify a STAC Catalog or API...`
 - Click `Load`
 
+![Load](img/stac_browser.png)
+
 You will get a HTML presentation of the Landing Page with a description and a list of collections and additional links. You can visualize the collections as List or as Tiles and you can order them alphabetically by title.
 Then you just [follow your nose](https://www.w3.org/wiki/FollowLinksForMoreInformation) to browse the different resources. Meaning: click on a collection of interest, click on an item of interest, download the asset files.
+
+![Landing page](img/landing_page.png)
 
 >**Note**
 >For the collections [Aktuelle Daten Temperatur](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/0a62455f-c39c-4084-bd54-36ee2192d3af) and [Stundenwerte Messstationen](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025) the asset files are available directly at collection level.
