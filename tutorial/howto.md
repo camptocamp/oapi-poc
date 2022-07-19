@@ -137,6 +137,13 @@ It is additionally possible to filter by `datetime` and by `BBOX`. In the follow
 
 ![Add OAFeat collection](img/oafeat_add_collection.png)
 
+It is additionally possible to filter by `datetime`, `BBOX` and by other item properties. In the following example we will retrieve all observations (collection `Stundenwerte Messstationen...`) of the parameter `pp0qnhh0` for all stations at the datetime `2022-07-17T00:00:00Z`:
+
+- Select the collection `Stundenwerte Messstationen...` and click on `Build query`
+- Under `Provide Specific Filter Expressions` set the expression to `"param_short" = 'pp0qnhh0' AND "datetime" = '2022-07-17T00:00:00Z'`
+- Click on `OK`, click on `Add` then on `Close`
+
+![OAFeat filters](img/oafeat_filter.png)
 
 ## Working with the command line
 >**Note**
