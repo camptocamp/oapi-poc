@@ -118,18 +118,24 @@ In order to consume the API with the STAC API Browser Plugin in QGIS proceed as 
 It is additionally possible to filter by `datetime` and by `BBOX`. In the following example we will retrieve the asset files of the item with datetime `2022-07-07T13:24:00Z` from the collection `Warnung vor Naturgefahren`:
 
 - In the main window of the plugin select the collection `Warnung vor Naturgefahren`
-- Activate `Filter by date` and set teh date and time in `Start`. Leave `End` as `NULL`
+- Activate `Filter by date` and set the date and time in `Start`. Leave `End` as `NULL`
 - Click on `Search` and download the asset file
 
-![Filter by datetime](search_by_date.png)
-
-
-
-
+![Filter by datetime](img/search_by_date.png)
 
 ## Working with the OAFeat interface in QGIS
 >**Note**
 >At this [link](https://github.com/opengeospatial/ogcapi-features/tree/master/implementations/clients) you will find a list of clients that can be used to work with APIs implementing OAFeat. Here the basic usage with the GIS client QGIS will be shortly discussed.
+
+- Open QGIS and go to `Layer>Add Layer>Add WFS Layer...`
+- Click on `New`, set a name for the connection, copy&paste the URL https://poc.meteoschweiz-poc.swisstopo.cloud/root/ in `URL`
+- Under `WFS Options` set `Version` to `OGC API - Features` and click on `OK`
+
+![Add OAFeat connection](img/oafeat_connection.png)
+
+- In the main window choose the newly created connection, click on `Connect`, select the collection `Aktuelle Daten...`, click on `Add` then on `Close`
+
+![Add OAFeat collection](img/oafeat_add_collection.png)
 
 
 ## Working with the command line
