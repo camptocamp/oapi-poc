@@ -83,7 +83,7 @@ Here a list of example queries you can test within a browser. Use Firefox, which
 
 An easy way to consume the API is to use the STAC Browser:
 - Go to https://radiantearth.github.io/stac-browser/#/
-- Copy&Paste the URL https://poc.meteoschweiz-poc.swisstopo.cloud/root/ under `Please specify a STAC Catalog or API...`
+- Copy&Paste the URL https://poc.meteoschweiz-poc.swisstopo.cloud/root/ in `Please specify a STAC Catalog or API...`
 - Click `Load`
 
 ![Load](img/stac_browser.png)
@@ -98,6 +98,32 @@ Then you just [follow your nose](https://www.w3.org/wiki/FollowLinksForMoreInfor
 
 ## Working with the STAC API Browser Plugin in QGIS
 In order to consume the API with the STAC API Browser Plugin in QGIS proceed as follows:
+
+- Open QGIS and go to `Plugins>Manage and Install Plugins...`
+- Search for `STAC API Browser` and install the plugin
+
+![STAC API Plugin](img/stac_api_plugin.png)
+
+- Go to `Plugins>STAC API Browser Plugin>Open STAC API Browser`
+- Click on `New`, set a name for the connection, copy&paste the URL https://poc.meteoschweiz-poc.swisstopo.cloud/root/ in `URL`, click on `OK`
+
+![Add connection](img/add_connection.png)
+
+- Click on `Fetch collections`, select the collection of interest and click on `Search`
+- Click on `View assets` in the item of interest
+- Click on `Download asset` and load back into QGIS the downloaded file
+
+![Download asset](img/download_asset.png)
+
+It is additionally possible to filter by `datetime` and by `BBOX`. In the following example we will retrieve the asset files of the item with datetime `2022-07-07T13:24:00Z` from the collection `Warnung vor Naturgefahren`:
+
+- In the main window of the plugin select the collection `Warnung vor Naturgefahren`
+- Activate `Filter by date` and set teh date and time in `Start`. Leave `End` as `NULL`
+- Click on `Search` and download the asset file
+
+![Filter by datetime](search_by_date.png)
+
+
 
 
 
