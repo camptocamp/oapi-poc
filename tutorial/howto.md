@@ -162,7 +162,10 @@ It is additionally possible to filter by `datetime`, `BBOX` and by other item pr
 - Get the URL of all assets of all items in a given `BBOX`:
   -  `curl "https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/b46a8f8d-bc48-41d3-b20a-de61d0763318/items?bbox=7.222133596513244,46.8348382353821,7.632747610185119,47.022404503762395" | jq ".features[].assets[].href"`
 
+## An example of an interactive web map with Leaflet
+Here an example of an interactive web map using [Leaflet](https://leafletjs.com/), the [WMTS](https://api.geo.admin.ch/services/sdiservices.html#wmts) of the Federal Spatial Data Infrastructure for the backgroung map, and the OAFeat interface to the collection `Aktuelle Daten Temperatur`:
 
+- https://codepen.io/p1d1d1-the-sans/pen/abYwmyP
 
 
 
