@@ -17,7 +17,7 @@ def collection_from_geocat(uuid):
 
     root = ET.fromstring(r.text)
 
-    item = {"id": uuid}
+    collection = {"id": uuid}
     # item = {
     #     "id": (
     #         e.text
@@ -32,12 +32,12 @@ def collection_from_geocat(uuid):
     # }
 
     if (e := root.find(".//gmd:citation//gmd:title//*[@locale='#EN']", NS)) is not None:
-        item["title"] = e.text
+        collection["title"] = e.text
 
     if (e := root.find(".//gmd:abstract//*[@locale='#EN']", NS)) is not None:
-        item["description"] = e.text
+        collection["description"] = e.text
 
-    item.update(
+    collection.update(
         {
             "extent": {
                 "spatial": {"bbox": [[5.96, 45.82, 10.49, 47.81]]},
@@ -57,7 +57,7 @@ def collection_from_geocat(uuid):
         }
     )
 
-    return item
+    return collection
 
 
 uuids = [
@@ -69,7 +69,7 @@ uuids = [
     "e74c17ea-0822-44db-bef9-f37135a68245",
     "7880287e-5d4b-4e15-b13f-846df89979a3",
     "a6296aa9-d183-45c3-90fc-f03ec7d637be",
-    "0a3b0af5-bbb4-4dde-bcff-adb27b932d77",
+    # "0a3b0af5-bbb4-4dde-bcff-adb27b932d77",
     "35ff8133-364a-47eb-a145-0d641b706bff",
     "ed6a30c9-672e-4d8f-95e4-8c5bef8ab417",
 ]
@@ -109,9 +109,132 @@ for line in path.open("r").readlines()[1:]:
             "nat_abbr": parts[3],
             "wigos_id": parts[4],
         },
-        "bbox": [lng, lat, lng, lat],
     }
 
     p = Path(f"../collections/{collection}/items/{id}.json")
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(item, indent=4, ensure_ascii=False))
+
+
+# Model catalog tree
+def add_child(catalogs, parent_id, child_id, child_title):
+    catalogs[child_id] = {
+        **catalogs[parent_id],
+        "type": "Catalog",
+        "id": child_id,
+        "title": child_title,
+        "links": [],
+    }
+
+    catalogs[parent_id]["links"].append(
+        {
+            "href": child_id,
+            "rel": "child",
+            "type": "application/json",
+            "title": catalogs[child_id]["title"],
+        }
+    )
+
+    catalogs[child_id]["links"].append(
+        {
+            "href": parent_id,
+            "rel": "parent",
+            "type": "application/json",
+            "title": catalogs[parent_id]["title"],
+        }
+    )
+
+
+# root catalog (collection)
+collection_id = "a6296aa9-d183-45c3-90fc-f03ec7d637be"
+
+collection = json.load(Path(f"../collections/{collection_id}.json").open())
+
+catalogs = {collection_id: collection}
+
+# create child catalogs
+format_id = "cosmo-1e_grib2"
+add_child(catalogs, collection_id, format_id, "COSMO-1E - GRIB2")
+
+zz = ["00", "03", "06", "09", "12", "15", "18", "21"]
+hhh = [str(item).zfill(3) for item in range(0, 34)]
+parameter_leveltype = {
+    "T_2M": "single-level",
+    "TOT_PREC": "single-level",
+    "T_level_2000m": "heightamsl-level",
+    "T_level_78": "model-level",
+    "T_level_79": "model-level",
+    "T_level_80": "model-level",
+    "T_level_500hPa": "pressure-level",
+}
+member = [str(item).zfill(3) for item in range(0, 11)]
+
+for z in zz:
+    z_id = f"{format_id}_{z}"
+    add_child(catalogs, format_id, z_id, f"COSMO-1E - GRIB2 - {z}")
+    for h in hhh:
+        h_id = f"{z_id}_{h}"
+        add_child(catalogs, z_id, h_id, f"COSMO-1E - GRIB2 - {z} - {h}")
+        for param, l in parameter_leveltype.items():
+            param_id = f"{h_id}_{param}"
+            add_child(
+                catalogs, h_id, param_id, f"COSMO-1E - GRIB2 - {z} - {h} - {param}"
+            )
+
+            # add items
+            for m in member:
+                id = f"COSMO-1E_alps_rotlatlon_{l}_leadtime_{h}_member_{m}_parameter_{param}"
+                item = {
+                    "id": id,
+                    "collection": collection_id,
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [5.96, 45.82],
+                                [10.49, 45.82],
+                                [10.49, 47.81],
+                                [5.96, 47.81],
+                                [5.96, 45.82],
+                            ]
+                        ],
+                    },
+                    "properties": {
+                        "model-name": "COSMO-1E",
+                        "domain": "alps",
+                        "grid-type": "rotlatlon",
+                        "level-type": l,
+                        "leadtime": h,
+                        "member": m,
+                        "parameter": param,
+                        "parameter-shortname": param.split("_level")[0],
+                    },
+                    "links": [
+                        {
+                            "href": f"../../{param_id}",
+                            "rel": "parent",
+                            "type": "application/json",
+                            "title": catalogs[param_id]["title"],
+                        }
+                    ],
+                }
+
+                if "level" in param:
+                    item["properties"]["level-value"] = param.split("level_")[1]
+
+                p = Path(f"../collections/{collection_id}/items/{id}.json")
+                p.parent.mkdir(parents=True, exist_ok=True)
+                p.write_text(json.dumps(item, indent=4, ensure_ascii=False))
+
+                catalogs[param_id]["links"].append(
+                    {
+                        "href": f"{collection_id}/items/{id}",
+                        "rel": "item",
+                        "type": "application/geo+json",
+                    }
+                )
+
+for catalog_id, catalog in catalogs.items():
+    p = Path(f"../collections/{catalog_id}.json")
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(catalog, indent=4, ensure_ascii=False))

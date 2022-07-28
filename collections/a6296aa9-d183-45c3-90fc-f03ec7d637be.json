@@ -30,6 +30,12 @@
             "type": "html/text",
             "hreflang": "en",
             "title": "Metadata (geocat.ch)"
+        },
+        {
+            "href": "cosmo-1e_grib2",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2"
         }
     ],
     "crs": [

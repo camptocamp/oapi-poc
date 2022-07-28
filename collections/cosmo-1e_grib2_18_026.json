@@ -1,0 +1,80 @@
+{
+    "id": "cosmo-1e_grib2_18_026",
+    "title": "COSMO-1E - GRIB2 - 18 - 026",
+    "description": "Temporary data set for internal use only",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.96,
+                    45.82,
+                    10.49,
+                    47.81
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "various",
+    "links": [
+        {
+            "href": "cosmo-1e_grib2_18",
+            "rel": "parent",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_026_T_2M",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 026 - T_2M"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_026_TOT_PREC",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 026 - TOT_PREC"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_026_T_level_2000m",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 026 - T_level_2000m"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_026_T_level_78",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 026 - T_level_78"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_026_T_level_79",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 026 - T_level_79"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_026_T_level_80",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 026 - T_level_80"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_026_T_level_500hPa",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 026 - T_level_500hPa"
+        }
+    ],
+    "crs": [
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    ],
+    "type": "Catalog"
+}

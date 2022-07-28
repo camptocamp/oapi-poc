@@ -1,0 +1,93 @@
+{
+    "id": "cosmo-1e_grib2_00_012_TOT_PREC",
+    "title": "COSMO-1E - GRIB2 - 00 - 012 - TOT_PREC",
+    "description": "Temporary data set for internal use only",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.96,
+                    45.82,
+                    10.49,
+                    47.81
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "various",
+    "links": [
+        {
+            "href": "cosmo-1e_grib2_00_012",
+            "rel": "parent",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 00 - 012"
+        },
+        {
+            "href": "a6296aa9-d183-45c3-90fc-f03ec7d637be/items/COSMO-1E_alps_rotlatlon_single-level_leadtime_012_member_000_parameter_TOT_PREC",
+            "rel": "item",
+            "type": "application/geo+json"
+        },
+        {
+            "href": "a6296aa9-d183-45c3-90fc-f03ec7d637be/items/COSMO-1E_alps_rotlatlon_single-level_leadtime_012_member_001_parameter_TOT_PREC",
+            "rel": "item",
+            "type": "application/geo+json"
+        },
+        {
+            "href": "a6296aa9-d183-45c3-90fc-f03ec7d637be/items/COSMO-1E_alps_rotlatlon_single-level_leadtime_012_member_002_parameter_TOT_PREC",
+            "rel": "item",
+            "type": "application/geo+json"
+        },
+        {
+            "href": "a6296aa9-d183-45c3-90fc-f03ec7d637be/items/COSMO-1E_alps_rotlatlon_single-level_leadtime_012_member_003_parameter_TOT_PREC",
+            "rel": "item",
+            "type": "application/geo+json"
+        },
+        {
+            "href": "a6296aa9-d183-45c3-90fc-f03ec7d637be/items/COSMO-1E_alps_rotlatlon_single-level_leadtime_012_member_004_parameter_TOT_PREC",
+            "rel": "item",
+            "type": "application/geo+json"
+        },
+        {
+            "href": "a6296aa9-d183-45c3-90fc-f03ec7d637be/items/COSMO-1E_alps_rotlatlon_single-level_leadtime_012_member_005_parameter_TOT_PREC",
+            "rel": "item",
+            "type": "application/geo+json"
+        },
+        {
+            "href": "a6296aa9-d183-45c3-90fc-f03ec7d637be/items/COSMO-1E_alps_rotlatlon_single-level_leadtime_012_member_006_parameter_TOT_PREC",
+            "rel": "item",
+            "type": "application/geo+json"
+        },
+        {
+            "href": "a6296aa9-d183-45c3-90fc-f03ec7d637be/items/COSMO-1E_alps_rotlatlon_single-level_leadtime_012_member_007_parameter_TOT_PREC",
+            "rel": "item",
+            "type": "application/geo+json"
+        },
+        {
+            "href": "a6296aa9-d183-45c3-90fc-f03ec7d637be/items/COSMO-1E_alps_rotlatlon_single-level_leadtime_012_member_008_parameter_TOT_PREC",
+            "rel": "item",
+            "type": "application/geo+json"
+        },
+        {
+            "href": "a6296aa9-d183-45c3-90fc-f03ec7d637be/items/COSMO-1E_alps_rotlatlon_single-level_leadtime_012_member_009_parameter_TOT_PREC",
+            "rel": "item",
+            "type": "application/geo+json"
+        },
+        {
+            "href": "a6296aa9-d183-45c3-90fc-f03ec7d637be/items/COSMO-1E_alps_rotlatlon_single-level_leadtime_012_member_010_parameter_TOT_PREC",
+            "rel": "item",
+            "type": "application/geo+json"
+        }
+    ],
+    "crs": [
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    ],
+    "type": "Catalog"
+}

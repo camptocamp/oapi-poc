@@ -35,7 +35,7 @@ pub(crate) async fn init(database_url: &Url) -> anyhow::Result<()> {
         let file = entry.as_file().unwrap().contents();
         let collection: Collection = serde_json::from_slice(file)?;
         let collection_id = &collection.id;
-        tracing::info!("Initializing `{}`", collection_id);
+
         db.create_collection(&collection).await?;
 
         for entry in COLLECTIONS_DIR
@@ -50,7 +50,5 @@ pub(crate) async fn init(database_url: &Url) -> anyhow::Result<()> {
 
     // register/load assets
     tracing::info!("run full registration");
-    crate::register::run("").await.unwrap();
-
-    Ok(())
+    crate::register::run("").await
 }

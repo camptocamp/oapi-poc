@@ -1,0 +1,242 @@
+{
+    "id": "cosmo-1e_grib2_18",
+    "title": "COSMO-1E - GRIB2 - 18",
+    "description": "Temporary data set for internal use only",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.96,
+                    45.82,
+                    10.49,
+                    47.81
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "various",
+    "links": [
+        {
+            "href": "cosmo-1e_grib2",
+            "rel": "parent",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_000",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 000"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_001",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 001"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_002",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 002"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_003",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 003"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_004",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 004"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_005",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 005"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_006",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 006"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_007",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 007"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_008",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 008"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_009",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 009"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_010",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 010"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_011",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 011"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_012",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 012"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_013",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 013"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_014",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 014"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_015",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 015"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_016",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 016"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_017",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 017"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_018",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 018"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_019",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 019"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_020",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 020"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_021",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 021"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_022",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 022"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_023",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 023"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_024",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 024"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_025",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 025"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_026",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 026"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_027",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 027"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_028",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 028"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_029",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 029"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_030",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 030"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_031",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 031"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_032",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 032"
+        },
+        {
+            "href": "cosmo-1e_grib2_18_033",
+            "rel": "child",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 18 - 033"
+        }
+    ],
+    "crs": [
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    ],
+    "type": "Catalog"
+}

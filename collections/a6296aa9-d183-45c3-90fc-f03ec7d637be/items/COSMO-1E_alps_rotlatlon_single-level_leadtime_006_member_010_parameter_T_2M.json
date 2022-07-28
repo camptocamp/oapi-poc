@@ -1,0 +1,49 @@
+{
+    "id": "COSMO-1E_alps_rotlatlon_single-level_leadtime_006_member_010_parameter_T_2M",
+    "collection": "a6296aa9-d183-45c3-90fc-f03ec7d637be",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    5.96,
+                    45.82
+                ],
+                [
+                    10.49,
+                    45.82
+                ],
+                [
+                    10.49,
+                    47.81
+                ],
+                [
+                    5.96,
+                    47.81
+                ],
+                [
+                    5.96,
+                    45.82
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "model-name": "COSMO-1E",
+        "domain": "alps",
+        "grid-type": "rotlatlon",
+        "level-type": "single-level",
+        "leadtime": "006",
+        "member": "010",
+        "parameter": "T_2M",
+        "parameter-shortname": "T_2M"
+    },
+    "links": [
+        {
+            "href": "../../cosmo-1e_grib2_21_006_T_2M",
+            "rel": "parent",
+            "type": "application/json",
+            "title": "COSMO-1E - GRIB2 - 21 - 006 - T_2M"
+        }
+    ]
+}

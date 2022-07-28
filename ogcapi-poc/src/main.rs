@@ -34,6 +34,7 @@ async fn main() -> anyhow::Result<()> {
 
     // initialize
     if std::env::var("INITIALIZE").unwrap_or_else(|_| "false".to_string()) == "true" {
+        tracing::info!("Initializing ...");
         initialization::init(&config.database_url).await?;
     }
 
@@ -41,7 +42,6 @@ async fn main() -> anyhow::Result<()> {
     let root = LandingPage::new("root")
         .title("PoC MeteoSchweiz")
         .description(include_str!("../../README.md"));
-    // .links(vec![Link::new("collections/test-child", CHILD)]);
 
     // application state
     let state = State::new_from(&config)
