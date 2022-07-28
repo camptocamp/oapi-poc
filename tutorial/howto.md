@@ -70,20 +70,20 @@ Here a list of example queries you can test within a browser. Use Firefox, which
 - Get the item with `datetime=2022-07-04T13:24:00Z` from the collection `Warnungen vor Naturgefahren` (ID: `35ff8133-364a-47eb-a145-0d641b706bff`):
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/35ff8133-364a-47eb-a145-0d641b706bff/items?datetime=2022-07-04T13:24:00Z (OAFeat interface)
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/search?collections=35ff8133-364a-47eb-a145-0d641b706bff&datetime=2022-07-04T13:24:00Z (STAC /search)
-- Get all items of a collection in a given `BBOX`:
+- Get all items of the collection `Tageswerte Messstationen` (ID: `b46a8f8d-bc48-41d3-b20a-de61d0763318`) in a given `bbox`:
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/b46a8f8d-bc48-41d3-b20a-de61d0763318/items?bbox=7.222133596513244,46.8348382353821,7.632747610185119,47.022404503762395 (OAFeat interface)
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/search?bbox=7.222133596513244,46.8348382353821,7.632747610185119,47.022404503762395&collections=b46a8f8d-bc48-41d3-b20a-de61d0763318 (STAC /search)
-- Get all items of a collection with a specific `datetime` in a given `BBOX`:
+- Get all items of the collection `Stundenwerte Messstationen` (ID: `ad2b1452-9f3c-4137-9822-9758298bc025`) with `datetime=2022-07-10T16:00:00Z` in a given `bbox`:
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025/items?bbox=7.36427035898788,46.89164576822265,7.569577365823817,46.98541165749452&datetime=2022-07-10T16:00:00Z (OAFeat interface)
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/search?collections=ad2b1452-9f3c-4137-9822-9758298bc025&bbox=7.36427035898788,46.89164576822265,7.569577365823817,46.98541165749452&datetime=2022-07-10T16:00:00Z (STAC /search)
-- Get the information on the current temperature at the Arosa station:
+- Get the information on the current temperature at the Arosa (ID: ARO) station from the collection `Aktuelle Daten Temperatur` (ID: `0a62455f-c39c-4084-bd54-36ee2192d3af`):
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/0a62455f-c39c-4084-bd54-36ee2192d3af/items/ARO (OAFeat interface)
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/0a62455f-c39c-4084-bd54-36ee2192d3af/items?station_name=Arosa (OAFeat interface. `KVP` example)
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/search?collections=0a62455f-c39c-4084-bd54-36ee2192d3af&ids=ARO (STAC /search)
-- Get all hourly observations of the last seven days at the Bantiger station:
+- Get all hourly observations of the last seven days at the Bantiger station from the collection `Stundenwerte Messstationen` (ID: `ad2b1452-9f3c-4137-9822-9758298bc025`):
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025/items?nat_abbr=BAN (OAFeat interface. `KVP` example)
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025/items?station_name=Bantiger (OAFeat interface. `KVP` example)
-- Get all observations of the parameter `pp0qnhh0` for all stations at the `datetime` 2022-07-17T00:00:00Z:
+- Get all observations of the parameter `pp0qnhh0` for all stations at the `datetime=2022-07-17T00:00:00Z` from the collection `Stundenwerte Messstationen` (ID: `ad2b1452-9f3c-4137-9822-9758298bc025`):
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025/items?datetime=2022-07-17T00:00:00Z&param_short=pp0qnhh0 (OAFeat interface. `KVP` example)
 
 ## Working with the STAC Browser
@@ -124,7 +124,7 @@ In order to consume the API with the STAC API Browser Plugin in QGIS proceed as 
 
 ![Download asset](img/download_asset.png)
 
-It is additionally possible to filter by `datetime` and by `BBOX`. In the following example we will retrieve the asset files of the item with datetime `2022-07-07T13:24:00Z` from the collection `Warnung vor Naturgefahren`:
+It is additionally possible to filter by `datetime` and by `bbox`. In the following example we will retrieve the asset files of the item with datetime `2022-07-07T13:24:00Z` from the collection `Warnung vor Naturgefahren`:
 
 - In the main window of the plugin select the collection `Warnung vor Naturgefahren`
 - Activate `Filter by date` and set the date and time in `Start`. Leave `End` as `NULL`
@@ -146,7 +146,7 @@ It is additionally possible to filter by `datetime` and by `BBOX`. In the follow
 
 ![Add OAFeat collection](img/oafeat_add_collection.png)
 
-It is additionally possible to filter by `datetime`, `BBOX` and by other item properties. In the following example we will retrieve all observations (collection `Stundenwerte Messstationen...`) of the parameter `pp0qnhh0` for all stations at the datetime `2022-07-17T00:00:00Z`:
+It is additionally possible to filter by `datetime`, `bbox` and by other item properties. In the following example we will retrieve all observations (collection `Stundenwerte Messstationen...`) of the parameter `pp0qnhh0` for all stations at the datetime `2022-07-17T00:00:00Z`:
 
 - Select the collection `Stundenwerte Messstationen...` and click on `Build query`
 - Under `Provide Specific Filter Expressions` set the expression to `"param_short" = 'pp0qnhh0' AND "datetime" = '2022-07-17T00:00:00Z'`
@@ -160,15 +160,15 @@ It is additionally possible to filter by `datetime`, `BBOX` and by other item pr
 
 - Get the title and the ID of all available collections:
   -  `curl "https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections" | jq ".collections[] | .title, .id"`
-- Get all items of a specific collection:
+- Get all items of the collection `Gridded dataset of global radiation` (ID: `4ccc5153-cc27-47b8-abee-9d6e12e19701`):
   -  `curl "https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/4ccc5153-cc27-47b8-abee-9d6e12e19701/items" | jq ".features[].id"`
-- Get the URL of the assets of a specific item:
+- Get the URL of the assets of the item with ID `20220301` from the collection `Gridded dataset of global radiation` (ID: `4ccc5153-cc27-47b8-abee-9d6e12e19701`):
   -  `curl "https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/4ccc5153-cc27-47b8-abee-9d6e12e19701/items/20220301" | jq ".assets[].href"`
 - Download an asset file:
   - `wget "https://s3.meteoschweiz-poc.swisstopo.cloud/4ccc5153-cc27-47b8-abee-9d6e12e19701/msg.SIS-No-Horizon.M_ch02.lonlat_20220301000000.nc"`
-- Get the URL of the assets of an item with a specific `datetime`:
+- Get the URL of the assets of the item with `datetime=2022-07-04T13:24:00Z` from the collection `Warnungen vor Naturgefahren` (ID: `35ff8133-364a-47eb-a145-0d641b706bff`):
   - `curl "https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/35ff8133-364a-47eb-a145-0d641b706bff/items?datetime=2022-07-04T13:24:00Z" | jq ".features[].assets[].href"`
-- Get the URL of all assets of all items in a given `BBOX`:
+- Get the URL of all assets of all items in a given `bbox` from the collection `Tageswerte Messstationen` (ID: `b46a8f8d-bc48-41d3-b20a-de61d0763318`):
   -  `curl "https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/b46a8f8d-bc48-41d3-b20a-de61d0763318/items?bbox=7.222133596513244,46.8348382353821,7.632747610185119,47.022404503762395" | jq ".features[].assets[].href"`
 
 ## An example of an interactive web map with Leaflet
