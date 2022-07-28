@@ -33,6 +33,12 @@ The API documentation is available here:
 |[/api](https://poc.meteoschweiz-poc.swisstopo.cloud/root/api)|The Open API definition|
 |[/swagger](https://poc.meteoschweiz-poc.swisstopo.cloud/root/swagger)|The Swagger UI|
 
+## Default limit and pagination
+
+The number of items returned as a result to a query (`/collections/{collectionId}/items` and `/search` endpoints) is limited to 100. In case the number of matched items is greater than 100, the API implements a pagination mechanism and provides two links `rel: "next"` and `rel: "prev"` to allow you to go through all matched items.
+The following [query](https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025/items?limit=100), for example, matches 394092 (see property `numberMatched`) items but only returns 100 of them (see property `numberReturned`). The link with `rel: "next"` returns the next 100 items and so on. The link with `rel: "prev"` returns the previous 100 items. 
+
+
 ## Available datasets
 
 The API provides currently the following datasets (collections):
