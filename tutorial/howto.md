@@ -2,13 +2,13 @@
 
 This API is an implementation of both the [STAC API](https://github.com/radiantearth/stac-api-spec) and the [OGC API - Features - Part 1: Core](https://ogcapi.ogc.org/features/) (OAFeat). The STAC API and OAFeat have a slightly different data model, which is briefly discussed below.
 
-The STAC API is a “dataset based” download service providing access to packaged geospatial data and related metadata. The data model is based on the following main concepts:
+The STAC API is a “**dataset based**” download service providing access to packaged geospatial data and related metadata. The data model is based on the following main concepts:
 
 - Collection: a `collection` is a set of metadata about a geospatial dataset, like its name, description, spatial and temporal extent, etc. Individual records within a collection are called `items`
 - Item: an `item` represents an atomic collection of inseparable data and metadata. A STAC `item` is a GeoJSON Feature and can be easily read by any modern GIS or geospatial library, and it describes a SpatioTemporal Asset. This means that the GeoJSON is not the "actual" thing, but instead references files and serves as an index to an `asset`
 - Asset: an `asset` is any file containing the actual data.
 
-OAFeat is a "features based" service providing access to single objects (`features`) of a dataset. In OAFeat there is no concept of `asset` and the `item` is the actual data.
+OAFeat is a "**features based**" service providing access to single objects (`features`) of a dataset. In OAFeat there is no concept of `asset` and the `item` is the actual data.
 
 To summarize, the STAC API is aimed at providing access to the complete dataset, while OAFeat is aimed at providing access to single features of a dataset.
 
@@ -18,13 +18,22 @@ The API provides the following endpoints:
 
 | Endpoint                                        | Returns                                                 | Description                                                                         |
 | ----------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| `/`                                             | JSON                                                    | Landing page                                                                        |
-| `/conformance`                                  | JSON                                                    | Info about standards to which the API conforms                                      |
-| `/collections`                                  | JSON                                                    | Object containing an array of Collection objects in the Catalog, and Link relations |
+| [/](https://poc.meteoschweiz-poc.swisstopo.cloud/root/)                                             | JSON                                                    | Landing page                                                                        |
+| [/conformance](https://poc.meteoschweiz-poc.swisstopo.cloud/root/conformance)                                  | JSON                                                    | Info about standards to which the API conforms                                      |
+| [/collections](https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections)                                  | JSON                                                    | Object containing an array of Collection objects in the Catalog, and Link relations |
 | `/collections/{collectionId}`                   | Collection                                              | Returns single Collection JSON                                                      |
 | `/collections/{collectionId}/items`             | ItemCollection                                          | GeoJSON FeatureCollection-conformant entity of Item objects in collection           |
 | `/collections/{collectionId}/items/{featureId}` | Item                                                    | Returns single Item (GeoJSON Feature)                                               |
-| `/search`                                       | Item Collection                                         | STAC search endpoint                                                                |
+| [/search](https://poc.meteoschweiz-poc.swisstopo.cloud/root/search)                                       | Item Collection                                         | STAC search endpoint                                                                |
+
+The API documentation is available here:
+
+|Endpoint|Description|
+|--------|-----------|
+|[/api](https://poc.meteoschweiz-poc.swisstopo.cloud/root/api)|The Open API definition|
+|[/swagger](https://poc.meteoschweiz-poc.swisstopo.cloud/root/swagger)|The Swagger UI|
+
+## Available datasets
 
 The API provides currently the following datasets (collections):
 
@@ -50,15 +59,15 @@ The API provides currently the following datasets (collections):
 
 Here a list of example queries you can test within a browser. Use Firefox, which has a built-in json viewer. Copy&paste the example queries in URL bar of the browser:
 
-- Get the description of a collection:
+- Get the description of the collection `Gridded dataset of global radiation` (ID: `4ccc5153-cc27-47b8-abee-9d6e12e19701`):
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/4ccc5153-cc27-47b8-abee-9d6e12e19701
-- Get all items of a collection:
+- Get all items the collection `Gridded dataset of global radiation` (ID: `4ccc5153-cc27-47b8-abee-9d6e12e19701`):
   -  https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/4ccc5153-cc27-47b8-abee-9d6e12e19701/items (OAFeat interface)
   -  https://poc.meteoschweiz-poc.swisstopo.cloud/root/search?collections=4ccc5153-cc27-47b8-abee-9d6e12e19701 (STAC /search)
-- Get a specific item and associated assets:
+- Get the item with ID `20220301` from the collection `Gridded dataset of global radiation` (ID: `4ccc5153-cc27-47b8-abee-9d6e12e19701`) and associated assets:
   -  https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/4ccc5153-cc27-47b8-abee-9d6e12e19701/items/20220301 (OAFeat interface)
   -  https://poc.meteoschweiz-poc.swisstopo.cloud/root/search?collections=4ccc5153-cc27-47b8-abee-9d6e12e19701&items=20220301 (STAC /search)
-- Get an item with a specific `datetime`:
+- Get the item with `datetime=2022-07-04T13:24:00Z` from the collection `Warnungen vor Naturgefahren` (ID: `35ff8133-364a-47eb-a145-0d641b706bff`):
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/35ff8133-364a-47eb-a145-0d641b706bff/items?datetime=2022-07-04T13:24:00Z (OAFeat interface)
   - https://poc.meteoschweiz-poc.swisstopo.cloud/root/search?collections=35ff8133-364a-47eb-a145-0d641b706bff&datetime=2022-07-04T13:24:00Z (STAC /search)
 - Get all items of a collection in a given `BBOX`:
