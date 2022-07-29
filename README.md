@@ -2,6 +2,19 @@
 
 Proof of concept (POC) to ingest geospatial datasets from [MeteoSuisse](https://www.meteoswiss.admin.ch/home.html) into a [SpatioTemporal Asset Catalog (STAC)](https://stacspec.org/), expose as [OGC API Features](https://ogcapi.ogc.org/features) and offer [OGC API Environmental Data Retrieval (EDR)](https://ogcapi.ogc.org/edr) capabilities.
 
+## OGC API Server
+
+Server: `https://poc.meteoschweiz-poc.swisstopo.cloud/root/`
+
+> **Warning**
+> - This is service is *experimental and not for operational use*. 
+> - *Limited service period*: from 1.8.2022 to 30.9.2022 might be extend
+> - *Limited availability / operating hours*: Server is frequently rebooted
+> - *Limited availability*: Server is frequently rebooted
+> - *General terms of use*: 
+> - - When using this service , the disclaimer of the Federal administration and the respective terms of use must be complied with in every case. You should therefore read the disclaimer carefully to ensure that you comply with the terms of use and the disclaimer.admin.ch.
+> - - During the the limitied service period, data can be accessed for **testing purposes** only. You must provide the source (author, title and link to the dataset).
+
 ## Documentation
 
 OGC API and STAC are designed to be explorable through `links` and a good starting point is the [`Landing Page (aka Root Catalog)`](https://poc.meteoschweiz-poc.swisstopo.cloud/root/) which links to capabilities, descriptions and fundamental resources of the services.
@@ -23,3 +36,11 @@ The created resources can for example be consoumed with the [STAC Browser](https
 ## Catalog Trees
 
 Catalog trees can be created by adding collection resources with the property `type` set to `Catalog` and links with the relations `parent`, `child` and/or `item`. Naturally these relations should be reflected on the linked ressources as well.
+
+## Tutorial
+
+A  [TUTORIAL] (https://github.com/camptocamp/oapi-poc/blob/tutorial/tutorial/howto.md is provided to integrate
+- Complete dataset browsing  and donwload
+- Feature data download via API with examples 
+- integration in web and fat client applications
+
