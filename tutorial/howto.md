@@ -138,6 +138,25 @@ It is additionally possible to filter by `datetime` and by `bbox`. In the follow
 
 ![Filter by datetime](img/search_by_date.png)
 
+## Working with the OAFeat interface in Arcgisonline
+>**Note**
+>At this [link](https://github.com/opengeospatial/ogcapi-features/tree/master/implementations/clients) you will find a list of clients that can be used to work with APIs implementing OAFeat. Here the basic usage with the GIS client QGIS will be shortly discussed.
+
+- Open [Arcgisonline](https://www.arcgis.com/](https://www.arcgis.com/apps/mapviewer/index.html)) and go to `Add>OGC API Features`
+- Copy&paste the URL https://poc.meteoschweiz-poc.swisstopo.cloud/root/ in `URL`
+- Choose `Aktuelle Daten für PoC MeteoSchweiz`
+- Click on `add to map`
+
+![Add OAFeat connection AGOL](https://user-images.githubusercontent.com/4577727/181782819-9461151f-8dbc-4c24-b5a2-b013d4e76094.png)
+
+ - Adapt symbology, labels and various other settings with the right hand menu, make sure you set the refresh interval 
+ 
+![Add OAFeat symbol AGOL](https://user-images.githubusercontent.com/4577727/181783362-d9090b82-60ad-41be-ace5-2fed9c516258.png)
+
+- Test the dataset [*Aktuelle Daten für PoC MeteoSchweiz*](https://www.arcgis.com/apps/mapviewer/index.html?webmap=d8fb8fc0a3a540dfb4befc89aab01c81) live 
+![Add OAFeat exmamplen AGOL](https://user-images.githubusercontent.com/4577727/181789748-19c617b9-a464-4c78-ba82-c2ce48f67fc0.png)
+
+
 ## Working with the OAFeat interface in QGIS
 >**Note**
 >At this [link](https://github.com/opengeospatial/ogcapi-features/tree/master/implementations/clients) you will find a list of clients that can be used to work with APIs implementing OAFeat. Here the basic usage with the GIS client QGIS will be shortly discussed.
@@ -181,6 +200,10 @@ It is additionally possible to filter by `datetime`, `bbox` and by other item pr
 Here an example of an interactive web map using [Leaflet](https://leafletjs.com/), the [WMTS](https://api.geo.admin.ch/services/sdiservices.html#wmts) of the Federal Spatial Data Infrastructure for the backgroung map and the OAFeat interface to the collection `Aktuelle Daten Temperatur`:
 
 - https://codepen.io/p1d1d1-the-sans/pen/abYwmyP
+ 
+![image](https://user-images.githubusercontent.com/4577727/181790574-92db6ebe-463d-4ddf-988a-c08159bdeb1d.png)
+
+
 
 
 
