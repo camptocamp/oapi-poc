@@ -138,11 +138,11 @@ It is additionally possible to filter by `datetime` and by `bbox`. In the follow
 
 ![Filter by datetime](img/search_by_date.png)
 
-## Working with the OAFeat interface in Arcgisonline
+## Working with the OAFeat interface in ArcGIS Online
 >**Note**
->At this [link](https://github.com/opengeospatial/ogcapi-features/tree/master/implementations/clients) you will find a list of clients that can be used to work with APIs implementing OAFeat. Here the basic usage with the GIS client QGIS will be shortly discussed.
+>At this [link](https://github.com/opengeospatial/ogcapi-features/tree/master/implementations/clients) you will find a list of clients that can be used to work with APIs implementing OAFeat. Here the basic usage with ArcGIS Online will be shortly discussed.
 
-- Open [Arcgisonline](https://www.arcgis.com/](https://www.arcgis.com/apps/mapviewer/index.html)) and go to `Add>OGC API Features`
+- Open [ArcGIS Online](https://www.arcgis.com/](https://www.arcgis.com/apps/mapviewer/index.html)) and go to `Add>OGC API Features`
 - Copy&paste the URL https://poc.meteoschweiz-poc.swisstopo.cloud/root/ in `URL`
 - Choose `Aktuelle Daten für PoC MeteoSchweiz`
 - Click on `add to map`
