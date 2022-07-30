@@ -1,6 +1,6 @@
 # OAPI - POC
 
-Proof of concept (POC) to ingest geospatial datasets from [MeteoSuisse](https://www.meteoswiss.admin.ch/home.html) into a [SpatioTemporal Asset Catalog (STAC)](https://stacspec.org/), expose as [OGC API Features](https://ogcapi.ogc.org/features) and offer [OGC API Environmental Data Retrieval (EDR)](https://ogcapi.ogc.org/edr) capabilities.
+Proof of concept (POC) to ingest geospatial datasets from [MeteoSwiss](https://www.meteoswiss.admin.ch/home.html) into a [SpatioTemporal Asset Catalog (STAC)](https://stacspec.org/) and expose as [OGC API Features](https://ogcapi.ogc.org/features).
 
 ## OGC API Server
 
@@ -12,8 +12,8 @@ Server: `https://poc.meteoschweiz-poc.swisstopo.cloud/root/`
 > - *Limited availability / operating hours*: Server is frequently rebooted
 > - *Limited availability*: Server is frequently rebooted
 > - *General terms of use*: 
-> - - When using this service , the disclaimer of the Federal administration and the respective terms of use must be complied with in every case. You should therefore read the disclaimer carefully to ensure that you comply with the terms of use and the disclaimer.admin.ch.
-> - - During the the limitied service period, data can be accessed for **testing purposes** only. You must provide the source (author, title and link to the dataset).
+>   - When using this service , the disclaimer of the Federal administration and the respective terms of use must be complied with in every case. You should therefore read the disclaimer carefully to ensure that you comply with the terms of use and the disclaimer.admin.ch.
+>   - During the the limitied service period, data can be accessed for **testing purposes** only. You must provide the source (author, title and link to the dataset).
 
 ## Documentation
 
@@ -42,5 +42,5 @@ Catalog trees can be created by adding collection resources with the property `t
 A  [TUTORIAL] (https://github.com/camptocamp/oapi-poc/blob/tutorial/tutorial/howto.md is provided to integrate
 - Complete dataset browsing  and donwload
 - Feature data download via API with examples 
-- integration in web and fat client applications
+- Integration in web and fat client applications
 
