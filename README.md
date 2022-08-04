@@ -39,7 +39,7 @@ Catalog trees can be created by adding collection resources with the property `t
 
 ## Tutorial
 
-A  [TUTORIAL] (https://github.com/camptocamp/oapi-poc/blob/tutorial/tutorial/howto.md is provided to integrate
+A  [TUTORIAL](https://github.com/camptocamp/oapi-poc/blob/tutorial/tutorial/howto.md) is provided to integrate
 - Complete dataset browsing  and donwload
 - Feature data download via API with examples 
 - Integration in web and fat client applications
