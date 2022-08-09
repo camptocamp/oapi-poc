@@ -196,7 +196,7 @@ It is additionally possible to filter by `datetime`, `bbox` and by other item pr
 - Get the URL of all assets of all items in a given `bbox` from the collection `Tageswerte Messstationen` (ID: `b46a8f8d-bc48-41d3-b20a-de61d0763318`):
   -  `curl "https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/b46a8f8d-bc48-41d3-b20a-de61d0763318/items?bbox=7.222133596513244,46.8348382353821,7.632747610185119,47.022404503762395" | jq ".features[].assets[].href"`
 
-Under Windows 10 - Powershell 
+ ### Under Windows 10 - Powershell 
 - [Start Windows Powershell](https://docs.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.2)
 - In case you are behind a proxy server, you need to execute this 4 commands:
 
@@ -206,7 +206,7 @@ Under Windows 10 - Powershell
    - `[System.Net.ServicePointManager]::SecurityProtocol = $AllProtocols`
    - `(Invoke-WebRequest -Uri "https://s3.meteoschweiz-poc.swisstopo.cloud/").StatusCode `
   
-- Download an asset file, e.g. based from the items list or you can construct the URL yourself e.g. for COSMO-1E with `<model-name>/<format>/<ZZ>/<HHH>/<parameter-shortname>/<file name>` with ZZ= modelrun, HHH forecast eg `COSMO-1E_alps_rotlatlon_single-level_leadtime_000_member_000_parameter_T_2M.grib2`:
+- Download an asset file, e.g. based from the items list or you can construct the URL yourself e.g. for COSMO-1E with `<model-name>/<format>/<ZZ>/<HHH>/<parameter-shortname>/<file name>` with ZZ= modelrun, HHH forecast e.g. `COSMO-1E_alps_rotlatlon_single-level_leadtime_000_member_000_parameter_T_2M.grib2`:
    - `wget "https://s3.meteoschweiz-poc.swisstopo.cloud/a6296aa9-d183-45c3-90fc-f03ec7d637be/COSMO-1E_alps_rotlatlon_single-level_leadtime_000_member_000_parameter_T_2M.grib2" -Outfile "COSMO-1E_alps_rotlatlon_single-level_leadtime_000_member_000_parameter_T_2M.grib2"`
 
 - In case you want to increase the Donwload speed in Powershell, deactivate the progress bar with `$ProgressPreference = 'SilentlyContinue'` and reactivate it with `$ProgressPreference = 'Continue'`
