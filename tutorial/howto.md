@@ -51,7 +51,7 @@ The API provides currently the following datasets (collections):
 - [CombiPrecip Niederschlagmenge akkumuliert 1h](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/e74c17ea-0822-44db-bef9-f37135a68245) - ID: e74c17ea-0822-44db-bef9-f37135a68245 (STAC)
 - [CombiPrecip Niederschlagmenge akkumuliert 24h](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/7880287e-5d4b-4e15-b13f-846df89979a3) - ID: 7880287e-5d4b-4e15-b13f-846df89979a3 (STAC)
 - [Gridded dataset of global radiation](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/4ccc5153-cc27-47b8-abee-9d6e12e19701) ID: 4ccc5153-cc27-47b8-abee-9d6e12e19701 (STAC)
-- [Modelldaten COSMO-1E](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/a6296aa9-d183-45c3-90fc-f03ec7d637be) - ID: a6296aa9-d183-45c3-90fc-f03ec7d637be (STAC). Currently no data available for this collection.
+- [Modelldaten COSMO-1E](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/a6296aa9-d183-45c3-90fc-f03ec7d637be) - ID: a6296aa9-d183-45c3-90fc-f03ec7d637be (STAC)
 - [Radarprodukte](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/e2e5132c-85df-417a-8706-f75068d4937e) - ID: e2e5132c-85df-417a-8706-f75068d4937e (STAC)
 - [Stundenwerte Messstationen](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/ad2b1452-9f3c-4137-9822-9758298bc025) - ID: ad2b1452-9f3c-4137-9822-9758298bc025 (OAFeat+STAC)
 - [Tageswerte Messstationen](https://radiantearth.github.io/stac-browser/#/external/poc.meteoschweiz-poc.swisstopo.cloud/root/collections/b46a8f8d-bc48-41d3-b20a-de61d0763318) - ID: b46a8f8d-bc48-41d3-b20a-de61d0763318 (STAC)
@@ -195,6 +195,21 @@ It is additionally possible to filter by `datetime`, `bbox` and by other item pr
   - `curl "https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/35ff8133-364a-47eb-a145-0d641b706bff/items?datetime=2022-07-04T13:24:00Z" | jq ".features[].assets[].href"`
 - Get the URL of all assets of all items in a given `bbox` from the collection `Tageswerte Messstationen` (ID: `b46a8f8d-bc48-41d3-b20a-de61d0763318`):
   -  `curl "https://poc.meteoschweiz-poc.swisstopo.cloud/root/collections/b46a8f8d-bc48-41d3-b20a-de61d0763318/items?bbox=7.222133596513244,46.8348382353821,7.632747610185119,47.022404503762395" | jq ".features[].assets[].href"`
+
+ ### Under Windows 10 - Powershell 
+- [Start Windows Powershell](https://docs.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.2)
+- In case you are behind a proxy server, you need to execute this 4 commands:
+
+   - `$browser = New-Object System.Net.WebClient`  
+   - `$browser.Proxy.Credentials =[System.Net.CredentialCache]::DefaultNetworkCredentials`
+   - `$AllProtocols = [System.Net.SecurityProtocolType]'Ssl3,Tls,Tls11,Tls12'`
+   - `[System.Net.ServicePointManager]::SecurityProtocol = $AllProtocols`
+   - `(Invoke-WebRequest -Uri "https://s3.meteoschweiz-poc.swisstopo.cloud/").StatusCode `
+  
+- Download an asset file, e.g. based from the items list or you can construct the URL yourself e.g. for COSMO-1E with `<model-name>/<format>/<ZZ>/<HHH>/<parameter-shortname>/<file name>` with ZZ= modelrun, HHH forecast e.g. `COSMO-1E_alps_rotlatlon_single-level_leadtime_000_member_000_parameter_T_2M.grib2`:
+   - `wget "https://s3.meteoschweiz-poc.swisstopo.cloud/a6296aa9-d183-45c3-90fc-f03ec7d637be/COSMO-1E_alps_rotlatlon_single-level_leadtime_000_member_000_parameter_T_2M.grib2" -Outfile "COSMO-1E_alps_rotlatlon_single-level_leadtime_000_member_000_parameter_T_2M.grib2"`
+
+- In case you want to increase the Donwload speed in Powershell, deactivate the progress bar with `$ProgressPreference = 'SilentlyContinue'` and reactivate it with `$ProgressPreference = 'Continue'`
 
 ## An example of an interactive web map with Leaflet
 Here an example of an interactive web map using [Leaflet](https://leafletjs.com/), the [WMTS](https://api.geo.admin.ch/services/sdiservices.html#wmts) of the Federal Spatial Data Infrastructure for the backgroung map and the OAFeat interface to the collection `Aktuelle Daten Temperatur`:
