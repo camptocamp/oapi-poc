@@ -219,6 +219,18 @@ Here an example of an interactive web map using [Leaflet](https://leafletjs.com/
 ![image](https://user-images.githubusercontent.com/4577727/181790574-92db6ebe-463d-4ddf-988a-c08159bdeb1d.png)
 
 
+# TERMS OF USE for PoC "STAC API" and "OGC API - Features - Part 1: Core"
+
+For the server: `https://poc.meteoschweiz-poc.swisstopo.cloud/root/`
+
+> **Warning**
+> - This is service is *experimental and not for operational use*. 
+> - *Limited service period*: from 1.8.2022 to 30.9.2022 might be extend
+> - *Limited availability / operating hours*: Server is frequently rebooted
+> - *Limited availability*: Server is frequently rebooted
+> - *General terms of use*: 
+>   - When using this service , the disclaimer of the Federal administration and the respective terms of use must be complied with in every case. You should therefore read the disclaimer carefully to ensure that you comply with the terms of use and the disclaimer.admin.ch.
+>   - During the the limitied service period, data can be accessed for **testing purposes** only. You must provide the source (author, title and link to the dataset).
 
 
 
