@@ -1,7 +1,7 @@
 {
     "id": "ad2b1452-9f3c-4137-9822-9758298bc025",
-    "title": "Stundenwerte Messstationen für PoC",
-    "description": "Temporary data set for internal use only",
+    "title": "Measurement values: Hourly values (PoC)",
+    "description": "Meteorological stations: Hourly data 7 days back.  \nFormat csv incl. station metadata.  \nSubsequent delivery with corrected values after 1 day.  \nTemporary data set for internal use only.",
     "extent": {
         "spatial": {
             "bbox": [

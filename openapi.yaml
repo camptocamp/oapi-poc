@@ -2,6 +2,7 @@ openapi: 3.0.3
 info:
   title: OpenAPI for OAPI POC - MeteoSwiss
   description: Sample OpenAPI definition of OGC API & STAC API for MeteoSuiss
+  termsOfService: https://github.com/camptocamp/oapi-poc#terms-of-service
   version: 0.1.0
 servers:
   - url: "http://localhost:8484/root/"

@@ -1,7 +1,7 @@
 {
     "id": "cosmo-1e_grib2_15_001_T_level_79",
     "title": "COSMO-1E - GRIB2 - 15 - 001 - T_level_79",
-    "description": "Temporary data set for internal use only",
+    "description": "Probabilistic forecasts for the Alpine region.  \nCOSMO-1E comprises an ensemble of 11 forecasts at a resolution of 1.1 km, calculated eight times a day.  \nTemporary data set for internal use only",
     "extent": {
         "spatial": {
             "bbox": [

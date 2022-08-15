@@ -7,8 +7,8 @@ import requests
 auth = ("user", "password")
 
 # API endpoint
-url = "https://poc.meteoschweiz-poc.swisstopo.cloud"
-# url = "http://0.0.0.0:8484"
+url = "https://poc.meteoschweiz-poc.swisstopo.cloud/root"
+# url = "http://0.0.0.0:8484/root"
 
 # Process description
 # r = requests.get(f'{url}/processes/load-asset')

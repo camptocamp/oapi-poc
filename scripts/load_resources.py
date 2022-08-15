@@ -7,8 +7,8 @@ import requests
 AUTH = ("user", "password")
 
 # Dataset root (Landing Page / Root Catalog)
-ROOT = "https://poc.meteoschweiz-poc.swisstopo.cloud"
-# ROOT = "http://0.0.0.0:8484"
+ROOT = "https://poc.meteoschweiz-poc.swisstopo.cloud/root"
+# ROOT = "http://0.0.0.0:8484/root"
 
 def update(d, u):
     """Update two dictionaries recursively"""

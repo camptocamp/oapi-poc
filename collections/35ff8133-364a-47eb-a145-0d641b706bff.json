@@ -1,7 +1,7 @@
 {
     "id": "35ff8133-364a-47eb-a145-0d641b706bff",
-    "title": "Warnungen vor Naturgefahren für PoC",
-    "description": "Temporary data set for internal use only",
+    "title": "Severe weather warnings (PoC)",
+    "description": "Severe weather warnings from MeteoSwiss for 159 warning regions and 51 warning objects (lakes and airports).\nCAP files hourly and as required.  \nTemporary data set for internal use only.",
     "extent": {
         "spatial": {
             "bbox": [
