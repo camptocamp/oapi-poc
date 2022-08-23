@@ -47,6 +47,6 @@ A  [TUTORIAL](https://github.com/camptocamp/oapi-poc/blob/main/tutorial/howto.md
 ## Feedback required: Can you answer our questions about the Proof of Concept?
 We are inviting you to take our survey about our Proof of Concept  data and services since you are interested in MeteoSwiss data or OGC API Features services.
 
--> Fill out the [SURVEY](https://de.surveymonkey.com/r/RL8HCBK) in DE, it kaes only 10 min
+-> Fill out the [SURVEY](https://de.surveymonkey.com/r/RL8HCBK) in DE, it takes only 10 min
 
 
