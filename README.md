@@ -40,9 +40,8 @@ A  [TUTORIAL](https://github.com/camptocamp/oapi-poc/blob/main/tutorial/howto.md
 - Feature data download via API with examples
 - Integration in web and fat client applications
 
-## Feedback required: Can you answer our questions about the Proof of Concept?
-We are inviting you to take our survey about our Proof of Concept  data and services since you are interested in MeteoSwiss data or OGC API Features services.
+## Feedback / Survey
 
--> Fill out the [SURVEY](https://de.surveymonkey.com/r/RL8HCBK) in DE, it takes only 10 min
+If you are interested in MeteoSwiss data or OGC API Features services, please answer our questions about the Proof of Concept.
 
-
+Fill in our [SURVEY](https://de.surveymonkey.com/r/RL8HCBK) in german which only takes about 10 min. Thank You!

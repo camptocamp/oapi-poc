@@ -16,7 +16,6 @@ To summarize, the STAC API is aimed at providing access to the complete dataset,
 > Feedback required: after you  tested our Proof of Concept, give us feedback on the MeteoSwiss data or OGC API Features services
 > -> Fill out the [SURVEY](https://de.surveymonkey.com/r/RL8HCBK) in DE, it takes only 10 min
 
-
 ## API endpoints
 
 The API provides the following endpoints:
@@ -230,10 +229,10 @@ Here an example of an interactive web map using [Leaflet](https://leafletjs.com/
 ![image](https://user-images.githubusercontent.com/4577727/181790574-92db6ebe-463d-4ddf-988a-c08159bdeb1d.png)
 
 ## Feedback required: Can you answer our questions about the Proof of Concept?
+
 We are inviting you to take our survey about our Proof of Concept  data and services since you are interested in MeteoSwiss data or OGC API Features services.
 
 -> Fill out the [SURVEY](https://de.surveymonkey.com/r/RL8HCBK) in DE, it takes only 10 min
-
 
 ## Terms Of Service
 
