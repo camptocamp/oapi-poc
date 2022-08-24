@@ -1,7 +1,7 @@
 {
     "id": "e2e5132c-85df-417a-8706-f75068d4937e",
-    "title": "Radarprodukte für PoC MeteoSchweiz",
-    "description": "Temporary data set for internal use only",
+    "title": "Radar: precipitation intensity 5 min (PoC)",
+    "description": "Radar measurements of precipitation intensity every 5 min.  \nTemporary data set for internal use only",
     "extent": {
         "spatial": {
             "bbox": [

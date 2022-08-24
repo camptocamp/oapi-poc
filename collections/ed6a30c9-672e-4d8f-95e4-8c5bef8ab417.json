@@ -1,7 +1,7 @@
 {
     "id": "ed6a30c9-672e-4d8f-95e4-8c5bef8ab417",
     "title": "Climate normals temperature 1961-1990 (PoC)",
-    "description": "Spatial analysis of monthly and yearly averages of temperature over the norm period 1961-1990.",
+    "description": "Gridded dataset of monthly and yearly averages of temperature over the norm period 1961-1990.",
     "extent": {
         "spatial": {
             "bbox": [

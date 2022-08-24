@@ -1,7 +1,7 @@
 {
     "id": "a6296aa9-d183-45c3-90fc-f03ec7d637be",
-    "title": "Modelldaten COSMO-1E für PoC",
-    "description": "Temporary data set for internal use only",
+    "title": "Numerical forecasts COSMO-1E (PoC)",
+    "description": "Probabilistic forecasts for the Alpine region.  \nCOSMO-1E comprises an ensemble of 11 forecasts at a resolution of 1.1 km, calculated eight times a day.  \nTemporary data set for internal use only",
     "extent": {
         "spatial": {
             "bbox": [

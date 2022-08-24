@@ -1,7 +1,7 @@
 {
     "id": "e74c17ea-0822-44db-bef9-f37135a68245",
-    "title": "CombiPrecip Niederschlagmenge akkumuliert 1h (PoC)",
-    "description": "Temporary data set for internal use only",
+    "title": "CombiPrecip Precipitation accumulated 1h (PoC)",
+    "description": "CombiPrecip (radar and precipitation measurement combined) Sum accumulated 1h.  \nTemporary data set for internal use only",
     "extent": {
         "spatial": {
             "bbox": [

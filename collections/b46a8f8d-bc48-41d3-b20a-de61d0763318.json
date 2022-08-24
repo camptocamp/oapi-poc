@@ -1,7 +1,7 @@
 {
     "id": "b46a8f8d-bc48-41d3-b20a-de61d0763318",
-    "title": "Tageswerte Messstationen für PoC",
-    "description": "Temporary data set for internal use only",
+    "title": "Measurement values: Daily values (PoC)",
+    "description": "Meteorological stations: Daily values 1 year back, up to 17 parameters.  \nFormat csv.  \nTemporary data set for internal use only.",
     "extent": {
         "spatial": {
             "bbox": [
