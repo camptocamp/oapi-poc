@@ -48,4 +48,4 @@ Fill in our [SURVEY (DE)](https://de.surveymonkey.com/r/RL8HCBK?lang=de) or [SUR
 
 ## Questions?
 
-Please drop us an e-mail to customerservice@meteoswiss.ch, Subject: POC OGD24 .
+Please drop us an e-mail to [customerservice@meteoswiss.ch](mailto:customerservice@meteoswiss.ch) with the subject `POC OGD24`.
