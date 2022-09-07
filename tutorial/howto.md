@@ -237,3 +237,7 @@ We are inviting you to take our survey about our Proof of Concept  data and serv
 ## Terms Of Service
 
 Consult the [`Terms of Service`](../README.md#terms-of-service) section of the `README.md`.
+
+## Questions?
+
+Please drop us an e-mail to [customerservice@meteoswiss.ch](mailto:customerservice@meteoswiss.ch) with the subject `POC OGD24`.
