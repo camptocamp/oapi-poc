@@ -45,3 +45,7 @@ A  [TUTORIAL](https://github.com/camptocamp/oapi-poc/blob/main/tutorial/howto.md
 If you are interested in MeteoSwiss data or OGC API Features services, please answer our questions about the Proof of Concept.
 
 Fill in our [SURVEY (DE)](https://de.surveymonkey.com/r/RL8HCBK?lang=de) or [SURVEY (EN)](https://de.surveymonkey.com/r/RL8HCBK?lang=en) which only takes about 10 min. Thank You!
+
+## Questions?
+
+Please drop us an e-mail to [customerservice@meteoswiss.ch](mailto:customerservice@meteoswiss.ch) with the subject `POC OGD24`.
