@@ -5,7 +5,7 @@ Proof of concept (POC) to ingest geospatial datasets from [MeteoSwiss](https://w
 ## Terms of Service
 
 1. This service is **experimental and thus not for operational use**.
-2. This service is limited in time, from 1.8.2022 to 31.10.2022 (might be extended).
+2. This service is **limited in time, from 1.8.2022 to 19.12.2022** .
 3. The service has limited availability and limited operating hours: It is frequently rebooted.
 4. During the limited service period, data can be accessed **for testing purposes only**. You must provide the source (author, title and link to the dataset).
 5. Further, when using this service, the disclaimer of the Federal Administration and the respective terms of use must be complied with in every case. You should therefore read the disclaimer carefully: [disclaimer.admin.ch](http://disclaimer.admin.ch).
